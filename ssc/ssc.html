@@ -77,10 +77,10 @@
 
             font-size: .5em;
         }
-        #modalOne {
+        .modal {
             /*top: 60%;*/
             /*right:60%;*/
-            margin-top: 15%;
+            margin-top: 35%;
             outline: none;
             position: center;
         }
@@ -164,12 +164,12 @@
                         </button>
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-default btn-seven-two" type="button" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-default btn-seven-two" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target=".modal-two">
                         <i class="material-icons">public</i>
                     </button>
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-default btn-two" type="button" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-default btn-two" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target=".modal-three">
                         <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
                     </button>
                 </div>
@@ -178,7 +178,7 @@
         <div class="icons-two">
             <div class="row">
                 <div class="col-xs-4">
-                    <button class="btn btn-default btn-five-three" type="button" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-default btn-five-three" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target=".modal-four">
                         <i class="material-icons">folder_special</i>
                     </button>
                 </div>
@@ -239,14 +239,62 @@
               <div class="modal-dialog modal-sm">
                 <div class="modal-content">
                   <div class="modal-body">
-                      Business Focus
+                      <p class="lead sansserif">Business Focus</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade modal-two" id="modalTwo" tabindex="1" role="dialog" aria-labelledby="causes" aria-hidden="true">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-body">
+                      <p class="lead sansserif">Causes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade modal-three" id="modalThree" tabindex="1" role="dialog" aria-labelledby="work-experience" aria-hidden="true">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-body">
+                      <p class="lead sansserif">Work Experience</p>
+                      <div class="row">
+                          <div class="col-xs-3">
+                              <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                  <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                              </button>
+                          </div>
+                          <div class="col-xs-3">
+                              <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                  <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                              </button>
+                          </div>
+                          <div class="col-xs-3">
+                              <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                  <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                              </button>
+                          </div>
+                          <div class="col-xs-3">
+                              <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                  <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                              </button>
+                          </div>
+                      </div>
                   </div>
                 </div>
               </div>
             </div>
         </div>
         <div class="modals-two">
-
+            <div class="modal fade modal-four" id="modalFour" tabindex="1" role="dialog" aria-labelledby="articles" aria-hidden="true">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-body">
+                      <p class="lead sansserif">Articles</p>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
         <div class="modals-three">
 
