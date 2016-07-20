@@ -4,142 +4,230 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css"> -->
-<!-- <script type="text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <style type="text/css">
-        h2 {
-            /*color: #00008B;*/
-            /*color: #3399ff;*/
-            color: #000099;
-            text-align: center;
-            /*margin-top: 50px;
-            margin-bottom: 5px;*/
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+   <style type="text/css">
+        html {
+            font-family: Lato, Arial, Helvetica, sans-serif;
         }
-        h6 {
-            color: #ffcc00;
+       .navbar {
+           background-color: #548bac;
+       }
+       .title {
+            color: #fff;
             text-align: center;
-            margin-bottom: 50px;
-
+            margin-top: 10px;
+            font-size: 40px;
+            margin-bottom: 5px;
         }
-        .title {
-            color: #000099;
-            text-align: center;
-            font-size: 50px;
+        .media-heading {
+            text-align: right;
         }
-        .col-xs-6, .col-md-4 {
+        .col-xs-4 {
             text-align: center;
+            padding: 5px;
         }
         .col-xs-3 {
             text-align: center;
-            margin-bottom: 30px;
+            padding: 15px;
         }
-        .glyphicon {
-            font-size: 2.5em;
-            /*color: #00008B;*/
-            /*color: #3399ff;*/
-            /*color: #000099;*/
-            color: #cc0000;
+        .glyphicon, .material-icons {
+            font-size: 3.0em;
+            color: #B52D2D;
         }
-        row {
-            margin-bottom: 50px;
+        .row-one, .row-two, .row-three, .row-four {
+            padding: 5px;
         }
-        p {
+        .subtitle-div {
+            color: #E8CD1C;
+            padding: 15px;
+            text-align: right;
+        }
+        .work-div {
+            padding: 15px;
+        }
+        .icons-div {
+            padding: 5px;
+        }
+        .icons-one, .icons-two, .icons-three, .icons-four {
+            padding: 5px;
+        }
+        .work-btn {
+            position: relative;
+            color: #E8CD1C;
+            font-size: .5em;
+        }
+        #myModal3 {
+            /*top: 60%;*/
+            /*right:60%;*/
+            margin-top: 15%;
+            outline: none;
+            position: center;
+        }
+        .modal-body {
             text-align: center;
-            color: #ffcc00;
-            margin-bottom: 50px;
+            padding: 5px;
+            color: #B52D2D;
         }
-        .location {
-            margin-bottom: 50px;
-        }
+
     </style>
+    <script>
+    </script>
 
     <title>Satjiv S. Chahil</title>
     <meta name="Satjiv S. Chahil" content="">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <p class="title lead">Satjiv S. Chahil</p>
-    <p class="lead">Global Marketing & Innovations<br>
-        Advisory Services</p>
-    <p class=" location lead">Silicon Valley, California</p>
+    <div class="navbar">
+        <div class="title-div">
+            <p class="title lead sansserif">Satjiv S. Chahil</p>
+        </div>
+    </div>
+    <div class="subtitle-div">
+        <div class="row">
+            <div class="col-xs-4">
+                <img class="media-heading" src="photo3.jpg" align="left" style="width: 100%;" alt="SatjivPhoto"/>
+            </div>
+            <div class="col-xs-8" style="padding-left: 0;">
+                <div class="banner">
+                    <div>Global Marketing & Innovations</div>
+                    <div>Advisory Services</div>
+                </div>
+                <div class="location-text">
+                    <em>Silicon Valley, California</em>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="work-div">
         <div class="row">
             <div class="col-xs-3">
-                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="icons-div">
+        <div class="icons-one">
+            <div class="row">
+                <div class="col-xs-4">
+                        <button class="btn btn-default btn-one" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target=".bd-example-modal-sm">
+                            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                        </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-seven-two" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">public</i>
                     </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-two" type="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                    </button>
+                </div>
             </div>
-            <div class="col-xs-3">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
-                </button>
+        </div>
+        <div class="icons-two">
+            <div class="row">
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-five-three" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">folder_special</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-four-two" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">people</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-three" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">school</i>
+                    </button>
+                </div>
             </div>
-            <div class="col-xs-3">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span>
-                </button>
+        </div>
+        <div class="icons-three">
+            <div class="row">
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-seven" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">collections</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-four-two" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">supervisor_account</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-nine" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">new_releases</i>
+                    </button>
+                </div>
             </div>
-            <div class="col-xs-3">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
-                </button>
+        </div>
+        <div class="icons-four">
+            <div class="row">
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-five" type="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-six" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">lightbulb_outline</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-four-three" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">live_tv</i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-    <!-- <div class="row"> -->
-        <div class="col-xs-3">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
-            </button>
-        </div>
-        <div class="col-xs-3">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-            </button>
-        </div>
-            <div class="col-xs-3">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                </button>
+    <div class="modals-div">
+        <div class="modals-one">
+            <div class="modal fade bd-example-modal-sm" id="myModal3" tabindex="1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-body">
+                      Business Focus
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-xs-3">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                </button>
-            </div>
-    <!-- </div> -->
-    <div class="col-xs-3">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-        </button>
-    </div>
-    <div class="col-xs-3">
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-        </button>
-    </div>
-        <div class="col-xs-3">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-            </button>
         </div>
-        <div class="col-xs-3">
-            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-            </button>
-        </div>
-</div>
+        <div class="modals-two">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+        </div>
+        <div class="modals-three">
+
+        </div>
+        <div class="modals-four">
+
+        </div>
+    </div>
 </body>
 </html>

@@ -61,6 +61,18 @@
             color: #E8CD1C;
             font-size: .5em;
         }
+        #myModal3 {
+            /*top: 60%;*/
+            /*right:60%;*/
+            margin-top: 15%;
+            outline: none;
+            position: center;
+        }
+        .modal-body {
+            text-align: center;
+            padding: 5px;
+            color: #B52D2D;
+        }
 
     </style>
     <script>
@@ -96,7 +108,7 @@
     <div class="work-div">
         <div class="row">
             <div class="col-xs-3">
-                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target=".bd-example-modal-sm">
+                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
                     <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
                 </button>
             </div>
@@ -116,22 +128,12 @@
                 </button>
             </div>
         </div>
-        <div class="modal fade bd-example-modal-sm" tabindex="1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-              <div class="modal-body">
-                  Hope this works 
-              </div>
-            </div>
-          </div>
-        </div>
-
     </div>
     <div class="icons-div">
         <div class="icons-one">
             <div class="row">
                 <div class="col-xs-4">
-                        <button class="btn btn-default btn-one" type="button" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-default btn-one" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target=".bd-example-modal-sm">
                             <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                         </button>
                 </div>
@@ -203,6 +205,28 @@
                     </button>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="modals-div">
+        <div class="modals-one">
+            <div class="modal fade bd-example-modal-sm" id="myModal3" tabindex="1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-body">
+                      Business Focus
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modals-two">
+
+        </div>
+        <div class="modals-three">
+
+        </div>
+        <div class="modals-four">
+
         </div>
     </div>
 </body>
