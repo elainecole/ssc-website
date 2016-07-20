@@ -17,7 +17,7 @@
        .navbar {
            background-color: #548bac;
        }
-        .title {
+       .title {
             color: #fff;
             text-align: center;
             margin-top: 10px;
@@ -27,9 +27,9 @@
         .media-heading {
             text-align: right;
         }
-
         .col-xs-4 {
             text-align: center;
+            padding: 5px;
         }
         .col-xs-3 {
             text-align: center;
@@ -40,55 +40,30 @@
             color: #B52D2D;
         }
         .row-one, .row-two, .row-three, .row-four {
-            padding: 20px;
-        }
-        p {
-            text-align: center;
-            margin-bottom: 50px;
+            padding: 5px;
         }
         .subtitle-div {
             color: #E8CD1C;
             padding: 15px;
             text-align: right;
         }
-        .location {
-            margin-bottom: 50px;
+        .work-div {
+            padding: 15px;
         }
-        .btn-zero-zero, logo-one {
+        .icons-div {
+            padding: 5px;
+        }
+        .icons-one, .icons-two, .icons-three, .icons-four {
+            padding: 5px;
+        }
+        .work-btn {
             position: relative;
             color: #E8CD1C;
-            margin-bottom: 10px;
             font-size: .5em;
-            /*left: -100px;*/
-            -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
-            animation-timing-function: linear;
-            /*animation:myfirst 5s linear infinite;
-            -moz-animation:myfirst 5s; /* Firefox */
-            /*-webkit-animation:myfirst 5s; /* Safari and Chrome */
-            /*-o-animation:myfirst 5s; /* Opera */
-        }
-        .btn-zero-one, logo-two {
-            position: relative;
-            color: #E8CD1C;
-            margin-bottom: 10px;
-            font-size: .5em;
-            /*left: -100px;*/
-            -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
-            animation-timing-function: linear;
-        }
-        .btn-zero-two, logo-three {
-            position: relative;
-            color: #E8CD1C;
-            margin-bottom: 10px;
-            font-size: .5em;
-            /*left: 100px;*/
-            -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
-            animation-timing-function: linear;
         }
 
     </style>
     <script>
-
     </script>
 
     <title>Satjiv S. Chahil</title>
@@ -121,259 +96,112 @@
     <div class="work-div">
         <div class="row">
             <div class="col-xs-3">
-                <button class="btn btn-default btn-zero-one" id="logo-two" type="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target=".bd-example-modal-sm">
+                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
                 </button>
             </div>
             <div class="col-xs-3">
-                <button class="btn btn-default btn-zero-one" id="logo-two" type="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
                 </button>
             </div>
             <div class="col-xs-3">
-                <button class="btn btn-default btn-zero-one" id="logo-two" type="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
                 </button>
             </div>
             <div class="col-xs-3">
-                <button class="btn btn-default btn-zero-one" id="logo-two" type="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
                 </button>
             </div>
         </div>
-    </div>
+        <div class="modal fade bd-example-modal-sm" tabindex="1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-body">
+                  Hope this works 
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="container-fluid">
-        <div class="row row-one">
-            <div class="col-xs-4">
-                    <button class="btn btn-default btn-one" type="button" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                    </button>
-            </div>
-            <div class="col-xs-4">
-                <button class="btn btn-default btn-two" type="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
-                </button>
-            </div>
-            <div class="col-xs-4">
-                <button class="btn btn-default btn-three" type="button" aria-haspopup="true" aria-expanded="false">
-                    <i class="material-icons">school</i>
-                </button>
-            </div>
-        </div>
-        <div class="well well-sm well-one" style="display:none;">
-            <div class="row row-well-one">
+    </div>
+    <div class="icons-div">
+        <div class="icons-one">
+            <div class="row">
                 <div class="col-xs-4">
-                        <button class="btn btn-default btn-one-one" type="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">info_outline</i>
+                        <button class="btn btn-default btn-one" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                         </button>
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-default btn-one-two" type="button"aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">info</i>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-one-three" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">not_interested</i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="well well-sm well-two" style="display:none;">
-            <div class="row row-one-well-three">
-                <div class="col-xs-4">
-                        <button class="btn btn-default btn-three-one" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">work</i>
-                        </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-three-two" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">business_center</i>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-three-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">not_interested</i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="well well-sm well-three" style="display:none;">
-            <div class="row row-one-well-one">
-                <div class="col-xs-4">
-                        <button class="btn btn-default btn-four-one" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                            <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-                        </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-four-two" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-four-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">live_tv</i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="row row-two">
-            <div class="col-xs-4">
-                <button class="btn btn-default btn-four" type="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
-                </button>
-            </div>
-            <div class="col-xs-4">
-                <button class="btn btn-default btn-five" type="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
-                </button>
-            </div>
-            <div class="col-xs-4">
-                <button class="btn btn-default btn-six" type="button" aria-haspopup="true" aria-expanded="false">
-                    <i class="material-icons">lightbulb_outline</i>
-                </button>
-            </div>
-        </div>
-        <div class="well well-sm well-four" style="display:none;">
-            <div class="row row-two-well-one">
-                <div class="col-xs-4">
-                        <button class="btn btn-default btn-two-one" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">movie</i>
-                        </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-two-two" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">video_library</i>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-two-three" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">local_movies</i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="well well-sm well-five" style="display:none;">
-            <div class="row row-one-well-three">
-                <div class="col-xs-4">
-                        <button class="btn btn-default btn-five-one" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">send</i>
-                        </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-five-two" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-five-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">new_releases</i>
-                    </button>
-                </div>
-            </div>
-            <div class="row row-one-well-three">
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-five-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">contact_phone</i>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-five-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">ring_volume</i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="well well-sm well-six" style="display:none;">
-            <div class="row row-one-well-three">
-                <div class="col-xs-4">
-                        <button class="btn btn-default btn-six-one" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">not_interested</i>
-                        </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-six-two" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">not_interested</i>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-six-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">not_interested</i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="row row-three">
-            <div class="col-xs-4">
-                <button class="btn btn-default btn-seven" type="button" aria-haspopup="true" aria-expanded="false">
-                    <i class="material-icons" title="Philanthropy">pan_tool</i>
-                </button>
-            </div>
-            <div class="col-xs-4">
-                <button class="btn btn-default btn-eight" type="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                </button>
-            </div>
-            <div class="col-xs-4">
-                <button class="btn btn-default btn-nine" type="button" aria-haspopup="true" aria-expanded="false">
-                    <i class="material-icons">new_releases</i>
-                </button>
-            </div>
-        </div>
-        <div class="well well-sm well-seven" style="display:none;">
-            <div class="row row-one-well-three">
-                <div class="col-xs-4">
-                        <button class="btn btn-default btn-seven-one" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">people</i>
-                        </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-seven-two" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                    <button class="btn btn-default btn-seven-two" type="button" aria-haspopup="true" aria-expanded="false">
                         <i class="material-icons">public</i>
                     </button>
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-default btn-seven-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">language</i>
+                    <button class="btn btn-default btn-two" type="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
                     </button>
                 </div>
             </div>
         </div>
-        <div class="well well-sm well-eight" style="display:none;">
-            <div class="row row-one-well-three">
+        <div class="icons-two">
+            <div class="row">
                 <div class="col-xs-4">
-                        <button class="btn btn-default btn-eight-one" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">not_interested</i>
-                        </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-eight-two" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">not_interested</i>
+                    <button class="btn btn-default btn-five-three" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">folder_special</i>
                     </button>
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-default btn-eight-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">not_interested</i>
+                    <button class="btn btn-default btn-four-two" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">people</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-three" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">school</i>
                     </button>
                 </div>
             </div>
         </div>
-        <div class="row row-four">
-            <div class="col-xs-4">
-                    <button class="btn btn-default" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="material-icons">tv</i>
+        <div class="icons-three">
+            <div class="row">
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-seven" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">collections</i>
                     </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-four-two" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">supervisor_account</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-nine" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">new_releases</i>
+                    </button>
+                </div>
             </div>
-            <div class="col-xs-4">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="material-icons">collections_bookmark</i>
-                </button>
-            </div>
-            <div class="col-xs-4">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="material-icons">not_interested</i>
-                </button>
+        </div>
+        <div class="icons-four">
+            <div class="row">
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-five" type="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-six" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">lightbulb_outline</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-four-three" type="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">live_tv</i>
+                    </button>
+                </div>
             </div>
         </div>
     </div>
