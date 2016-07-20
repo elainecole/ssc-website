@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1; user-scalable=no; maximum-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -14,18 +14,22 @@
         html {
             font-family: Lato, Arial, Helvetica, sans-serif;
         }
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            background-color: #BB342F;
+        }
        .navbar {
-           background-color: #548bac;
+           /*background-color: #4C7A96;*/
+           padding-bottom: 0px;
        }
        .title {
+            /*color: #4C7A96;*/
+            /*color: #577590;*/
             color: #fff;
-            text-align: center;
             margin-top: 10px;
-            font-size: 40px;
+            font-size: 30px;
             margin-bottom: 5px;
-        }
-        .media-heading {
-            text-align: right;
         }
         .col-xs-4 {
             text-align: center;
@@ -37,31 +41,43 @@
         }
         .glyphicon, .material-icons {
             font-size: 3.0em;
-            color: #B52D2D;
+            /*color: #B52D2D;*/
+            /*color: #0B4F6C;*/
+            color: #fff;
         }
         .row-one, .row-two, .row-three, .row-four {
             padding: 5px;
         }
         .subtitle-div {
-            color: #E8CD1C;
+            /*color: #E8CD1C;*/
+            color: #F3CA40;
+            /*color: #FBFB5F;*/
+            /*color: #DDA448;*/
             padding: 15px;
-            text-align: right;
+            padding-bottom: 0;
+            padding-top: 0;
         }
         .work-div {
             padding: 15px;
         }
         .icons-div {
             padding: 5px;
+            /*background-color: #F3CA40;*/
+            /*opacity: 0.5;*/
         }
         .icons-one, .icons-two, .icons-three, .icons-four {
             padding: 5px;
         }
         .work-btn {
             position: relative;
-            color: #E8CD1C;
+            /*color: #E8CD1C;*/
+            /*color: #cb513a;*/
+            /*color: #0B4F6C;*/
+            color: #BB342F;
+
             font-size: .5em;
         }
-        #myModal3 {
+        #modalOne {
             /*top: 60%;*/
             /*right:60%;*/
             margin-top: 15%;
@@ -71,7 +87,16 @@
         .modal-body {
             text-align: center;
             padding: 5px;
-            color: #B52D2D;
+            /*color: #B52D2D;*/
+            /*color: #F08A4B;*/
+            /*color: #0B4F6C;*/
+            color: #24597A;
+        }
+
+        button {
+            color: #fff !important;
+            border: none !important;
+            background-color: #BB342F !important;
         }
 
     </style>
@@ -80,18 +105,20 @@
 
     <title>Satjiv S. Chahil</title>
     <meta name="Satjiv S. Chahil" content="">
+</head>
+<body>
 
-    <div class="navbar">
-        <div class="title-div">
-            <p class="title lead sansserif">Satjiv S. Chahil</p>
-        </div>
-    </div>
+
+<!-- B7C4CC -->
     <div class="subtitle-div">
-        <div class="row">
-            <div class="col-xs-4">
-                <img class="media-heading" src="photo3.jpg" align="left" style="width: 100%;" alt="SatjivPhoto"/>
-            </div>
-            <div class="col-xs-8" style="padding-left: 0;">
+        <div class="row" style="border-bottom:6px solid #24597A;">
+            <!-- <div class="col-xs-4" style="padding-bottom:0;">
+                 <img src="photo2.jpg" style="width: 100%; padding-top: 30px; margin-bottom:0;" alt="SatjivPhoto"/> -->
+            <!-- </div>  -->
+            <div class="col-xs-12" style="padding-left: 15px; padding-bottom: 10px;">
+                <div class="title-div">
+                    <p class="title lead sansserif">Satjiv S. Chahil</p>
+                </div>
                 <div class="banner">
                     <div>Global Marketing & Innovations</div>
                     <div>Advisory Services</div>
@@ -101,10 +128,9 @@
                 </div>
             </div>
         </div>
+
     </div>
 
-</head>
-<body>
     <div class="work-div">
         <div class="row">
             <div class="col-xs-3">
@@ -133,7 +159,7 @@
         <div class="icons-one">
             <div class="row">
                 <div class="col-xs-4">
-                        <button class="btn btn-default btn-one" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target=".bd-example-modal-sm">
+                        <button class="btn btn-default btn-one" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target=".modal-one">
                             <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                         </button>
                 </div>
@@ -209,7 +235,7 @@
     </div>
     <div class="modals-div">
         <div class="modals-one">
-            <div class="modal fade bd-example-modal-sm" id="myModal3" tabindex="1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal fade modal-one" id="modalOne" tabindex="1" role="dialog" aria-labelledby="business-focus" aria-hidden="true">
               <div class="modal-dialog modal-sm">
                 <div class="modal-content">
                   <div class="modal-body">
