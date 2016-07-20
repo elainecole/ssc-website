@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+   <style type="text/css">
+        html {
+            font-family: Lato, Arial, Helvetica, sans-serif;
+        }
+       .navbar {
+           background-color: #548bac;
+       }
+        .title {
+            color: #fff;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        .media-heading {
+            text-align: right;
+        }
+
+        .col-xs-4 {
+            text-align: center;
+        }
+        .col-xs-3 {
+            text-align: center;
+            padding: 15px;
+        }
+        .glyphicon, .material-icons {
+            font-size: 3.0em;
+            color: #B52D2D;
+        }
+        .row-one, .row-two, .row-three, .row-four {
+            padding: 20px;
+        }
+        p {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .subtitle-div {
+            color: #E8CD1C;
+            padding: 15px;
+            text-align: right;
+        }
+        .location {
+            margin-bottom: 50px;
+        }
+        .btn-zero-zero, logo-one {
+            position: relative;
+            color: #E8CD1C;
+            margin-bottom: 10px;
+            font-size: .5em;
+            /*left: -100px;*/
+            -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+            animation-timing-function: linear;
+            /*animation:myfirst 5s linear infinite;
+            -moz-animation:myfirst 5s; /* Firefox */
+            /*-webkit-animation:myfirst 5s; /* Safari and Chrome */
+            /*-o-animation:myfirst 5s; /* Opera */
+        }
+        .btn-zero-one, logo-two {
+            position: relative;
+            color: #E8CD1C;
+            margin-bottom: 10px;
+            font-size: .5em;
+            /*left: -100px;*/
+            -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+            animation-timing-function: linear;
+        }
+        .btn-zero-two, logo-three {
+            position: relative;
+            color: #E8CD1C;
+            margin-bottom: 10px;
+            font-size: .5em;
+            /*left: 100px;*/
+            -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+            animation-timing-function: linear;
+        }
+
+    </style>
+    <script>
+
+        // $(document).ready(function(){
+        //     $(".btn-one").click(function(){
+        //         $(".well-one").fadeToggle();
+        //         $(".well-two").fadeOut();
+        //         $(".well-three").fadeOut();
+        //         $(".well-four").fadeOut();
+        //         $(".well-five").fadeOut();
+        //         $(".well-six").fadeOut();
+        //         $(".well-seven").fadeOut();
+        //         $(".well-eight").fadeOut();
+        //         $(".well-nine").fadeOut();
+        //     });
+        //     $(".btn-two").click(function(){
+        //         $(".well-two").fadeToggle();
+        //         $(".well-one").fadeOut();
+        //         $(".well-three").fadeOut();
+        //         $(".well-four").fadeOut();
+        //         $(".well-five").fadeOut();
+        //         $(".well-six").fadeOut();
+        //         $(".well-seven").fadeOut();
+        //         $(".well-eight").fadeOut();
+        //         $(".well-nine").fadeOut();
+        //     });
+        //     $(".btn-three").click(function(){
+        //         $(".well-three").fadeToggle();
+        //         $(".well-two").fadeOut();
+        //         $(".well-one").fadeOut();
+        //         $(".well-four").fadeOut();
+        //         $(".well-five").fadeOut();
+        //         $(".well-six").fadeOut();
+        //         $(".well-seven").fadeOut();
+        //         $(".well-eight").fadeOut();
+        //         $(".well-nine").fadeOut();
+        //     });
+        //     $(".btn-four").click(function(){
+        //         $(".well-four").fadeToggle();
+        //         $(".well-two").fadeOut();
+        //         $(".well-three").fadeOut();
+        //         $(".well-one").fadeOut();
+        //         $(".well-five").fadeOut();
+        //         $(".well-six").fadeOut();
+        //         $(".well-seven").fadeOut();
+        //         $(".well-eight").fadeOut();
+        //         $(".well-nine").fadeOut();
+        //     });
+        //     $(".btn-five").click(function(){
+        //         $(".well-five").fadeToggle();
+        //         $(".well-two").fadeOut();
+        //         $(".well-three").fadeOut();
+        //         $(".well-four").fadeOut();
+        //         $(".well-one").fadeOut();
+        //         $(".well-six").fadeOut();
+        //         $(".well-seven").fadeOut();
+        //         $(".well-eight").fadeOut();
+        //         $(".well-nine").fadeOut();
+        //     });
+        //     $(".btn-six").click(function(){
+        //         $(".well-six").fadeToggle();
+        //         $(".well-two").fadeOut();
+        //         $(".well-three").fadeOut();
+        //         $(".well-four").fadeOut();
+        //         $(".well-five").fadeOut();
+        //         $(".well-one").fadeOut();
+        //         $(".well-seven").fadeOut();
+        //         $(".well-eight").fadeOut();
+        //         $(".well-nine").fadeOut();
+        //     });
+        //     $(".btn-seven").click(function(){
+        //         $(".well-seven").fadeToggle();
+        //         $(".well-two").fadeOut();
+        //         $(".well-three").fadeOut();
+        //         $(".well-four").fadeOut();
+        //         $(".well-five").fadeOut();
+        //         $(".well-six").fadeOut();
+        //         $(".well-one").fadeOut();
+        //         $(".well-eight").fadeOut();
+        //         $(".well-nine").fadeOut();
+        //     });
+        //     $(".btn-eight").click(function(){
+        //         $(".well-eight").fadeToggle();
+        //         $(".well-two").fadeOut();
+        //         $(".well-three").fadeOut();
+        //         $(".well-four").fadeOut();
+        //         $(".well-five").fadeOut();
+        //         $(".well-six").fadeOut();
+        //         $(".well-seven").fadeOut();
+        //         $(".well-one").fadeOut();
+        //         $(".well-nine").fadeOut();
+        //     });
+        //     $(".btn-nine").click(function(){
+        //         $(".well-nine").fadeToggle();
+        //         $(".well-two").fadeOut();
+        //         $(".well-three").fadeOut();
+        //         $(".well-four").fadeOut();
+        //         $(".well-five").fadeOut();
+        //         $(".well-six").fadeOut();
+        //         $(".well-seven").fadeOut();
+        //         $(".well-eight").fadeOut();
+        //         $(".well-one").fadeOut();
+        //     });
+        //     $(window).load(scrollOne(), scrollTwo(), scrollThree());
+        // });
+        // function resetOne() {
+        //     logo = "#logo-one"
+        //     $(logo).css('visibility', 'hidden');
+        //     $(logo).animate({"left": '-70'}, scrollOne);
+        // }
+        // function scrollOne() {
+        //     logo = "#logo-one"
+        //     $(logo).css('visibility', 'visible');
+        //     $(logo).animate({"left": '350'}, 10000, resetOne);
+        // }
+        // function resetTwo() {
+        //     logo = "#logo-two"
+        //     $(logo).css('visibility', 'hidden');
+        //     $(logo).animate({"left": '-70'}, scrollTwo);
+        // }
+        // function scrollTwo() {
+        //     logo = "#logo-two"
+        //     $(logo).css('visibility', 'visible');
+        //     $(logo).animate({"left": '350'}, 10000, resetTwo);
+        // }
+        // function scrollOne() {
+        //     var logo = "#logo-one"
+        //     var x = $(logo).position();
+        //     if (x.left >= '300') {
+        //         $(logo).css('visibility', 'hidden');
+        //         $(logo).delay(500).animate({"left": '-100'}, scrollOne);
+        //     }
+        //     else {
+        //         $(logo).css('visibility', 'visible');
+        //         $(logo).animate({"left": '350'}, 10000, 'linear', scrollOne);
+        //     }
+        // }
+        // function scrollTwo() {
+        //     var logo = "#logo-two"
+        //     var x = $(logo).position();
+        //     if (x.left >= '300') {
+        //         $(logo).css('visibility', 'hidden');
+        //         $(logo).animate({"left": '-100'}, scrollTwo);
+        //     }
+        //     else {
+        //         $(logo).css('visibility', 'visible');
+        //         $(logo).animate({"left": '350'}, 10000, 'linear', scrollTwo);
+        //     }
+        // }
+        // function scrollThree() {
+        //     var logo = "#logo-three"
+        //     var x = $(logo).position();
+        //     if (x.left >= '350') {
+        //         $(logo).css('visibility', 'hidden');
+        //         $(logo).animate({"left": '-100'}, scrollThree);
+        //     }
+        //     else {
+        //         $(logo).css('visibility', 'visible');
+        //         $(logo).animate({"left": '350'}, 5000, 'linear', scrollThree);
+        //     }
+        // }
+    </script>
+
+    <title>Satjiv S. Chahil</title>
+    <meta name="Satjiv S. Chahil" content="">
+
+    <div class="navbar">
+        <div class="title-div">
+            <p class="title lead sansserif">Satjiv S. Chahil</p>
+        </div>
+    </div>
+    <div class="subtitle-div">
+        <div class="row">
+            <div class="col-xs-4">
+                <img class="media-heading" src="photo3.jpg" align="left" style="width: 100%;" alt="SatjivPhoto"/>
+            </div>
+            <div class="col-xs-8" style="padding-left: 0;">
+                <div class="banner">
+                    <div>Global Marketing & Innovations</div>
+                    <div>Advisory Services</div>
+                </div>
+                <div class="location-text">
+                    <em>Silicon Valley, California</em>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</head>
+<body>
+    <div class="work-banner">
+        <div class="row">
+            <div class="col-xs-3">
+                <button class="btn btn-default btn-zero-one" id="logo-two" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-default btn-zero-one" id="logo-two" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-default btn-zero-one" id="logo-two" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-xs-3">
+                <button class="btn btn-default btn-zero-one" id="logo-two" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row row-one">
+            <div class="col-xs-4">
+                    <button class="btn btn-default btn-one" type="button" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                    </button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-default btn-two" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-default btn-three" type="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons">school</i>
+                </button>
+            </div>
+        </div>
+        <div class="well well-sm well-one" style="display:none;">
+            <div class="row row-well-one">
+                <div class="col-xs-4">
+                        <button class="btn btn-default btn-one-one" type="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">info_outline</i>
+                        </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-one-two" type="button"aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">info</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-one-three" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">not_interested</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="well well-sm well-two" style="display:none;">
+            <div class="row row-one-well-three">
+                <div class="col-xs-4">
+                        <button class="btn btn-default btn-three-one" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">work</i>
+                        </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-three-two" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">business_center</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-three-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">not_interested</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="well well-sm well-three" style="display:none;">
+            <div class="row row-one-well-one">
+                <div class="col-xs-4">
+                        <button class="btn btn-default btn-four-one" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                        </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-four-two" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-apple" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-four-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">live_tv</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row row-two">
+            <div class="col-xs-4">
+                <button class="btn btn-default btn-four" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-default btn-five" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-default btn-six" type="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons">lightbulb_outline</i>
+                </button>
+            </div>
+        </div>
+        <div class="well well-sm well-four" style="display:none;">
+            <div class="row row-two-well-one">
+                <div class="col-xs-4">
+                        <button class="btn btn-default btn-two-one" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">movie</i>
+                        </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-two-two" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">video_library</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-two-three" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">local_movies</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="well well-sm well-five" style="display:none;">
+            <div class="row row-one-well-three">
+                <div class="col-xs-4">
+                        <button class="btn btn-default btn-five-one" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">send</i>
+                        </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-five-two" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-five-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">new_releases</i>
+                    </button>
+                </div>
+            </div>
+            <div class="row row-one-well-three">
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-five-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">contact_phone</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-five-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">ring_volume</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="well well-sm well-six" style="display:none;">
+            <div class="row row-one-well-three">
+                <div class="col-xs-4">
+                        <button class="btn btn-default btn-six-one" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">not_interested</i>
+                        </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-six-two" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">not_interested</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-six-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">not_interested</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row row-three">
+            <div class="col-xs-4">
+                <button class="btn btn-default btn-seven" type="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons" title="Philanthropy">pan_tool</i>
+                </button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-default btn-eight" type="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-default btn-nine" type="button" aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons">new_releases</i>
+                </button>
+            </div>
+        </div>
+        <div class="well well-sm well-seven" style="display:none;">
+            <div class="row row-one-well-three">
+                <div class="col-xs-4">
+                        <button class="btn btn-default btn-seven-one" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">people</i>
+                        </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-seven-two" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">public</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-seven-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">language</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="well well-sm well-eight" style="display:none;">
+            <div class="row row-one-well-three">
+                <div class="col-xs-4">
+                        <button class="btn btn-default btn-eight-one" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                            <i class="material-icons">not_interested</i>
+                        </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-eight-two" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">not_interested</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-eight-three" type="button" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">not_interested</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row row-four">
+            <div class="col-xs-4">
+                    <button class="btn btn-default" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons">tv</i>
+                    </button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons">collections_bookmark</i>
+                </button>
+            </div>
+            <div class="col-xs-4">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons">not_interested</i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
