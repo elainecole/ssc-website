@@ -12,12 +12,13 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
    <style type="text/css">
         html {
-            font-family: Lato, Arial, Helvetica, sans-serif;
+            font-family: Lato, Arial, Helvetica, sans-serif !important;
         }
         body {
             overflow-x: hidden;
             width: 100%;
             background-color: #BB342F;
+            font-family: Lato, Arial, Helvetica, sans-serif !important;
         }
        .navbar {
            /*background-color: #4C7A96;*/
@@ -90,20 +91,26 @@
             padding: 5px;
             /*color: #B52D2D;*/
             /*color: #F08A4B;*/
-            /*color: #0B4F6C;*/
-            color: #24597A;
+            color: #fff;
+            background-color: #24597A;
         }
-
+        .modal-header {
+            color: #fff;
+            background-color: #24597A;
+            font-size: 20px;
+            text-align: right;
+            font-weight: 300;
+        }
         .btn-default {
             color: #fff;
             border: none;
             background-color: #BB342F;
         }
         .modal-work-btn {
-            background-color: #fff;
+            background-color: #24597A !important;
         }
         .modal-work-icons {
-            color: #24597A;
+            color: #fff;
         }
 
     </style>
@@ -245,8 +252,10 @@
             <div class="modal fade modal-one" id="modalOne" tabindex="1" role="dialog" aria-labelledby="business-focus" aria-hidden="true">
               <div class="modal-dialog modal-sm">
                 <div class="modal-content">
+                    <div class="modal-header">
+                        Business Focus
+                    </div>
                   <div class="modal-body">
-                      <p class="lead sansserif">Business Focus</p>
                   </div>
                 </div>
               </div>
@@ -254,8 +263,10 @@
             <div class="modal fade modal-two" id="modalTwo" tabindex="1" role="dialog" aria-labelledby="causes" aria-hidden="true">
               <div class="modal-dialog modal-sm">
                 <div class="modal-content">
+                    <div class="modal-header">
+                        Causes
+                    </div>
                   <div class="modal-body">
-                      <p class="lead sansserif">Causes</p>
                   </div>
                 </div>
               </div>
@@ -263,8 +274,10 @@
             <div class="modal fade modal-three" id="modalThree" tabindex="1" role="dialog" aria-labelledby="work-experience" aria-hidden="true">
               <div class="modal-dialog modal-sm">
                 <div class="modal-content">
+                    <div class="modal-header">
+                        Work Experience
+                    </div>
                   <div class="modal-body">
-                      <p class="lead sansserif">Work Experience</p>
                       <div class="row">
                           <div class="col-xs-3">
                               <button class="btn btn-default modal-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
@@ -318,8 +331,10 @@
             <div class="modal fade modal-four" id="modalFour" tabindex="1" role="dialog" aria-labelledby="articles" aria-hidden="true">
               <div class="modal-dialog modal-sm">
                 <div class="modal-content">
+                    <div class="modal-header">
+                        Articles
+                    </div>
                   <div class="modal-body">
-                      <p class="lead sansserif">Articles</p>
                   </div>
                 </div>
               </div>
