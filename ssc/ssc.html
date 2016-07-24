@@ -63,28 +63,33 @@
         .work-btn {
             position: relative;
             color: #BB342F;
-
             font-size: .5em;
         }
-
         .modal-first {
             margin-top: 35%;
             outline: none;
             position: center;
         }
-        .modal-content {
+        .panel {
             background-color: #24597A;
+            border: none;
+            border-radius: 0 !important;
+            box-shadow: inset 0px 0px 8px 2px #183c53;
         }
-        .modal-body {
+        .panels {
+            margin: -5px;
+        }
+        .panel-body {
             text-align: center;
-            padding: 5px;
+            padding: 10px 5px;
             color: #fff;
         }
-        .modal-header {
+        .panel-title {
             color: #fff;
             font-size: 20px;
             text-align: right;
             font-weight: 300;
+            margin-right: 5px;
         }
         .btn-default {
             color: #fff;
@@ -100,7 +105,9 @@
         .lighter-text {
             font-weight: 300;
         }
-
+        .panel-default {
+            margin-bottom: 0;
+        }
         button:focus {
             outline:0 !important;
             background-color: inherit !important;
@@ -169,19 +176,39 @@
         <div class="icons-one">
             <div class="row">
                 <div class="col-xs-4">
-                        <button class="btn btn-default btn-one" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target=".modal-one">
+                        <button id="btn-one" class="btn btn-default btn-one open-panel" data-panel="panel-one" type="button">
                             <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
                         </button>
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-default btn-two" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target=".modal-two">
+                    <button id="btn-two" class="btn btn-default btn-two open-panel" data-panel="panel-two" type="button">
                         <i class="material-icons">public</i>
                     </button>
                 </div>
                 <div class="col-xs-4">
-                    <button class="btn btn-default btn-three" type="button" aria-haspopup="true" aria-expanded="false" data-toggle="modal" data-target=".modal-three">
+                    <button id="btn-three" class="btn btn-default btn-three open-panel" data-panel="panel-three" type="button">
                         <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
                     </button>
+                </div>
+            </div>
+        </div>
+        <div class="panels">
+            <div class="panel panel-default panel-one">
+                <div class="panel-body panel-collapse collapse" id="panel-one" aria-labelledby="btn-one">
+                <h3 class="panel-title">Business Focus</h3>
+                Panel content
+                </div>
+            </div>
+            <div class="panel panel-default panel-two">
+                <div class="panel-body panel-collapse collapse" id="panel-two" aria-labelledby="btn-two">
+                <h3 class="panel-title">Causes</h3>
+                Panel content
+                </div>
+            </div>
+            <div class="panel panel-default panel-three">
+                <div class="panel-body panel-collapse collapse" id="panel-three" aria-labelledby="btn-three">
+                <h3 class="panel-title">Work Experience</h3>
+                Panel content
                 </div>
             </div>
         </div>
@@ -429,8 +456,22 @@
             </div>
         </div>
     </div>
-    <div class="pages-div">
+    <script>
+    $( document ).ready(function () { 
+        $('.open-panel').click(function (e) {
+            var $this = $(e.target).closest('button'),
+                panelLookup = $this.attr('data-panel'),
+                $panel = $('#' + panelLookup);
 
-    </div>
+            if ($panel.hasClass('in')) {
+                $panel.removeClass('in');
+            } else {
+                $panel.addClass('in');
+                $panel.parent().siblings().children().removeClass('in');
+            }
+        });
+    });
+
+    </script>
 </body>
 </html>
