@@ -9,6 +9,8 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
    <style type="text/css">
         html {
@@ -75,6 +77,7 @@
             border: none;
             border-radius: 0 !important;
             box-shadow: inset 0px 0px 8px 2px #183c53;
+            display: none;
         }
         .panels {
             margin: -5px;
@@ -194,19 +197,19 @@
         </div>
         <div class="panels">
             <div class="panel panel-default panel-one">
-                <div class="panel-body panel-collapse collapse" id="panel-one" aria-labelledby="btn-one">
+                <div class="panel-body" id="panel-one" aria-labelledby="btn-one">
                 <h3 class="panel-title">Business Focus</h3>
                 Panel content
                 </div>
             </div>
             <div class="panel panel-default panel-two">
-                <div class="panel-body panel-collapse collapse" id="panel-two" aria-labelledby="btn-two">
+                <div class="panel-body" id="panel-two" aria-labelledby="btn-two">
                 <h3 class="panel-title">Causes</h3>
                 Panel content
                 </div>
             </div>
             <div class="panel panel-default panel-three">
-                <div class="panel-body panel-collapse collapse" id="panel-three" aria-labelledby="btn-three">
+                <div class="panel-body" id="panel-three" aria-labelledby="btn-three">
                 <h3 class="panel-title">Work Experience</h3>
                 Panel content
                 </div>
@@ -457,17 +460,17 @@
         </div>
     </div>
     <script>
-    $( document ).ready(function () { 
+    $( document ).ready(function () {
         $('.open-panel').click(function (e) {
             var $this = $(e.target).closest('button'),
                 panelLookup = $this.attr('data-panel'),
                 $panel = $('#' + panelLookup);
 
-            if ($panel.hasClass('in')) {
-                $panel.removeClass('in');
+            if ($panel.height() > 0) {
+                $panel.parent().slideUp();
             } else {
-                $panel.addClass('in');
-                $panel.parent().siblings().children().removeClass('in');
+                $panel.parent().slideDown();
+                $panel.parent().siblings().slideUp();
             }
         });
     });
