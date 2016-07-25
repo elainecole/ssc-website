@@ -392,6 +392,8 @@
                 $moveable.animate({'left': '+=50'}, 1000, "linear", scroll);
             }
             else {
+                // $moveable.css({'visibility': 'hidden', 'left': '-50'}, scroll);
+                // $moveable.animate({'left': '-50'}, scroll);
                 $moveable.css({'visibility': 'hidden'});
                 setTimeout(function(){$moveable.animate({'left': '-50'}, scroll)}, 500);
             }
