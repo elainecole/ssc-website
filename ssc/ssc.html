@@ -56,22 +56,23 @@
         .work-div {
             padding: 15px;
         }
+        .row-work {
+            margin: 10px;
+        }
         .work-btn {
-            position: relative;
+            position: absolute;
             color: #BB342F;
             font-size: .5em;
             visibility: visible;
-        }
-        wb-two {
-            /*margin-right: 3px;*/
+            /*margin: -5px;*/
         }
         .icons-div {
             padding: 5px;
+            padding-top: 15px;
         }
         .icons-one, .icons-two, .icons-three, .icons-four {
             padding: 5px;
         }
-
         .panel {
             background-color: #24597A;
             border: none;
@@ -126,8 +127,6 @@
     <meta name="Satjiv S. Chahil" content="">
 </head>
 <body>
-
-
     <div class="subtitle-div">
         <div class="row" style="border-bottom:3px solid #144572;">
             <div class="col-xs-12" style="padding-left: 15px;">
@@ -147,28 +146,32 @@
         </div>
     </div>
     <div class="work-div">
-        <div class="row">
-            <!-- <div class="col-xs-3"> -->
-                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
-                </button>
-            <!-- </div>
-            <div class="col-xs-3"> -->
-                <button class="btn btn-default work-btn wb-two" type="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
-                </button>
-            <!-- </div>
-            <div class="col-xs-3">
-                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
-                </button>
-            </div>
-            <div class="col-xs-3">
-                <button class="btn btn-default work-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                    <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
-                </button>
-            </div> -->
-        </div>
+        <!-- <div class="row row-work"> -->
+            <button class="btn btn-default work-btn wb-one" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-two" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-three" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-four" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-five" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+            </button>
+            <!-- <button class="btn btn-default work-btn wb-six" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-seven" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-eight" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+            </button> -->
+        <!-- </div> -->
     </div>
     <div class="icons-div">
         <div class="icons-one">
@@ -373,7 +376,6 @@
     </div>
     <script>
     $( document ).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip();
         $('.open-panel').click(function (e) {
             var $this = $(e.target).closest('button'),
                 panelLookup = $this.attr('data-panel'),
@@ -385,21 +387,130 @@
                 setTimeout(function(){$panel.parent().slideDown()}, 401);
             }
         });
-        scroll();
-        function scroll() {
-            var $moveable = $('.work-btn');
-            if ($moveable.position().left < 360) {
+        $('.wb-one').css({'left': ($(window).width() - $('.wb-one').width()) * (1/5)});
+        $('.wb-two').css({'left': ($(window).width() - $('.wb-two').width()) * ((1/5)*2)});
+        $('.wb-three').css({'left': ($(window).width() - $('.wb-three').width()) * ((1/5)*3)});
+        $('.wb-four').css({'left': ($(window).width() - $('.wb-four').width()) * ((1/5)*4)});
+        $('.wb-five').css({'left': ($(window).width() - $('.wb-five').width()) * ((1/5)*5)});
+        // $('.wb-six').css({'left': ($(window).width() - $('.wb-one').width()) * (-(1/6))});
+        // $('.wb-seven').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/6)*6)});
+        // $('.wb-eight').css({'left': ($(window).width() - $('.wb-one').width()) * (0)});
+        scrollOne();
+        scrollTwo();
+        scrollThree();
+        scrollFour();
+        scrollFive();
+        // scrollSix();
+        // scrollSeven();
+        // scrollEight();
+        function scroll(e) {
+            var $moveable = e;
+            if ($moveable.position().left < $(window).width()) {
                 $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=50'}, 1000, "linear", scroll);
+                $moveable.animate({'left': '+=50'}, 1000, "linear", scrollOne);
             }
             else {
-                // $moveable.css({'visibility': 'hidden', 'left': '-50'}, scroll);
-                // $moveable.animate({'left': '-50'}, scroll);
                 $moveable.css({'visibility': 'hidden'});
-                setTimeout(function(){$moveable.animate({'left': '-50'}, scroll)}, 500);
+                setTimeout(function(){$moveable.animate({'left': '-50px'}, scrollOne)}, 500);
             }
         }
 
+        function scrollOne() {
+            var $moveable = $('.wb-one');
+            if ($moveable.position().left < $(window).width()) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/5 + 'px'}, 1000, "linear", scrollOne);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollOne()
+            }
+        }
+        function scrollTwo() {
+            var $moveable = $('.wb-two');
+            if ($moveable.position().left < $(window).width()) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/5 + 'px'}, 1000, "linear", scrollTwo);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollTwo()
+            }
+        }
+        function scrollThree() {
+            var $moveable = $('.wb-three');
+            if ($moveable.position().left < $(window).width()) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/5 + 'px'}, 1000, "linear", scrollThree);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollThree()
+            }
+        }
+        function scrollFour() {
+            var $moveable = $('.wb-four');
+            if ($moveable.position().left < $(window).width()) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/5 + 'px'}, 1000, "linear", scrollFour);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollFour()
+            }
+        }
+        function scrollFive() {
+            var $moveable = $('.wb-five');
+            if ($moveable.position().left < $(window).width()) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/5 + 'px'}, 1000, "linear", scrollFive);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollFive()
+            }
+        }
+        function scrollSix() {
+            var $moveable = $('.wb-one');
+            if ($moveable.position().left < $(window).width()) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': $(window).width()/5 + 'px'}, 1000, "linear", scrollSix);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollSix()
+            }
+        }
+        function scrollSeven() {
+            var $moveable = $('.wb-one');
+            if ($moveable.position().left < $(window).width()) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': $(window).width()/5 + 'px'}, 1000, "linear", scrollSeven);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollSeven()
+            }
+        }
+        function scrollEight() {
+            var $moveable = $('.wb-one');
+            if ($moveable.position().left < $(window).width()) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': $(window).width()/5 + 'px'}, 1000, "linear", scrollEight);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollEight()
+            }
+        }
     });
 
 
