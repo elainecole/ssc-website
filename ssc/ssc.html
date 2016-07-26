@@ -28,7 +28,7 @@
        .title {
             color: #fff;
             margin-top: 10px;
-            font-size: 30px;
+            font-size: 28px;
             margin-bottom: 5px;
         }
         .col-xs-4 {
@@ -51,6 +51,7 @@
             padding: 15px;
             padding-bottom: 0;
             padding-top: 0;
+            padding-right: 0;
             background-color: #892522;
         }
         .work-div {
@@ -129,19 +130,19 @@
 <body>
     <div class="subtitle-div">
         <div class="row" style="border-bottom:3px solid #144572;">
-            <div class="col-xs-8" style="padding-left: 15px;">
+            <div class="col-xs-8" id="subtitle-wrd" style="padding-left: 15px; padding-right: 0;">
                 <div class="title-div" style="margin-bottom: 10px;">
                     <p class="title lead sansserif">Satjiv S. Chahil</p>
                 </div>
-                <div class="col-xs-9 banner lighter-text" style=" padding: 0; margin-bottom:2px;">
+                <div class="col-xs-12 banner lighter-text" style=" padding: 0; margin-bottom:2px;">
                     <div>Global Marketing & Innovations Advisory Services</div>
                 </div>
-                <div class="col-xs-9 location-text lighter-text" style="padding: 0; margin-bottom:8px;">
+                <div class="col-xs-12 location-text lighter-text" style="padding: 0; margin-bottom:8px;">
                     <em>Silicon Valley, California</em>
                 </div>
             </div>
-            <div class="col-xs-4" style="padding-bottom:0;">
-                 <img src="photo1.png" style="background: transparent; width: 100%; margin-bottom:0;" alt="SatjivPhoto"/>
+            <div class="col-xs-3" id="subtitle-img" style="padding-bottom:0;">
+                 <img src="photo1.png" style="bottom: 0; left: 0; position: absolute; background: transparent; width: 100%; margin-bottom:0;" alt="SatjivPhoto"/>
             </div>
         </div>
     </div>
@@ -162,15 +163,15 @@
             <button class="btn btn-default work-btn wb-five" type="button" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
             </button>
-            <!-- <button class="btn btn-default work-btn wb-six" type="button" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+            <button class="btn btn-default work-btn wb-six" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
             </button>
             <button class="btn btn-default work-btn wb-seven" type="button" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
             </button>
             <button class="btn btn-default work-btn wb-eight" type="button" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
-            </button> -->
+            </button>
         <!-- </div> -->
     </div>
     <div class="icons-div">
@@ -387,22 +388,27 @@
                 setTimeout(function(){$panel.parent().slideDown()}, 401);
             }
         });
-        $('.wb-one').css({'left': ($(window).width() - $('.wb-one').width()) * (1/5)});
-        $('.wb-two').css({'left': ($(window).width() - $('.wb-two').width()) * ((1/5)*2)});
-        $('.wb-three').css({'left': ($(window).width() - $('.wb-three').width()) * ((1/5)*3)});
-        $('.wb-four').css({'left': ($(window).width() - $('.wb-four').width()) * ((1/5)*4)});
-        $('.wb-five').css({'left': ($(window).width() - $('.wb-five').width()) * ((1/5)*5)});
-        // $('.wb-six').css({'left': ($(window).width() - $('.wb-one').width()) * (-(1/6))});
-        // $('.wb-seven').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/6)*6)});
-        // $('.wb-eight').css({'left': ($(window).width() - $('.wb-one').width()) * (0)});
+        if ($('#subtitle-wrd').height() != $('#subtitle-img').height()) {
+            $('#subtitle-img').css({'height': $('#subtitle-wrd').height()});
+            // $('#subtitle-wrd').css({'height': $('#subtitle-img').height()});
+
+        }
+        $('.wb-one').css({'left': ($(window).width() - $('.wb-one').width()) * (1/6)});
+        $('.wb-two').css({'left': ($(window).width() - $('.wb-two').width()) * ((1/6)*2)});
+        $('.wb-three').css({'left': ($(window).width() - $('.wb-three').width()) * ((1/6)*3)});
+        $('.wb-four').css({'left': ($(window).width() - $('.wb-four').width()) * ((1/6)*4)});
+        $('.wb-five').css({'left': ($(window).width() - $('.wb-five').width()) * ((1/6)*5)});
+        $('.wb-six').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/6)*6)});
+        $('.wb-seven').css({'left': '0px'});
+        $('.wb-eight').css({'left': '-49px'});
         scrollOne();
         scrollTwo();
         scrollThree();
         scrollFour();
         scrollFive();
-        // scrollSix();
-        // scrollSeven();
-        // scrollEight();
+        scrollSix();
+        scrollSeven();
+        scrollEight();
         function scroll(e) {
             var $moveable = e;
             if ($moveable.position().left < $(window).width()) {
@@ -419,7 +425,7 @@
             var $moveable = $('.wb-one');
             if ($moveable.position().left < $(window).width()) {
                 $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/5 + 'px'}, 1000, "linear", scrollOne);
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollOne);
             }
             else {
                 $moveable.css({'visibility': 'hidden'});
@@ -431,7 +437,7 @@
             var $moveable = $('.wb-two');
             if ($moveable.position().left < $(window).width()) {
                 $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/5 + 'px'}, 1000, "linear", scrollTwo);
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollTwo);
             }
             else {
                 $moveable.css({'visibility': 'hidden'});
@@ -443,7 +449,7 @@
             var $moveable = $('.wb-three');
             if ($moveable.position().left < $(window).width()) {
                 $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/5 + 'px'}, 1000, "linear", scrollThree);
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollThree);
             }
             else {
                 $moveable.css({'visibility': 'hidden'});
@@ -455,7 +461,7 @@
             var $moveable = $('.wb-four');
             if ($moveable.position().left < $(window).width()) {
                 $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/5 + 'px'}, 1000, "linear", scrollFour);
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollFour);
             }
             else {
                 $moveable.css({'visibility': 'hidden'});
@@ -467,7 +473,7 @@
             var $moveable = $('.wb-five');
             if ($moveable.position().left < $(window).width()) {
                 $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/5 + 'px'}, 1000, "linear", scrollFive);
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollFive);
             }
             else {
                 $moveable.css({'visibility': 'hidden'});
@@ -476,10 +482,10 @@
             }
         }
         function scrollSix() {
-            var $moveable = $('.wb-one');
+            var $moveable = $('.wb-six');
             if ($moveable.position().left < $(window).width()) {
                 $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': $(window).width()/5 + 'px'}, 1000, "linear", scrollSix);
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollSix);
             }
             else {
                 $moveable.css({'visibility': 'hidden'});
@@ -488,10 +494,10 @@
             }
         }
         function scrollSeven() {
-            var $moveable = $('.wb-one');
+            var $moveable = $('.wb-seven');
             if ($moveable.position().left < $(window).width()) {
                 $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': $(window).width()/5 + 'px'}, 1000, "linear", scrollSeven);
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollSeven);
             }
             else {
                 $moveable.css({'visibility': 'hidden'});
@@ -500,10 +506,10 @@
             }
         }
         function scrollEight() {
-            var $moveable = $('.wb-one');
+            var $moveable = $('.wb-eight');
             if ($moveable.position().left < $(window).width()) {
                 $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': $(window).width()/5 + 'px'}, 1000, "linear", scrollEight);
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollEight);
             }
             else {
                 $moveable.css({'visibility': 'hidden'});
