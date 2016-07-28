@@ -11,16 +11,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <link rel='shortcut icon' href='photo1.png' type='image/png'/ >
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
    <style type="text/css">
         html {
             font-family: Lato, Arial, Helvetica, sans-serif !important;
+            overflow-x: hidden;
         }
         body {
-            overflow-x: hidden;
             width: 100%;
             background-color: #BB342F;
             font-family: Lato, Arial, Helvetica, sans-serif !important;
+        }
+        .site-wrapper {
+            overflow-x: hidden;
         }
        .navbar {
            padding-bottom: 0px;
@@ -43,6 +47,9 @@
             font-size: 3.0em;
             color: #fff;
         }
+        .panel-btn {
+            width: 100%;
+        }
         .row-one, .row-two, .row-three, .row-four {
             padding: 5px;
         }
@@ -59,6 +66,10 @@
         }
         .row-work {
             margin: 10px;
+        }
+        .row-panel {
+            padding-left: 15px;
+            padding-right: 15px;
         }
         .work-btn {
             position: absolute;
@@ -101,7 +112,7 @@
             border: none;
             background-color: #BB342F;
         }
-        .panel-work-btn {
+        .panel-work-btn, .panel-causes-btn, .panel-article-btn, .panel-press-btn {
             background-color: #24597A !important;
         }
         .lighter-text {
@@ -128,6 +139,7 @@
     <meta name="Satjiv S. Chahil" content="">
 </head>
 <body>
+    <div class="site-wrapper">
     <div class="subtitle-div">
         <div class="row" style="border-bottom:3px solid #144572;">
             <div class="col-xs-8" id="subtitle-wrd" style="padding-left: 15px; padding-right: 0;">
@@ -211,13 +223,56 @@
             <div class="panel panel-default panel-two">
                 <div class="panel-body" id="panel-two" aria-labelledby="btn-two">
                 <h3 class="panel-title">Causes</h3>
-                Panel content
+                <div class="row row-panel">
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-panel">
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
                 </div>
             </div>
             <div class="panel panel-default panel-three">
                 <div class="panel-body" id="panel-three" aria-labelledby="btn-three">
                     <h3 class="panel-title">Work Experience</h3>
-                    <div class="row">
+                    <div class="row row-panel">
                         <div class="col-xs-3">
                             <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
                                 <span class="glyphicon glyphicon-asterisk modal-work-icons" aria-hidden="true"></span>
@@ -239,7 +294,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row row-panel">
                         <div class="col-xs-3">
                             <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
                                 <span class="glyphicon glyphicon-asterisk modal-work-icons" aria-hidden="true"></span>
@@ -287,7 +342,50 @@
             <div class="panel panel-default panel-four">
                 <div class="panel-body" id="panel-four" aria-labelledby="btn-four">
                 <h3 class="panel-title">Press</h3>
-                Panel content
+                <div class="row row-panel">
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-panel">
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
                 </div>
             </div>
             <div class="panel panel-default panel-five">
@@ -326,7 +424,50 @@
             <div class="panel panel-default panel-seven">
                 <div class="panel-body" id="panel-seven" aria-labelledby="btn-seven">
                 <h3 class="panel-title">Articles</h3>
-                Panel content
+                <div class="row row-panel">
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.location='http://www.wired.com/2000/11/people-39/'">
+                            <img src="wiredLogo.png" class="panel-btn" style="background: transparent;" alt="WiredLogo"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <img src="fortuneLogo.png" class="panel-btn" style="background: transparent;" alt="FortuneLogo"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <img src="cnetLogo.png" class="panel-btn" style="background: transparent;" alt="C|netLogo"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-panel">
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
                 </div>
             </div>
             <div class="panel panel-default panel-eight">
@@ -382,6 +523,9 @@
             </div>
         </div>
     </div>
+</div>
+</body>
+
     <script>
     $( document ).ready(function () {
         $('.open-panel').click(function (e) {
@@ -525,8 +669,5 @@
             }
         }
     });
-
-
     </script>
-</body>
 </html>
