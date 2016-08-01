@@ -67,6 +67,9 @@
         .work-div {
             padding: 15px;
         }
+        .causes-div {
+            padding: 15px;
+        }
         .row-work {
             margin: 10px;
         }
@@ -80,6 +83,16 @@
             font-size: .5em;
             visibility: visible;
             /*margin: -5px;*/
+        }
+        .causes-btn {
+            position: absolute;
+            color: #BB342F;
+            font-size: .5em;
+            visibility: visible;
+            /*margin: -5px;*/
+        }
+        .scroll-btn {
+            width: 100%;
         }
         .icons-div {
             padding: 5px;
@@ -172,7 +185,7 @@
     <div class="work-div">
         <!-- <div class="row row-work"> -->
             <button class="btn btn-default work-btn wb-one" type="button" aria-haspopup="true" aria-expanded="false">
-                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
             </button>
             <button class="btn btn-default work-btn wb-two" type="button" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
@@ -528,6 +541,34 @@
         </div>
     </div>
 </div>
+<div class="causes-div">
+    <!-- <div class="row row-work"> -->
+        <button class="btn btn-default causes-btn c-one" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+        </button>
+        <button class="btn btn-default causes-btn c-two" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        </button>
+        <button class="btn btn-default causes-btn c-three" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+        </button>
+        <button class="btn btn-default causes-btn c-four" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+        </button>
+        <button class="btn btn-default causes-btn c-five" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+        </button>
+        <button class="btn btn-default causes-btn c-six" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+        </button>
+        <button class="btn btn-default causes-btn c-seven" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+        </button>
+        <button class="btn btn-default causes-btn c-eight" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+        </button>
+    <!-- </div> -->
+</div>
 </body>
 
     <script>
@@ -556,6 +597,14 @@
         $('.wb-six').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/6)*6)});
         $('.wb-seven').css({'left': '0px'});
         $('.wb-eight').css({'left': '-49px'});
+        $('.c-one').css({'left': ($(window).width() - $('.c-one').width()) * (1/6)});
+        $('.c-two').css({'left': ($(window).width() - $('.c-two').width()) * ((1/6)*2)});
+        $('.c-three').css({'left': ($(window).width() - $('.c-three').width()) * ((1/6)*3)});
+        $('.c-four').css({'left': ($(window).width() - $('.c-four').width()) * ((1/6)*4)});
+        $('.c-five').css({'left': ($(window).width() - $('.c-five').width()) * ((1/6)*5)});
+        $('.c-six').css({'left': ($(window).width() - $('.c-one').width()) * ((1/6)*6)});
+        $('.c-seven').css({'left': '0px'});
+        $('.c-eight').css({'left': '-49px'});
         scrollOne();
         scrollTwo();
         scrollThree();
@@ -564,6 +613,14 @@
         scrollSix();
         scrollSeven();
         scrollEight();
+        scrollCOne();
+        scrollCTwo();
+        scrollCThree();
+        scrollCFour();
+        scrollCFive();
+        scrollCSix();
+        scrollCSeven();
+        scrollCEight();
         function scroll(e) {
             var $moveable = e;
             if ($moveable.position().left < $(window).width()) {
@@ -575,7 +632,6 @@
                 setTimeout(function(){$moveable.animate({'left': '-50px'}, scrollOne)}, 500);
             }
         }
-
         function scrollOne() {
             var $moveable = $('.wb-one');
             if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
@@ -670,6 +726,102 @@
                 $moveable.css({'visibility': 'hidden'});
                 $moveable.css({'left': '-50px'});
                 scrollEight()
+            }
+        }
+        function scrollCOne() {
+            var $moveable = $('.c-one');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollCOne);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollCOne()
+            }
+        }
+        function scrollCTwo() {
+            var $moveable = $('.c-two');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollCTwo);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollCTwo()
+            }
+        }
+        function scrollCThree() {
+            var $moveable = $('.c-three');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollCThree);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollCThree()
+            }
+        }
+        function scrollCFour() {
+            var $moveable = $('.c-four');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollCFour);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollCFour()
+            }
+        }
+        function scrollCFive() {
+            var $moveable = $('.c-five');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollCFive);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollCFive()
+            }
+        }
+        function scrollCSix() {
+            var $moveable = $('.c-six');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollCSix);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollCSix()
+            }
+        }
+        function scrollCSeven() {
+            var $moveable = $('.c-seven');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollCSeven);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollCSeven()
+            }
+        }
+        function scrollCEight() {
+            var $moveable = $('.c-eight');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollCEight);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollCEight()
             }
         }
     });
