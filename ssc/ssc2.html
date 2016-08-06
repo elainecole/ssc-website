@@ -13,6 +13,12 @@
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <link rel='shortcut icon' href='photo1.png' type='image/png'/ >
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
    <style type="text/css">
         html {
             font-family: Lato, Arial, Helvetica, sans-serif !important;
@@ -34,7 +40,14 @@
             margin-top: 10px;
             font-size: 28px;
             margin-bottom: 5px;
-            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
+            /*font-family: 'Open Sans', sans-serif;*/
+            /*font-family: 'Roboto Condensed', sans-serif;*/
+            /*font-family: 'Open Sans Condensed', sans-serif;*/
+            font-family: 'PT Sans Narrow', sans-serif;
+            font-family: 'Roboto', sans-serif;
+
+
         }
         .col-xs-4 {
             text-align: center;
@@ -179,7 +192,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                            <h4 class="modal-title" id="imgModal">Headshots</h4>
+                            <h4 class="modal-title" id="imgModal">Portrait</h4>
                         </div>
                         <div class="modal-body">
                             <a target="_blank" href="SChahilIMG1.jpg" class="thumbnail">
@@ -532,8 +545,8 @@
                         </button>
                     </div>
                     <div class="col-xs-3">
-                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                            <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('/CNN_Money_Article.pdf')">
+                            <img src="cnnLogo.png" class="panel-btn" style="background: transparent;" alt="CNNLogo"/>
                         </button>
                     </div>
                 </div>
@@ -597,7 +610,10 @@
             <div class="panel panel-default panel-ten">
                 <div class="panel-body" id="panel-ten" aria-labelledby="btn-ten">
                 <h3 class="panel-title">Contact</h3>
-                Panel content
+                <a href="mailto:Satjiv@Chahil.com">
+                    <i class="material-icons">email</i>
+                    Satjiv@Chahil.com
+                </a>
                 </div>
             </div>
             <div class="panel panel-default panel-eleven">
