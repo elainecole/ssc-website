@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <link rel='shortcut icon' href='photo1.png' type='image/png'/ >
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+   <style type="text/css">
+        html {
+            font-family: Lato, Arial, Helvetica, sans-serif !important;
+            overflow-x: hidden;
+        }
+        body {
+            width: 100%;
+            background-color: #BB342F;
+            font-family: Lato, Arial, Helvetica, sans-serif !important;
+        }
+        .site-wrapper {
+            overflow-x: hidden;
+        }
+       .navbar {
+           padding-bottom: 0px;
+       }
+       .title {
+            color: #fff;
+            margin-top: 10px;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        .col-xs-4 {
+            text-align: center;
+            padding: 5px;
+        }
+        .col-xs-3 {
+            text-align: center;
+            padding: 15px;
+        }
+        .glyphicon, .material-icons {
+            font-size: 3.0em;
+            color: #fff;
+        }
+        .panel-btn {
+            width: 100%;
+        }
+        .row-one, .row-two, .row-three, .row-four {
+            padding: 5px;
+        }
+        .subtitle-div {
+            color: #F3CA40;
+            padding: 15px;
+            padding-bottom: 0;
+            padding-top: 0;
+            padding-right: 0;
+            background-color: #892522;
+        }
+        .work-div {
+            padding: 15px;
+        }
+        .row-work {
+            margin: 10px;
+        }
+        .row-panel {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .work-btn {
+            position: absolute;
+            color: #BB342F;
+            font-size: .5em;
+            visibility: visible;
+            /*margin: -5px;*/
+        }
+        .icons-div {
+            padding: 5px;
+            padding-top: 15px;
+        }
+        .icons-one, .icons-two, .icons-three, .icons-four {
+            padding: 5px;
+        }
+        .panel {
+            background-color: #24597A;
+            border: none;
+            border-radius: 0 !important;
+            box-shadow: inset 0px 0px 8px 2px #183c53;
+            display: none;
+        }
+        .panels {
+            margin: -5px;
+        }
+        .panel-body {
+            text-align: center;
+            padding: 10px 5px;
+            color: #fff;
+        }
+        .panel-title {
+            color: #fff;
+            font-size: 20px;
+            text-align: right;
+            font-weight: 300;
+            margin-right: 5px;
+        }
+        .btn-default {
+            color: #fff;
+            border: none;
+            background-color: #BB342F;
+        }
+        .panel-work-btn, .panel-causes-btn, .panel-article-btn, .panel-press-btn {
+            background-color: #24597A !important;
+        }
+        .lighter-text {
+            font-weight: 300;
+        }
+        .panel-default {
+            margin-bottom: 0;
+        }
+        button:focus {
+            outline:0 !important;
+            background-color: inherit !important;
+            box-shadow: 0;
+        }
+
+        button:focus, button:active, button.active, button:focus:active, button:hover {
+            outline: 0 !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+
+    </style>
+
+    <title>Satjiv S. Chahil</title>
+    <meta name="Satjiv S. Chahil" content="">
+</head>
+<body>
+    <div class="site-wrapper">
+    <div class="subtitle-div">
+        <div class="row" style="border-bottom:3px solid #144572;">
+            <div class="col-xs-8" id="subtitle-wrd" style="padding-left: 15px; padding-right: 0;">
+                <div class="title-div" style="margin-bottom: 10px;">
+                    <p class="title lead sansserif">Satjiv S. Chahil</p>
+                </div>
+                <div class="col-xs-12 banner lighter-text" style=" padding: 0; margin-bottom:2px;">
+                    <div>Global Marketing & Innovations Advisory Services</div>
+                </div>
+                <div class="col-xs-12 location-text lighter-text" style="padding: 0; margin-bottom:8px;">
+                    <em>Silicon Valley, California</em>
+                </div>
+            </div>
+            <div class="col-xs-3" id="subtitle-img" style="padding-bottom:0;">
+                 <img src="photo1.png" style="bottom: 0; left: 0; position: absolute; background: transparent; width: 100%; margin-bottom:0;" alt="SatjivPhoto"/>
+            </div>
+        </div>
+    </div>
+    <div class="quote-div">
+        <div class="row">
+            <blockquote class="blockquote-reverse lighter-text" style="padding-left: 20px; font-size: 1em; color: #F3CA40;">
+                <p>Few executives have had greater influence shaping marketing in Silicon Valley than Satjiv Chahil.<footer style="color: #fff;"><cite title="Forbes Magazine">Forbes Magazine</cite></footer></p>
+            </blockquote>
+        </div>
+    </div>
+    <div class="work-div">
+        <!-- <div class="row row-work"> -->
+            <button class="btn btn-default work-btn wb-one" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-two" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-three" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-four" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-five" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-six" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-seven" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+            </button>
+            <button class="btn btn-default work-btn wb-eight" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span>
+            </button>
+        <!-- </div> -->
+    </div>
+    <div class="icons-div">
+        <div class="icons-one">
+            <div class="row">
+                <div class="col-xs-4">
+                        <button id="btn-one" class="btn btn-default btn-one open-panel" data-toggle="tooltip" title="Business Focus" data-panel="panel-one" type="button">
+                            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                        </button>
+                </div>
+                <div class="col-xs-4">
+                    <button id="btn-two" class="btn btn-default btn-two open-panel" data-panel="panel-two" type="button">
+                        <i class="material-icons">public</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button id="btn-three" class="btn btn-default btn-three open-panel" data-panel="panel-three" type="button">
+                        <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="panels">
+            <div class="panel panel-default panel-one">
+                <div class="panel-body" id="panel-one" aria-labelledby="btn-one">
+                <h3 class="panel-title">Business Focus</h3>
+                Panel content
+                </div>
+            </div>
+            <div class="panel panel-default panel-two">
+                <div class="panel-body" id="panel-two" aria-labelledby="btn-two">
+                <h3 class="panel-title">Causes</h3>
+                <div class="row row-panel">
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-panel">
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk panel-causes-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="panel panel-default panel-three">
+                <div class="panel-body" id="panel-three" aria-labelledby="btn-three">
+                    <h3 class="panel-title">Work Experience</h3>
+                    <div class="row row-panel">
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-asterisk modal-work-icons" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-asterisk modal-work-icons" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-asterisk modal-work-icons" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-asterisk modal-work-icons" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row row-panel">
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-asterisk modal-work-icons" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-asterisk modal-work-icons" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-asterisk modal-work-icons" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="glyphicon glyphicon-asterisk modal-work-icons" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="icons-two">
+            <div class="row">
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-four open-panel" data-panel="panel-four" type="button">
+                        <i class="material-icons">folder_special</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-five open-panel" data-panel="panel-five" type="button">
+                        <i class="material-icons">people</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-six open-panel" data-panel="panel-six" type="button">
+                        <i class="material-icons">school</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="panels">
+            <div class="panel panel-default panel-four">
+                <div class="panel-body" id="panel-four" aria-labelledby="btn-four">
+                <h3 class="panel-title">Press</h3>
+                <div class="row row-panel">
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-panel">
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="panel panel-default panel-five">
+                <div class="panel-body" id="panel-five" aria-labelledby="btn-five">
+                <h3 class="panel-title">References</h3>
+                Panel content
+                </div>
+            </div>
+            <div class="panel panel-default panel-six">
+                <div class="panel-body" id="panel-six" aria-labelledby="btn-six">
+                <h3 class="panel-title">Education</h3>
+                Panel content
+                </div>
+            </div>
+        </div>
+        <div class="icons-three">
+            <div class="row">
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-seven open-panel" data-panel="panel-seven" type="button">
+                        <i class="material-icons">collections</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-eight open-panel" data-panel="panel-eight" type="button">
+                        <i class="material-icons">supervisor_account</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-nine open-panel" data-panel="panel-nine" type="button">
+                        <i class="material-icons">new_releases</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="panels">
+            <div class="panel panel-default panel-seven">
+                <div class="panel-body" id="panel-seven" aria-labelledby="btn-seven">
+                <h3 class="panel-title">Articles</h3>
+                <div class="row row-panel">
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.location='http://www.wired.com/2000/11/people-39/'">
+                            <img src="wiredLogo.png" class="panel-btn" style="background: transparent;" alt="WiredLogo"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.location='http://fortune.com/2013/08/29/tech-star-satjiv-chahil/'">
+                            <img src="fortuneLogo.png" class="panel-btn" style="background: transparent;" alt="FortuneLogo"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.location='http://www.cnet.com/news/palm-names-former-apple-execs-to-new-posts/'">
+                            <img src="cnetLogo.png" class="panel-btn" style="background: transparent;" alt="C|netLogo"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-panel">
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="col-xs-3">
+                        <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="panel panel-default panel-eight">
+                <div class="panel-body" id="panel-eight" aria-labelledby="btn-eight">
+                <h3 class="panel-title">Mentors</h3>
+                Mentors
+                </div>
+            </div>
+            <div class="panel panel-default panel-nine">
+                <div class="panel-body" id="panel-nine" aria-labelledby="btn-nine">
+                <h3 class="panel-title">Innovations & Partnerships</h3>
+                Panel content
+                </div>
+            </div>
+        </div>
+        <div class="icons-four">
+            <div class="row">
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-ten open-panel" data-panel="panel-ten" type="button">
+                        <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-eleven open-panel" data-panel="panel-eleven" type="button">
+                        <i class="material-icons">lightbulb_outline</i>
+                    </button>
+                </div>
+                <div class="col-xs-4">
+                    <button class="btn btn-default btn-twelve open-panel" data-panel="panel-twelve" type="button">
+                        <i class="material-icons">live_tv</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="panels">
+            <div class="panel panel-default panel-ten">
+                <div class="panel-body" id="panel-ten" aria-labelledby="btn-ten">
+                <h3 class="panel-title">Contact</h3>
+                Panel content
+                </div>
+            </div>
+            <div class="panel panel-default panel-eleven">
+                <div class="panel-body" id="panel-eleven" aria-labelledby="btn-eleven">
+                <h3 class="panel-title">Inspiration</h3>
+                Panel content
+                </div>
+            </div>
+            <div class="panel panel-default panel-twelve">
+                <div class="panel-body" id="panel-twelve" aria-labelledby="btn-twelve">
+                <h3 class="panel-title">Television</h3>
+                Panel content
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+    <script>
+    $( document ).ready(function () {
+        $('.open-panel').click(function (e) {
+            var $this = $(e.target).closest('button'),
+                panelLookup = $this.attr('data-panel'),
+                $panel = $('#' + panelLookup);
+            if ($panel.height() > 0) {
+                $panel.parent().slideUp();
+            } else {
+                $('.panel-body').parent().slideUp();
+                setTimeout(function(){$panel.parent().slideDown()}, 401);
+            }
+        });
+        if ($('#subtitle-wrd').height() != $('#subtitle-img').height()) {
+            $('#subtitle-img').css({'height': $('#subtitle-wrd').height()});
+            // $('#subtitle-wrd').css({'height': $('#subtitle-img').height()});
+
+        }
+        $('.wb-one').css({'left': ($(window).width() - $('.wb-one').width()) * (1/6)});
+        $('.wb-two').css({'left': ($(window).width() - $('.wb-two').width()) * ((1/6)*2)});
+        $('.wb-three').css({'left': ($(window).width() - $('.wb-three').width()) * ((1/6)*3)});
+        $('.wb-four').css({'left': ($(window).width() - $('.wb-four').width()) * ((1/6)*4)});
+        $('.wb-five').css({'left': ($(window).width() - $('.wb-five').width()) * ((1/6)*5)});
+        $('.wb-six').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/6)*6)});
+        $('.wb-seven').css({'left': '0px'});
+        $('.wb-eight').css({'left': '-49px'});
+        scrollOne();
+        scrollTwo();
+        scrollThree();
+        scrollFour();
+        scrollFive();
+        scrollSix();
+        scrollSeven();
+        scrollEight();
+        function scroll(e) {
+            var $moveable = e;
+            if ($moveable.position().left < $(window).width()) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=50'}, 1000, "linear", scrollOne);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                setTimeout(function(){$moveable.animate({'left': '-50px'}, scrollOne)}, 500);
+            }
+        }
+
+        function scrollOne() {
+            var $moveable = $('.wb-one');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollOne);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollOne()
+            }
+        }
+        function scrollTwo() {
+            var $moveable = $('.wb-two');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollTwo);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollTwo()
+            }
+        }
+        function scrollThree() {
+            var $moveable = $('.wb-three');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollThree);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollThree()
+            }
+        }
+        function scrollFour() {
+            var $moveable = $('.wb-four');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollFour);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollFour()
+            }
+        }
+        function scrollFive() {
+            var $moveable = $('.wb-five');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollFive);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollFive()
+            }
+        }
+        function scrollSix() {
+            var $moveable = $('.wb-six');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollSix);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollSix()
+            }
+        }
+        function scrollSeven() {
+            var $moveable = $('.wb-seven');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollSeven);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollSeven()
+            }
+        }
+        function scrollEight() {
+            var $moveable = $('.wb-eight');
+            if ($moveable.position().left < ($(window).width() - $(window).width()/12)) {
+                $moveable.css({'visibility': 'visible'});
+                $moveable.animate({'left': '+=' + $(window).width()/6 + 'px'}, 1000, "linear", scrollEight);
+            }
+            else {
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollEight()
+            }
+        }
+    });
+    </script>
+</html>
