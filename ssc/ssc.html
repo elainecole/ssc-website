@@ -166,10 +166,39 @@
             background-color: inherit !important;
             box-shadow: 0;
         }
-        button:focus, button:active, button.active, button:focus:active, button:hover {
+        button:focus, button:active, button.active, button:focus:active {
             outline: 0 !important;
             background-color: transparent !important;
             box-shadow: none !important;
+        }
+        button:hover {
+            /*color: #fff;*/
+        }
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -60px;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
         }
     </style>
     <title>Satjiv S. Chahil</title>
@@ -270,9 +299,11 @@
         <div class="icons-one">
             <div class="row">
                 <div class="col-xs-4">
-                        <button id="btn-one" class="btn btn-default btn-one open-panel" data-toggle="tooltip" title="Business Focus" data-panel="panel-one" type="button">
-                            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                        </button>
+                    <button id="btn-one" title="you little scallywag" class="btn btn-default btn-one open-panel" data-panel="panel-one" type="button">
+                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                    </button>
+                    <!-- <span class="tooltiptext">Business Focus</span> -->
+
                 </div>
                 <div class="col-xs-4">
                     <button id="btn-two" class="btn btn-default btn-two open-panel" data-panel="panel-two" type="button">
@@ -437,7 +468,7 @@
                 </div>
                 <div class="col-xs-4">
                     <button class="btn btn-default btn-six open-panel" data-panel="panel-six" type="button">
-                        <i class="material-icons">school</i>
+                        <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
                     </button>
                 </div>
             </div>
