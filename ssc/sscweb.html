@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
 
     <style type="text/css">
         html {
@@ -201,34 +200,86 @@
         .tooltip:hover .tooltiptext {
             visibility: visible;
         }
-        .btn-linkedin {
-          background: #0E76A8;
-          border-radius: 0;
-          color: #fff;
-          border-width: 1px;
-          border-style: solid;
-          border-color: #084461;
-        }
-        .btn-linkedin:link, .btn-linkedin:visited {
-          color: #fff;
-        }
-        .btn-linkedin:active, .btn-linkedin:hover {
-          background: #084461;
-          color: #fff;
-        }
     </style>
     <title>Satjiv S. Chahil</title>
     <meta name="Satjiv S. Chahil" content="">
 </head>
 <body>
     <div class="site-wrapper">
-    <div class="subtitle-div">
+    <!-- <div class="subtitle-div col-md-4"> -->
+    <nav class="navbar navbar-light bg-faded">
+        <ul class="nav navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <button id="btn-one" class="btn btn-default btn-one open-panel" data-panel="panel-one" type="button">
+                    <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button id="btn-two" class="btn btn-default btn-two open-panel" data-panel="panel-two" type="button">
+                    <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button id="btn-three" class="btn btn-default btn-three open-panel" data-panel="panel-three" type="button">
+                    <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-default btn-four open-panel" data-panel="panel-four" type="button">
+                    <i class="material-icons">import_contacts</i>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-default btn-five open-panel" data-panel="panel-five" type="button">
+                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-default btn-six open-panel" data-panel="panel-six" type="button">
+                    <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-default btn-seven open-panel" data-panel="panel-seven" type="button">
+                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-default btn-eight open-panel" data-panel="panel-eight" type="button">
+                    <i class="material-icons">supervisor_account</i>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-default btn-nine open-panel" data-panel="panel-nine" type="button">
+                    <i class="material-icons">pan_tool</i>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-default btn-ten open-panel" data-panel="panel-ten" type="button">
+                    <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-default btn-eleven open-panel" data-panel="panel-eleven" type="button">
+                    <i class="material-icons">lightbulb_outline</i>
+                </button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-default btn-twelve open-panel" data-panel="panel-twelve" type="button">
+                    <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
+                </button>
+            </li>
+        </ul>
+</nav>
         <div class="row" style="border-bottom:3px solid #003068;">
-            <div class="col-xs-3" id="subtitle-img" style="margin-left: 10px; padding-bottom:0;">
+            <!-- <div class="col-xs-3" id="subtitle-img" style="margin-left: 10px; padding-bottom:0;">
                 <button class="btn btn-default" type="button" data-toggle="modal" data-target="#imgModal">
                     <img src="photo1.png" style="bottom: 0; right: 0; position: absolute; background: transparent; width: 100%; margin-bottom:0;" alt="SatjivPhoto"/>
                 </button>
-            </div>
+            </div> -->
             <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -252,7 +303,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-8" id="subtitle-wrd" style="text-align: right; padding-left: 5px; padding-right: 0;">
+            <!-- <div class="col-xs-8" id="subtitle-wrd" style="text-align: right; padding-left: 5px; padding-right: 0;">
                 <div class="title-div" style="margin-bottom: 10px;">
                     <p class="title lead"><b>Satjiv S. Chahil</b></p>
                 </div>
@@ -264,8 +315,9 @@
                 </div></b></p>
             </div>
         </div>
-    </div>
-    <div class="quote-div">
+    <!-- </div> -->
+
+    <!-- <div class="quote-div">
         <div class="row">
             <blockquote class="lighter-text" style="text-align: right; padding-left: 20px; margin-bottom: 0;font-size: 1em; color: #003068;">
                 <p><img src="fortuneLogo.png" style="width: 20%; background: transparent; padding-right: 10px;" alt="FortuneLogo"/>
@@ -309,30 +361,7 @@
         </button>
         <button class="btn btn-default work-btn wb-twelve" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="starkeyLogo.png" class="work-btn" style="width: 130%; padding-top: 5px; background: transparent;" alt="StarkeyLogo"/>
-        </button>
-    </div>
-    <div class="icons-div">
-        <div class="icons-one">
-            <div class="row">
-                <div class="col-xs-4">
-                    <button id="btn-one" title="you little scallywag" class="btn btn-default btn-one open-panel" data-panel="panel-one" type="button">
-                        <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
-                    </button>
-                    <!-- <span class="tooltiptext">Business Focus</span> -->
-
-                </div>
-                <div class="col-xs-4">
-                    <button id="btn-two" class="btn btn-default btn-two open-panel" data-panel="panel-two" type="button">
-                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button id="btn-three" class="btn btn-default btn-three open-panel" data-panel="panel-three" type="button">
-                        <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
+        </button> -->
         <div class="panels">
             <div class="panel panel-default panel-one">
                 <div class="panel-body" id="panel-one" aria-labelledby="btn-one">
@@ -514,25 +543,6 @@
                 </div>
             </div>
         </div>
-        <div class="icons-two">
-            <div class="row">
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-four open-panel" data-panel="panel-four" type="button">
-                        <i class="material-icons">import_contacts</i>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-five open-panel" data-panel="panel-five" type="button">
-                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-six open-panel" data-panel="panel-six" type="button">
-                        <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
         <div class="panels">
             <div class="panel panel-default panel-four">
                 <div class="panel-body" id="panel-four" aria-labelledby="btn-four">
@@ -593,25 +603,6 @@
                 <div class="panel-body" id="panel-six" aria-labelledby="btn-six">
                 <h3 class="panel-title">Education</h3>
                 Panel content
-                </div>
-            </div>
-        </div>
-        <div class="icons-three">
-            <div class="row">
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-seven open-panel" data-panel="panel-seven" type="button">
-                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-eight open-panel" data-panel="panel-eight" type="button">
-                        <i class="material-icons">supervisor_account</i>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-nine open-panel" data-panel="panel-nine" type="button">
-                        <img src="partnerships.png" class="" style="width: 60%; background: transparent;" alt="Causes"/>
-                    </button>
                 </div>
             </div>
         </div>
@@ -678,25 +669,6 @@
                 </div>
             </div>
         </div>
-        <div class="icons-four">
-            <div class="row">
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-ten open-panel" data-panel="panel-ten" type="button">
-                        <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-eleven open-panel" data-panel="panel-eleven" type="button">
-                        <i class="material-icons">lightbulb_outline</i>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-twelve open-panel" data-panel="panel-twelve" type="button">
-                        <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
         <div class="panels">
             <div class="panel panel-default panel-ten">
                 <div class="panel-body" id="panel-ten" aria-labelledby="btn-ten">
@@ -706,11 +678,8 @@
                             <i class="material-icons">email</i>
                         </a>
                     </div>
-                    <!-- <div class="col-xs-6" style="text-align: center">
-                        <i class="material-icons">ring_volume</i>
-                    </div> -->
                     <div class="col-xs-6" style="text-align: center">
-                        <a href="https://www.linkedin.com/in/satjiv-chahil-3b8baa99?authType=&authToken=&trk=" title="LinkedIn" class="btn btn-linkedin"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+                        <i class="material-icons">ring_volume</i>
                     </div>
                 </div>
             </div>
