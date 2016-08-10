@@ -835,7 +835,7 @@
         $('.wb-eleven').css({'left': ($(window).width() - $('.wb-eleven').width()) * ((1/11)*11)});
         $('.wb-twelve').css({'left': '0px'});
         // $('.wb-twelve').css({'left': -($('.wb-eleven').width()) * (1/10)*2});
-
+        // scroll('.wb-one');
         $('.c-one').css({'left': ($(window).width() - $('.c-one').width()) * (1/9)});
         $('.c-two').css({'left': ($(window).width() - $('.c-two').width()) * ((1/9)*2)});
         $('.c-three').css({'left': ($(window).width() - $('.c-three').width()) * ((1/9)*3)});
@@ -868,17 +868,32 @@
         scrollCEight();
         scrollCNine();
         scrollCTen();
-        function scroll(e) {
-            var $moveable = e;
-            if ($moveable.position().left < $(window).width()) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=50'}, 1000, "linear", scrollOne);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                setTimeout(function(){$moveable.animate({'left': '-50px'}, scrollOne)}, 500);
-            }
-        }
+        // function scroll(e) {
+        //     var $moveable = e;
+        //     if ($moveable.position().left < $(window).width()) {
+        //         $moveable.css({'visibility': 'visible'});
+        //         $moveable.animate({'left': '+=50'}, 1000, "linear", scrollOne);
+        //     }
+        //     else {
+        //         $moveable.css({'visibility': 'hidden'});
+        //         setTimeout(function(){$moveable.animate({'left': '-50px'}, scrollOne)}, 500);
+        //     }
+        // }
+
+        // function scroll(e) {
+        //     // var $moveable = e;
+        //     var $moveable = $('.wb-one');
+        //
+        //     if ($moveable.position().left < $(window).width()) {
+        //         $moveable.css({'visibility': 'visible'});
+        //         $moveable.animate({'left': '+=50px'}, 2000, "linear", scroll($moveable));
+        //     }
+        //     else {
+        //         $moveable.css({'visibility': 'hidden'});
+        //         $moveable.css({'left': '-50px'});
+        //         scroll($moveable);
+        //     }
+        // }
         function scrollOne() {
             var $moveable = $('.wb-one');
             if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
