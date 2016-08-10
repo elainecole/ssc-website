@@ -9,7 +9,9 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
     <link rel='shortcut icon' href='photo1.png' type='image/png'/ >
     <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
@@ -167,13 +169,10 @@
             background-color: inherit !important;
             box-shadow: 0;
         }
-        button:focus, button:active, button.active, button:focus:active {
+        button:focus, button:active, button.active, button:focus:active, button:hover {
             outline: 0 !important;
             background-color: transparent !important;
             box-shadow: none !important;
-        }
-        button:hover {
-            /*color: #fff;*/
         }
         .tooltip {
             position: relative;
@@ -402,34 +401,34 @@
                     <h3 class="panel-title">Causes</h3>
                     <div class="row row-panel">
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" onclick="window.open('http://aif.org/')">
                                 <img src="aifLogo.png" class="panel-causes-icons" style="background: transparent;" alt="AIFLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="afiLogo.png" class="panel-causes-icons" style="background: transparent;" alt="AFILogo"/>
+                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" onclick="window.open('http://www.afi.com/')">
+                                <img src="afiLogo.png" class="panel-causes-icons" style="width: 115%; background: transparent;" alt="AFILogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" onclick="window.open('http://www.amfar.org/')">
                                 <img src="AmfARLogo.png" class="panel-causes-icons" style="background: transparent;" alt="amFARLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" onclick="window.open('https://www.mptf.com/')">
                                 <img src="MPTFLogo.png" class="panel-causes-icons" style="background: transparent;" alt="MPTFLogo"/>
                             </button>
                         </div>
                     </div>
                     <div class="row row-panel">
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" onclick="window.open('http://ejaf.org/')">
                                 <img src="EJAFLogo.png" class="panel-causes-icons" style="background: transparent;" alt="EJAFLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" onclick="window.open('https://www.ucsf.edu/')">
                                 <img src="UCSFLogo.png" class="panel-causes-icons" style="background: transparent;" alt="UCSFLogo"/>
                             </button>
                         </div>
@@ -543,8 +542,8 @@
                             </button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                Newbridge
+                            <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/chahilnewbridge.pdf')">
+                                <img src="newbridgeLogo.png" class="modal-work-icons" style="background: transparent;" alt="newBridgeLogo"/>
                             </button>
                         </div>
                     </div>
