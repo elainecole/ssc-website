@@ -38,9 +38,9 @@
        }
        .title {
             color: #C93732;
-            margin-top: 10px;
-            font-size: 28px;
-            margin-bottom: 5px;
+            /*margin-top: 10px;*/
+            font-size: 25px;
+            /*margin-bottom: 5px;*/
             /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
             /*font-family: 'Open Sans', sans-serif;*/
             /*font-family: 'Roboto Condensed', sans-serif;*/
@@ -153,7 +153,7 @@
             background-color: #FFF8E5;
         }
         .panel-work-btn, .panel-causes-btn, .panel-article-btn, .panel-press-btn {
-            background-color: #D9E7F7 !important;
+            background-color: #FFF8E5 !important;
             color: #274C77;
         }
         .lighter-text {
@@ -167,14 +167,14 @@
             background-color: inherit !important;
             box-shadow: 0;
         }
-        button:focus, button:active, button.active, button:focus:active {
+        button:focus, button:active, button.active, button:focus:active, button:hover {
             outline: 0 !important;
             background-color: transparent !important;
             box-shadow: none !important;
         }
-        button:hover {
+        /*button:hover {
             /*color: #fff;*/
-        }
+        }*/
         .tooltip {
             position: relative;
             display: inline-block;
@@ -216,19 +216,99 @@
           background: #084461;
           color: #fff;
         }
+        .open-panel:hover {
+            width: 120%;
+        }
     </style>
     <title>Satjiv S. Chahil</title>
     <meta name="Satjiv S. Chahil" content="">
 </head>
 <body>
-    <div class="site-wrapper">
-    <div class="subtitle-div">
-        <div class="row" style="border-bottom:3px solid #003068;">
-            <div class="col-xs-3" id="subtitle-img" style="margin-left: 10px; padding-bottom:0;">
-                <button class="btn btn-default" type="button" data-toggle="modal" data-target="#imgModal">
-                    <img src="photo1.png" style="bottom: 0; right: 0; position: absolute; background: transparent; width: 100%; margin-bottom:0;" alt="SatjivPhoto"/>
-                </button>
+    <!-- <div class="site-wrapper"> -->
+        <nav class="navbar navbar-fixed-bottom navbar-light bg-faded"  style="border-top:3px solid #003068;">
+            <div class="nav navbar-nav">
+                <li class="navbar-brand">
+                    <div class="title-div">
+                        <!-- <button class="btn btn-default" type="button" data-toggle="modal" data-target="#imgModal">
+                            <img src="photo1.png" style="bottom: 0; right: 0; position: absolute; background: transparent; width: 20%; margin-bottom:0;" alt="SatjivPhoto"/>
+                        </button> -->
+                        <p class="title lead"><b>Satjiv S. Chahil</b></p>
+                        </div>
+                    <!-- </div> -->
+                </li>
+                <li class="nav-item active">
+                    <button id="btn-two" class="btn btn-default open-panel" type="button">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                    </button>
+                </li>
+                <!-- <div class="container"> -->
+                    <li class="nav-item">
+                        <button id="btn-one" class="btn btn-default btn-one" type="button" data-toggle="modal" data-target="#modalOne">
+                            <i class="material-icons">info_outline</i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="btn-two" class="btn btn-default btn-two" type="button" data-toggle="modal" data-target="#modalTwo">
+                            <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="btn-three" class="btn btn-default btn-three" type="button" data-toggle="modal" data-target="#modalThree">
+                            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-default btn-four" type="button" data-toggle="modal" data-target="#modalFour">
+                            <i class="material-icons">history</i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-default btn-five" type="button" data-toggle="modal" data-target="#modalFive">
+                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-default btn-six" type="button" data-toggle="modal" data-target="#modalSix">
+                            <i class="material-icons">import_contacts</i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-default btn-seven" type="button" data-toggle="modal" data-target="#modalSeven">
+                            <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-default btn-eight" type="button" data-toggle="modal" data-target="#modalEight">
+                            <i class="material-icons">people</i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-default btn-nine" type="button" data-toggle="modal" data-target="#modalNine">
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-default btn-ten" type="button" data-toggle="modal" data-target="#modalTen">
+                            <i class="material-icons">pan_tool</i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-default btn-eleven" type="button" data-toggle="modal" data-target="#modalEleven">
+                            <i class="material-icons">movie</i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-default btn-twelve" type="button" data-toggle="modal" data-target="#modalTwelve">
+                            <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                        </button>
+                    </li>
+                </div>
             </div>
+        </nav>
+
+
+
+    <div class="subtitle-div">
             <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
@@ -252,20 +332,18 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-8" id="subtitle-wrd" style="text-align: right; padding-left: 5px; padding-right: 0;">
-                <div class="title-div" style="margin-bottom: 10px;">
-                    <p class="title lead"><b>Satjiv S. Chahil</b></p>
-                </div>
+            <!-- <div class="col-xs-8" id="subtitle-wrd" style="text-align: right; padding-left: 5px; padding-right: 0;">
                 <p><b><div class="col-xs-12 banner lighter-text" style="padding: 0; padding-left: 15px; margin-bottom:2px;">
                     <div>Global Marketing & Innovation Advisory Services</div>
                 </div></b>
                 <div class="col-xs-12 location-text lighter-text" style="padding: 0; margin-bottom:8px;">
                     <b>Silicon Valley, California
                 </div></b></p>
-            </div>
+            </div> -->
+
         </div>
     </div>
-    <div class="quote-div">
+    <!-- <div class="quote-div">
         <div class="row">
             <blockquote class="lighter-text" style="text-align: right; padding-left: 20px; margin-bottom: 0;font-size: 1em; color: #003068;">
                 <p><img src="fortuneLogo.png" style="width: 20%; background: transparent; padding-right: 10px;" alt="FortuneLogo"/>
@@ -310,89 +388,196 @@
         <button class="btn btn-default work-btn wb-twelve" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="starkeyLogo.png" class="work-btn" style="width: 130%; padding-top: 5px; background: transparent;" alt="StarkeyLogo"/>
         </button>
-    </div>
-    <div class="icons-div">
-        <div class="icons-one">
-            <div class="row">
-                <div class="col-xs-4">
-                    <button id="btn-one" title="you little scallywag" class="btn btn-default btn-one open-panel" data-panel="panel-one" type="button">
-                        <i class="material-icons">info_outline</i>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button id="btn-two" class="btn btn-default btn-two open-panel" data-panel="panel-two" type="button">
-                        <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
-
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button id="btn-three" class="btn btn-default btn-three open-panel" data-panel="panel-three" type="button">
-                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="panels">
-            <div class="panel panel-default panel-one">
-                <div class="panel-body" id="panel-one" aria-labelledby="btn-one">
-                    <h3 class="panel-title">Business Focus</h3>
-                    Satjiv S. Chahil is a Silicon Valley, California-based advisor specializing in
-                    <ul>
-                        <li>commercializing innovations and driving go-to-market strategies</li>
-                        <li>assisting companies expand their businesses to global markets</li>
-                        <li>facilitating and integrating business goals with social causes</li>
-                    </ul>
-                    Chahil's clients have included: Audi, Blackberry, BMW/Mini, Engadget, Mercedes, Obi Worldphone, SF 49er's, Sony, Starkey, and TechCrunch.
-                    Philanthropic organizations supported: American India Foundation, American Film Institute, AmfAR, Boys and Girls Club, Elton John Foundation, Serena Williams Foundation and Virgin Unite.
-                    <br>
-                </div>
-            </div>
-            <div class="panel panel-default panel-two">
-                <div class="panel-body" id="panel-two" aria-labelledby="btn-two">
-                    <h3 class="panel-title">Clients</h3>
-                    <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="audiLogo.png" class="modal-work-icons" style="background: transparent;" alt="AudiLogo"/>
+    </div> -->
+        <div class="modals">
+            <div class="modal fade" id="modalOne" tabindex="-1" role="dialog" aria-labelledby="modalOne" aria-hidden="true">
+                <div class="modal-dialog modal-sml" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
                             </button>
+                            <h4 class="modal-title" id="modalOne">Business Focus</h4>
                         </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="blackberryLogo.png" class="modal-work-icons" style="background: transparent;" alt="BlackberryLogo"/>
-                            </button>
+                        <div class="modal-body">
+                            Satjiv S. Chahil is a Silicon Valley, California-based advisor specializing in
+                            <ul>
+                                <li>commercializing innovations and driving go-to-market strategies</li>
+                                <li>assisting companies expand their businesses to global markets</li>
+                                <li>facilitating and integrating business goals with social causes</li>
+                            </ul>
+                            Chahil's clients have included: Audi, Blackberry, BMW/Mini, Engadget, Mercedes, Obi Worldphone, SF 49er's, Sony, Starkey, and TechCrunch.
+                            Philanthropic organizations supported: American India Foundation, American Film Institute, AmfAR, Boys and Girls Club, Elton John Foundation, Serena Williams Foundation and Virgin Unite.
+                            <br>
                         </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="BMWLogo.png" class="modal-work-icons" style="background: transparent;" alt="BMWLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="beatsLogo.png" class="modal-work-icons" style="background: transparent;" alt="BeatsLogo"/>
-                            </button>
+                        <div class="modal-footer">
+                            Some footer here.
                         </div>
                     </div>
-                    <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                <img src="mercedesLogo.png" class="modal-work-icons" style="background: transparent;" alt="MercedesLogo"/>
+                </div>
+            </div>
+            <div class="modal fade" id="modalTwo" tabindex="-1" role="dialog" aria-labelledby="modalTwo" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
                             </button>
+                            <h4 class="modal-title" id="modalTwo">Clients</h4>
                         </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                <img src="sonyLogo.png" class="modal-work-icons" style="background: transparent;" alt="SonyLogo"/>
-                            </button>
+                        <div class="modal-body">
+                            <div class="row row-panel">
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="audiLogo.png" class="modal-work-icons" style="background: transparent;" alt="AudiLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="blackberryLogo.png" class="modal-work-icons" style="background: transparent;" alt="BlackberryLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="BMWLogo.png" class="modal-work-icons" style="background: transparent;" alt="BMWLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="beatsLogo.png" class="modal-work-icons" style="background: transparent;" alt="BeatsLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
+                                        <img src="mercedesLogo.png" class="modal-work-icons" style="background: transparent;" alt="MercedesLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
+                                        <img src="sonyLogo.png" class="modal-work-icons" style="background: transparent;" alt="SonyLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
+                                        <img src="swarovskiLogo.png" class="modal-work-icons" style="background: transparent;" alt="SwarvoskiLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
+                                        <img src="starkeyLogo.png" class="modal-work-icons" style="background: transparent;" alt="StarkeyLogo"/>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                <img src="swarovskiLogo.png" class="modal-work-icons" style="background: transparent;" alt="SwarvoskiLogo"/>
-                            </button>
+                        <div class="modal-footer">
+                            Some footer here.
                         </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                <img src="starkeyLogo.png" class="modal-work-icons" style="background: transparent;" alt="StarkeyLogo"/>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modalThree" tabindex="-1" role="dialog" aria-labelledby="modalThree" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
                             </button>
+                            <h4 class="modal-title" id="modalThree">Causes</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row row-panel">
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="aifLogo.png" class="panel-causes-icons" style="background: transparent;" alt="AIFLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="afiLogo.png" class="panel-causes-icons" style="background: transparent;" alt="AFILogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="AmfARLogo.png" class="panel-causes-icons" style="background: transparent;" alt="amFARLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="MPTFLogo.png" class="panel-causes-icons" style="background: transparent;" alt="MPTFLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="EJAFLogo.png" class="panel-causes-icons" style="background: transparent;" alt="EJAFLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <img src="UCSFLogo.png" class="panel-causes-icons" style="background: transparent;" alt="UCSFLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.specialolympics.org/')">
+                                        <img src="SpecialOlympicsLogo.png" class="panel-causes-icons" style="background: transparent;" alt="SpecialOlympicsLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.bgcp.org/#mission')">
+                                        <img src="boys&girlsLogo.png" class="panel-causes-btn" style="width: 110%; background: transparent;" alt="Boys&GirlsLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.doctorswithoutborders.org/')">
+                                        <img src="doctorswithoutbordersLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="DoctorsWithoutBordersLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.habitat.org')">
+                                        <img src="habitatforhumanitylogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="habitatforhumanityLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://tamana.org/')">
+                                        <img src="tamanaLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="TamanaLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://diabetes.org/')">
+                                        <img src="americandiabetesassociationLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="americandiabetesassociationLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.brightfocus.org/alzheimers')">
+                                        <img src="alzheimersdiseaseresearchLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="alzheimersdiseaseresearchLogo"/>
+                                    </button>
+                                </div>
+                                <!-- <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.habitat.org')">
+                                        <img src="habitatforhumanitylogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="habitatforhumanityLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://tamana.org/')">
+                                        <img src="tamanaLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="TamanaLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://diabetes.org/')">
+                                        <img src="americandiabetesassociationLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="americandiabetesassociationLogo"/>
+                                    </button>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            Some footer here.
                         </div>
                     </div>
                 </div>
@@ -400,114 +585,7 @@
             <div class="panel panel-default panel-three">
                 <div class="panel-body" id="panel-three" aria-labelledby="btn-three">
                     <h3 class="panel-title">Causes</h3>
-                    <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="aifLogo.png" class="panel-causes-icons" style="background: transparent;" alt="AIFLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="afiLogo.png" class="panel-causes-icons" style="background: transparent;" alt="AFILogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="AmfARLogo.png" class="panel-causes-icons" style="background: transparent;" alt="amFARLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="MPTFLogo.png" class="panel-causes-icons" style="background: transparent;" alt="MPTFLogo"/>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="EJAFLogo.png" class="panel-causes-icons" style="background: transparent;" alt="EJAFLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="UCSFLogo.png" class="panel-causes-icons" style="background: transparent;" alt="UCSFLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.specialolympics.org/')">
-                                <img src="SpecialOlympicsLogo.png" class="panel-causes-icons" style="background: transparent;" alt="SpecialOlympicsLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.bgcp.org/#mission')">
-                                <img src="boys&girlsLogo.png" class="panel-causes-btn" style="width: 110%; background: transparent;" alt="Boys&GirlsLogo"/>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.doctorswithoutborders.org/')">
-                                <img src="doctorswithoutbordersLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="DoctorsWithoutBordersLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.habitat.org')">
-                                <img src="habitatforhumanitylogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="habitatforhumanityLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://tamana.org/')">
-                                <img src="tamanaLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="TamanaLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://diabetes.org/')">
-                                <img src="americandiabetesassociationLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="americandiabetesassociationLogo"/>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.brightfocus.org/alzheimers')">
-                                <img src="alzheimersdiseaseresearchLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="alzheimersdiseaseresearchLogo"/>
-                            </button>
-                        </div>
-                        <!-- <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.habitat.org')">
-                                <img src="habitatforhumanitylogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="habitatforhumanityLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://tamana.org/')">
-                                <img src="tamanaLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="TamanaLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://diabetes.org/')">
-                                <img src="americandiabetesassociationLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="americandiabetesassociationLogo"/>
-                            </button>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="icons-two">
-            <div class="row">
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-four open-panel" data-panel="panel-four" type="button">
-                        <i class="material-icons">history</i>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-five open-panel" data-panel="panel-five" type="button">
-                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-six open-panel" data-panel="panel-six" type="button">
-                        <i class="material-icons">import_contacts</i>
-                    </button>
-                </div>
+
             </div>
         </div>
         <div class="panels">
@@ -649,26 +727,6 @@
                 </div>
             </div>
         </div>
-        <div class="icons-three">
-            <div class="row">
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-seven open-panel" data-panel="panel-seven" type="button">
-                        <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-eight open-panel" data-panel="panel-eight" type="button">
-                        <i class="material-icons">people</i>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-nine open-panel" data-panel="panel-nine" type="button">
-                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-
-                    </button>
-                </div>
-            </div>
-        </div>
         <div class="panels">
             <div class="panel panel-default panel-seven">
                 <div class="panel-body" id="panel-seven" aria-labelledby="btn-seven">
@@ -710,26 +768,6 @@
                 </div>
             </div>
         </div>
-        <div class="icons-four">
-            <div class="row">
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-ten open-panel" data-panel="panel-ten" type="button">
-                        <i class="material-icons">pan_tool</i>
-
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-eleven open-panel" data-panel="panel-eleven" type="button">
-                        <i class="material-icons">movie</i>
-                    </button>
-                </div>
-                <div class="col-xs-4">
-                    <button class="btn btn-default btn-twelve open-panel" data-panel="panel-twelve" type="button">
-                        <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-        </div>
         <div class="panels">
             <div class="panel panel-default panel-ten">
                 <div class="panel-body" id="panel-ten" aria-labelledby="btn-ten">
@@ -761,7 +799,7 @@
         </div>
     </div>
 </div>
-<div class="causes-div">
+<!-- <div class="causes-div">
         <button class="btn btn-default causes-btn c-one" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="aifLogo.png" class="causes-btn" style="width: 150%; background: transparent;" alt="AIFLogo"/>
         </button>
@@ -800,12 +838,19 @@
                 <em>"Even in Silicon Valley, where cutting-edge advertising is the norm and marketing genuises legion, Satjiv Chahil and his resume stand out."</em></p>
         </blockquote>
     </div>
-</div>
-</div>
+</div> -->
+<!-- </div> -->
 
 </body>
 
     <script>
+    (document).on('show.bs.modal', '.modal', function () {
+        var zIndex = 1040 + (10 * $('.modal:visible').length);
+        $(this).css('z-index', zIndex);
+        setTimeout(function() {
+        $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
+    }, 0);
+    });
     $( document ).ready(function () {
         $('.open-panel').click(function (e) {
             var $this = $(e.target).closest('button'),
@@ -818,6 +863,8 @@
                 setTimeout(function(){$panel.parent().slideDown()}, 401);
             }
         });
+
+
         if ($('#subtitle-wrd').height() != $('#subtitle-img').height()) {
             $('#subtitle-img').css({'height': $('#subtitle-wrd').height()});
             // $('#subtitle-wrd').css({'height': $('#subtitle-img').height()});
