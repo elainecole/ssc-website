@@ -39,7 +39,7 @@
        .title {
             color: #C93732;
             /*margin-top: 10px;*/
-            font-size: 25px;
+            font-size: 28px;
             /*margin-bottom: 5px;*/
             /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
             /*font-family: 'Open Sans', sans-serif;*/
@@ -225,17 +225,54 @@
 </head>
 <body>
     <!-- <div class="site-wrapper"> -->
+    <div style="border-bottom:3px solid #003068; text-align: left">
+        <div class="subtitle-div">
+            <div class="row" style="border-bottom:3px solid #003068;">
+                <div class="col-xs-3" id="subtitle-img" style="padding-bottom:0; text-align: left;">
+                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#imgModal">
+                        <img src="photo1.png" style="bottom: 0; right: 0; position: absolute; background: transparent; width: 30%; margin-bottom:0;" alt="SatjivPhoto"/>
+                    </button>
+                </div>
+                <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="imgModal">Portrait</h4>
+                            </div>
+                            <div class="modal-body">
+                                <a target="_blank" href="SChahilIMG1.jpg" class="thumbnail">
+                                    <img src="SChahilIMG1.jpg" alt="Chahil Image One">
+                                </a>
+                                <a target="_blank" href="SChahilIMG2.jpg" class="thumbnail">
+                                    <img src="SChahilIMG2.jpg" alt="Chahil Image Two">
+                                </a>
+                            </div>
+                            <div class="modal-footer">
+                                Some footer here.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-8" id="subtitle-wrd" style="text-align: right; padding-left: 5px; padding-right: 0;">
+                    <div class="title-div" style="margin-bottom: 10px;">
+                        <p class="title lead"><b>Satjiv S. Chahil</b></p>
+                    </div>
+                    <p><b><div class="col-xs-12 banner lighter-text" style="padding: 0; padding-left: 15px; margin-bottom:2px;">
+                        <div>Global Marketing & Innovation Advisory Services</div>
+                    </div></b>
+                    <div class="col-xs-12 location-text lighter-text" style="padding: 0; margin-bottom:8px;">
+                        <b>Silicon Valley, California
+                    </div></b></p>
+                </div>
+            </div>
+
+    </div>
+
         <nav class="navbar navbar-fixed-bottom navbar-light bg-faded"  style="border-top:3px solid #003068;">
             <div class="nav navbar-nav">
-                <li class="navbar-brand">
-                    <div class="title-div">
-                        <!-- <button class="btn btn-default" type="button" data-toggle="modal" data-target="#imgModal">
-                            <img src="photo1.png" style="bottom: 0; right: 0; position: absolute; background: transparent; width: 20%; margin-bottom:0;" alt="SatjivPhoto"/>
-                        </button> -->
-                        <p class="title lead"><b>Satjiv S. Chahil</b></p>
-                        </div>
-                    <!-- </div> -->
-                </li>
                 <li class="nav-item active">
                     <button id="btn-two" class="btn btn-default open-panel" type="button">
                         <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
@@ -343,15 +380,15 @@
 
         </div>
     </div>
-    <!-- <div class="quote-div">
+ <!-- <div class="quote-div">
         <div class="row">
             <blockquote class="lighter-text" style="text-align: right; padding-left: 20px; margin-bottom: 0;font-size: 1em; color: #003068;">
                 <p><img src="fortuneLogo.png" style="width: 20%; background: transparent; padding-right: 10px;" alt="FortuneLogo"/>
                     <em>"Few executives have had greater influence shaping marketing in Silicon Valley than Satjiv Chahil."</em></p>
             </blockquote>
         </div>
-    </div>
-    <div class="work-div">
+    </div> -->
+     <div class="work-div" style="margin-top: 100px;">
         <button class="btn btn-default work-btn wb-one" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="appleLogo.png" class="work-btn" style="width: 110%; background: transparent;" alt="AppleLogo"/>
         </button>
@@ -388,7 +425,7 @@
         <button class="btn btn-default work-btn wb-twelve" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="starkeyLogo.png" class="work-btn" style="width: 130%; padding-top: 5px; background: transparent;" alt="StarkeyLogo"/>
         </button>
-    </div> -->
+    </div>
         <div class="modals">
             <div class="modal fade" id="modalOne" tabindex="-1" role="dialog" aria-labelledby="modalOne" aria-hidden="true">
                 <div class="modal-dialog modal-sml" role="document">
@@ -844,13 +881,13 @@
 </body>
 
     <script>
-    (document).on('show.bs.modal', '.modal', function () {
-        var zIndex = 1040 + (10 * $('.modal:visible').length);
-        $(this).css('z-index', zIndex);
-        setTimeout(function() {
-        $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
-    }, 0);
-    });
+    // (document).on('show.bs.modal', '.modal', function () {
+    //     var zIndex = 1040 + (10 * $('.modal:visible').length);
+    //     $(this).css('z-index', zIndex);
+    //     setTimeout(function() {
+    //     $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
+    // }, 0);
+    // });
     $( document ).ready(function () {
         $('.open-panel').click(function (e) {
             var $this = $(e.target).closest('button'),
