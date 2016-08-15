@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 
     <style type="text/css">
         html {
@@ -268,8 +269,9 @@
                     </div></b></p>
                 </div>
             </div>
-
+        </div>
     </div>
+    <h1 class="animated infinite bounce">Example</h1>
 
         <nav class="navbar navbar-fixed-bottom navbar-light bg-faded"  style="border-top:3px solid #003068;">
             <div class="nav navbar-nav">
@@ -388,11 +390,11 @@
             </blockquote>
         </div>
     </div> -->
-     <div class="work-div" style="margin-top: 100px;">
+     <!-- <div class="work-div" style="margin-top: 100px;"> -->
         <button class="btn btn-default work-btn wb-one" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="appleLogo.png" class="work-btn" style="width: 110%; background: transparent;" alt="AppleLogo"/>
         </button>
-        <button class="btn btn-default work-btn wb-two" type="button" aria-haspopup="true" aria-expanded="false">
+        <!-- <button class="btn btn-default work-btn wb-two" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="audiLogo.png" class="work-btn" style="width: 120%; background: transparent;" alt="AudiLogo"/>
         </button>
         <button class="btn btn-default work-btn wb-three" type="button" aria-haspopup="true" aria-expanded="false">
@@ -425,7 +427,7 @@
         <button class="btn btn-default work-btn wb-twelve" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="starkeyLogo.png" class="work-btn" style="width: 130%; padding-top: 5px; background: transparent;" alt="StarkeyLogo"/>
         </button>
-    </div>
+    </div> -->
         <div class="modals">
             <div class="modal fade" id="modalOne" tabindex="-1" role="dialog" aria-labelledby="modalOne" aria-hidden="true">
                 <div class="modal-dialog modal-sml" role="document">
@@ -889,6 +891,7 @@
     // }, 0);
     // });
     $( document ).ready(function () {
+        var $windowWidth = $(window).width();
         $('.open-panel').click(function (e) {
             var $this = $(e.target).closest('button'),
                 panelLookup = $this.attr('data-panel'),
@@ -901,71 +904,17 @@
             }
         });
 
-
-        if ($('#subtitle-wrd').height() != $('#subtitle-img').height()) {
-            $('#subtitle-img').css({'height': $('#subtitle-wrd').height()});
-            // $('#subtitle-wrd').css({'height': $('#subtitle-img').height()});
-
-        }
-        $('.wb-one').css({'left': ($(window).width() - $('.wb-one').width()) * (1/11)});
-        $('.wb-two').css({'left': ($(window).width() - $('.wb-two').width()) * ((1/11)*2)});
-        $('.wb-three').css({'left': ($(window).width() - $('.wb-three').width()) * ((1/11)*3)});
-        $('.wb-four').css({'left': ($(window).width() - $('.wb-four').width()) * ((1/11)*4)});
-        $('.wb-five').css({'left': ($(window).width() - $('.wb-five').width()) * ((1/11)*5)});
-        $('.wb-six').css({'left': ($(window).width() - $('.wb-six').width()) * ((1/11)*6)});
-        $('.wb-seven').css({'left': ($(window).width() - $('.wb-seven').width()) * ((1/11)*7)});
-        $('.wb-eight').css({'left': ($(window).width() - $('.wb-eight').width()) * ((1/11)*8)});
-        $('.wb-nine').css({'left': ($(window).width() - $('.wb-nine').width()) * ((1/11)*9)});
-        $('.wb-ten').css({'left': ($(window).width() - $('.wb-ten').width()) * ((1/11)*10)});
-        $('.wb-eleven').css({'left': ($(window).width() - $('.wb-eleven').width()) * ((1/11)*11)});
-        $('.wb-twelve').css({'left': '0px'});
-        // $('.wb-twelve').css({'left': -($('.wb-eleven').width()) * (1/10)*2});
-
-        $('.c-one').css({'left': ($(window).width() - $('.c-one').width()) * (1/9)});
-        $('.c-two').css({'left': ($(window).width() - $('.c-two').width()) * ((1/9)*2)});
-        $('.c-three').css({'left': ($(window).width() - $('.c-three').width()) * ((1/9)*3)});
-        $('.c-four').css({'left': ($(window).width() - $('.c-four').width()) * ((1/9)*4)});
-        $('.c-five').css({'left': ($(window).width() - $('.c-five').width()) * ((1/9)*5)});
-        $('.c-six').css({'left': ($(window).width() - $('.c-six').width()) * ((1/9)*6)});
-        $('.c-seven').css({'left': ($(window).width() - $('.c-seven').width()) * ((1/9)*7)});
-        $('.c-eight').css({'left': ($(window).width() - $('.c-eight').width()) * ((1/9)*8)});
-        $('.c-nine').css({'left': ($(window).width() - $('.c-nine').width()) * ((1/9)*9)});
-        $('.c-ten').css({'left': '0px'});
         scrollOne();
-        scrollTwo();
-        scrollThree();
-        scrollFour();
-        scrollFive();
-        scrollSix();
-        scrollSeven();
-        scrollEight();
-        scrollNine();
-        scrollTen();
-        scrollEleven();
-        scrollTwelve();
-        scrollCOne();
-        scrollCTwo();
-        scrollCThree();
-        scrollCFour();
-        scrollCFive();
-        scrollCSix();
-        scrollCSeven();
-        scrollCEight();
-        scrollCNine();
-        scrollCTen();
-        function scroll(e) {
-            var $moveable = e;
-            if ($moveable.position().left < $(window).width()) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=50'}, 1000, "linear", scrollOne);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                setTimeout(function(){$moveable.animate({'left': '-50px'}, scrollOne)}, 500);
-            }
-        }
+        // $('.wb-one').hover(pauseSlide($('.wb-one')), resumeSlide($('.wb-one')));
+        // scroll($('.wb-one'));
         function scrollOne() {
             var $moveable = $('.wb-one');
+            $('.wb-one').mouseenter(function(){
+            $(this).animate({'left': '+=50px'}, 2500, "linear");
+            });
+            $('.wb-one').mouseleave(function(){
+                $(this).animate({'left': '+=500px'}, 2500, "linear");
+            });
             if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
                 $moveable.css({'visibility': 'visible'});
                 $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollOne);
@@ -976,258 +925,49 @@
                 scrollOne()
             }
         }
-        function scrollTwo() {
-            var $moveable = $('.wb-two');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollTwo);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollTwo()
-            }
+        if ($('#subtitle-wrd').height() != $('#subtitle-img').height()) {
+            $('#subtitle-img').css({'height': $('#subtitle-wrd').height()});
+            // $('#subtitle-wrd').css({'height': $('#subtitle-img').height()});
+
         }
-        function scrollThree() {
-            var $moveable = $('.wb-three');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollThree);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollThree()
-            }
-        }
-        function scrollFour() {
-            var $moveable = $('.wb-four');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollFour);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollFour()
-            }
-        }
-        function scrollFive() {
-            var $moveable = $('.wb-five');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollFive);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollFive()
-            }
-        }
-        function scrollSix() {
-            var $moveable = $('.wb-six');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollSix);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollSix()
-            }
-        }
-        function scrollSeven() {
-            var $moveable = $('.wb-seven');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollSeven);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollSeven()
-            }
-        }
-        function scrollEight() {
-            var $moveable = $('.wb-eight');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollEight);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollEight()
-            }
-        }
-        function scrollNine() {
-            var $moveable = $('.wb-nine');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollNine);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollNine()
-            }
-        }
-        function scrollTen() {
-            var $moveable = $('.wb-ten');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollTen);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollTen()
-            }
-        }
-        function scrollEleven() {
-            var $moveable = $('.wb-eleven');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollEleven);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollEleven()
-            }
-        }
-        function scrollTwelve() {
-            var $moveable = $('.wb-twelve');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollTwelve);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollTwelve()
-            }
-        }
-        function scrollCOne() {
-            var $moveable = $('.c-one');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/8 + 'px'}, 2000, "linear", scrollCOne);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollCOne()
-            }
-        }
-        function scrollCTwo() {
-            var $moveable = $('.c-two');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/8 + 'px'}, 2000, "linear", scrollCTwo);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollCTwo()
-            }
-        }
-        function scrollCThree() {
-            var $moveable = $('.c-three');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/8 + 'px'}, 2000, "linear", scrollCThree);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollCThree()
-            }
-        }
-        function scrollCFour() {
-            var $moveable = $('.c-four');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/8 + 'px'}, 2000, "linear", scrollCFour);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollCFour()
-            }
-        }
-        function scrollCFive() {
-            var $moveable = $('.c-five');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/8 + 'px'}, 2000, "linear", scrollCFive);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollCFive()
-            }
-        }
-        function scrollCSix() {
-            var $moveable = $('.c-six');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/8 + 'px'}, 2000, "linear", scrollCSix);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollCSix()
-            }
-        }
-        function scrollCSeven() {
-            var $moveable = $('.c-seven');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/8 + 'px'}, 2000, "linear", scrollCSeven);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollCSeven()
-            }
-        }
-        function scrollCEight() {
-            var $moveable = $('.c-eight');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/8 + 'px'}, 2000, "linear", scrollCEight);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollCEight()
-            }
-        }
-        function scrollCNine() {
-            var $moveable = $('.c-nine');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/8 + 'px'}, 2000, "linear", scrollCNine);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollCNine()
-            }
-        }
-        function scrollCTen() {
-            var $moveable = $('.c-ten');
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
-                $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/8 + 'px'}, 2000, "linear", scrollCTen);
-            }
-            else {
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollCTen()
-            }
-        }
+        // function scroll(e) {
+        //     var $moving = e;
+        //     $moving.mouseenter($moving.stop());
+        //     $moving.mouseleave(
+        //         if ($(this).position().left < '900px') {
+        //             $(this).css({'visibility': 'visible'});
+        //             $(this).animate({'left': '+=500px'}, 2500, "linear");
+        //         }
+        //         else {
+        //             // alert("This worked!");
+        //             $(this).css({'visibility': 'hidden'});
+        //             $(this).css({'left': '-50px'});
+        //         }
+        //     );
+        //         scroll($moving);
+        //     }
+        // }
+        // $(".wb-one").animate({'left': '+=500px'}, 2500, "linear");
+        // $( ".wb-one" )
+        // .mouseenter(pauseSlide)
+        // .mouseleave(resumeSlide);
+        // function pauseSlide(e) {
+        //     $(this).css({'visibility': 'visible'});
+        //
+        //     $(this).stop();
+        // }
+        // function resumeSlide() {
+        //     if ($(this).position().left < '900px') {
+        //         $(this).css({'visibility': 'visible'});
+        //         $(this).animate({'left': '+=500px'}, 2500, "linear");
+        //     }
+        //     else {
+        //         // alert("This worked!");
+        //         $(this).css({'visibility': 'hidden'});
+        //         $(this).css({'left': '-50px'});
+        //     }
+        // }
+
     });
     </script>
 </html>
