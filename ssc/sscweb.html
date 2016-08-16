@@ -85,6 +85,10 @@
             padding-right: 0;
             background-color: #FFF8E5;
         }
+        .business-focus {
+            padding: 30px;
+            color: #274C77;
+        }
         .work-div {
             padding-bottom: 15px;
             margin-bottom: 15px;
@@ -220,6 +224,9 @@
         .open-panel:hover {
             width: 120%;
         }
+        .modal-backdrop {
+             background: transparent;
+        }
     </style>
     <title>Satjiv S. Chahil</title>
     <meta name="Satjiv S. Chahil" content="">
@@ -271,8 +278,6 @@
             </div>
         </div>
     </div>
-    <h1 class="animated infinite bounce">Example</h1>
-
         <nav class="navbar navbar-fixed-bottom navbar-light bg-faded"  style="border-top:3px solid #003068;">
             <div class="nav navbar-nav">
                 <li class="nav-item active">
@@ -281,11 +286,11 @@
                     </button>
                 </li>
                 <!-- <div class="container"> -->
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <button id="btn-one" class="btn btn-default btn-one" type="button" data-toggle="modal" data-target="#modalOne">
                             <i class="material-icons">info_outline</i>
                         </button>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <button id="btn-two" class="btn btn-default btn-two" type="button" data-toggle="modal" data-target="#modalTwo">
                             <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
@@ -390,16 +395,16 @@
             </blockquote>
         </div>
     </div> -->
-     <!-- <div class="work-div" style="margin-top: 100px;"> -->
+     <div class="work-div" style="margin-top: 40px; margin-bottom: 60px;">
         <button class="btn btn-default work-btn wb-one" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="appleLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="AppleLogo"/>
         </button>
-        <!-- <button class="btn btn-default work-btn wb-two" type="button" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-default work-btn wb-two" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="audiLogo.png" style="position: absolute; width: 120%; background: transparent;" alt="AudiLogo"/>
-        </button> -->
-         <!-- <button class="btn btn-default work-btn wb-three" type="button" aria-haspopup="true" aria-expanded="false">
+        </button>
+         <button class="btn btn-default work-btn wb-three" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="blackberryLogo.png" style="position: absolute; width: 120%; background: transparent;" alt="BlackberryLogo"/>
-        </button> -->
+        </button>
         <!-- <button class="btn btn-default work-btn wb-four" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="BMWLogo.png" class="work-btn" style="width: 110%; background: transparent;" alt="BMWLogo"/>
         </button>
@@ -426,10 +431,21 @@
         </button>
         <button class="btn btn-default work-btn wb-twelve" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="starkeyLogo.png" class="work-btn" style="width: 130%; padding-top: 5px; background: transparent;" alt="StarkeyLogo"/>
-        </button>
-    </div> -->
+        </button> -->
+    </div>
+    <div class="business-focus">
+        Satjiv S. Chahil is a Silicon Valley, California-based advisor specializing in
+        <ul>
+            <li>commercializing innovations and driving go-to-market strategies</li>
+            <li>assisting companies expand their businesses to global markets</li>
+            <li>facilitating and integrating business goals with social causes</li>
+        </ul>
+        Chahil's clients have included: Audi, Blackberry, BMW/Mini, Engadget, Mercedes, Obi Worldphone, SF 49er's, Sony, Starkey, and TechCrunch.
+        Philanthropic organizations supported: American India Foundation, American Film Institute, AmfAR, Boys and Girls Club, Elton John Foundation, Serena Williams Foundation and Virgin Unite.
+        <br>
+    </div>
         <div class="modals">
-            <div class="modal fade" id="modalOne" tabindex="-1" role="dialog" aria-labelledby="modalOne" aria-hidden="true">
+            <!-- <div class="modal fade" id="modalOne" tabindex="-1" role="dialog" aria-labelledby="modalOne" aria-hidden="true">
                 <div class="modal-dialog modal-sml" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -438,24 +454,16 @@
                             </button>
                             <h4 class="modal-title" id="modalOne">Business Focus</h4>
                         </div>
-                        <div class="modal-body">
-                            Satjiv S. Chahil is a Silicon Valley, California-based advisor specializing in
-                            <ul>
-                                <li>commercializing innovations and driving go-to-market strategies</li>
-                                <li>assisting companies expand their businesses to global markets</li>
-                                <li>facilitating and integrating business goals with social causes</li>
-                            </ul>
-                            Chahil's clients have included: Audi, Blackberry, BMW/Mini, Engadget, Mercedes, Obi Worldphone, SF 49er's, Sony, Starkey, and TechCrunch.
-                            Philanthropic organizations supported: American India Foundation, American Film Institute, AmfAR, Boys and Girls Club, Elton John Foundation, Serena Williams Foundation and Virgin Unite.
-                            <br>
-                        </div>
+                        <div class="modal-body"> -->
+
+                        <!-- </div>
                         <div class="modal-footer">
                             Some footer here.
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="modal fade" id="modalTwo" tabindex="-1" role="dialog" aria-labelledby="modalTwo" aria-hidden="true">
+                </div> -->
+            <!-- </div> -->
+            <div class="modal" id="modalTwo" tabindex="5" role="dialog" aria-labelledby="modalTwo" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -838,17 +846,17 @@
         </div>
     </div>
 </div>
-<!-- <div class="causes-div">
+ <div class="causes-div" style="margin-top: 60px;">
         <button class="btn btn-default causes-btn c-one" type="button" aria-haspopup="true" aria-expanded="false">
-            <img src="aifLogo.png" class="causes-btn" style="width: 150%; background: transparent;" alt="AIFLogo"/>
+            <img src="aifLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="AIFLogo"/>
         </button>
         <button class="btn btn-default causes-btn c-two" type="button" aria-haspopup="true" aria-expanded="false">
-            <img src="afiLogo.png" class="causes-btn" style="width: 150%; background: transparent;" alt="AFILogo"/>
+            <img src="afiLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="AFILogo"/>
         </button>
         <button class="btn btn-default causes-btn c-three" type="button" aria-haspopup="true" aria-expanded="false">
-            <img src="AmfARLogo.png" class="causes-btn" style="width: 100%; background: transparent;" alt="amFARLogo"/>
+            <img src="AmfARLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="amFARLogo"/>
         </button>
-        <button class="btn btn-default causes-btn c-four" type="button" aria-haspopup="true" aria-expanded="false">
+    <!--    <button class="btn btn-default causes-btn c-four" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="MPTFLogo.png" class="causes-btn" style="width: 100%; background: transparent;" alt="MPTFLogo"/>
         </button>
         <button class="btn btn-default causes-btn c-five" type="button" aria-haspopup="true" aria-expanded="false">
@@ -891,6 +899,13 @@
     // }, 0);
     // });
     $( document ).ready(function () {
+        // $(".modal").modal({}).draggable();
+        $("#imgModal").draggable({
+            handle: ".modal-header"
+        });
+        $("#modalTwo").draggable({
+            handle: ".modal-header"
+        });
         var $windowWidth = $(window).width();
         $('.open-panel').click(function (e) {
             var $this = $(e.target).closest('button'),
@@ -903,87 +918,68 @@
                 setTimeout(function(){$panel.parent().slideDown()}, 401);
             }
         });
-        // $('.wb-one').css({'left': '100px'});
-        // $('.wb-two').css({'left': '0px'});
-        // $('.wb-three').css({'left': '200px'});
-        // scrollOne();
-        scroll($('.wb-one'));
-        // scrollTwo();
-        // scrollThree();
-        // $('.wb-one').hover(pauseSlide($('.wb-one')), resumeSlide($('.wb-one')));
-        // scroll($('.wb-one'));
+        $('.wb-one').css({'left': '100px'});
+        $('.wb-two').css({'left': '0px'});
+        $('.wb-three').css({'left': '200px'});
+        $('.c-one').css({'left': '100px'});
+        $('.c-two').css({'left': '0px'});
+        $('.c-three').css({'left': '200px'});
+        scrollW($('.wb-one'));
+        scrollW($('.wb-two'));
+        scrollW($('.wb-three'));
+        scrollC($('.c-one'));
+        scrollC($('.c-two'));
+        scrollC($('.c-three'));
 
-        function scroll($moveable) {
+        function scrollW($moveable) {
             $moveable.mouseover(function(){
                 $(".work-btn").stop();
-                $moveable.css({'visibility': 'visible'});
-                $(".work-btn").animate({'left': '+=50px'}, 2500, "linear", _.bind(scroll, null, $moveable));
+                // $moveable.css({'visibility': 'visible'});
+                $(".work-btn").animate({'left': '+=50px'}, 2500, "linear", _.bind(scrollW, null, $moveable));
             });
             $moveable.mouseout(function(){
                 $(".work-btn").stop();
-                $moveable.css({'visibility': 'visible'});
-                $(".work-btn").animate({'left': '+=100px'}, 2500, "linear", _.bind(scroll, null, $moveable));
+                _.each($('.work-btn'), function (btn){
+                    var $btn = $(btn);
+                    $btn.animate({'left': '+=100px'}, 2500, "linear", _.bind(scrollW, null, $btn));
+                });
             });
             if ($moveable.position().left > ($(window).width())) {
-                console.log("fixed");
                 $moveable.stop();
                 $moveable.css({'visibility': 'hidden'});
                 $moveable.css({'left': '-50px'});
-                // _.bind(scroll, null, $moveable);
-                scroll($moveable);
+                scrollW($moveable);
             }
             else {
                 $moveable.stop();
                 $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=100px'}, 2500, "linear", _.bind(scroll, null, $moveable));
+                $moveable.animate({'left': '+=100px'}, 2500, "linear", _.bind(scrollW, null, $moveable));
             }
         }
-        function scrollTwo() {
-            var $moveable = $(".wb-two");
+
+        function scrollC($moveable) {
             $moveable.mouseover(function(){
-                $(".work-btn").stop();
-                $moveable.css({'visibility': 'visible'});
-            $(".work-btn").animate({'left': '+=50px'}, 2500, "linear", scrollTwo);
+                $(".causes-btn").stop();
+                // $moveable.css({'visibility': 'visible'});
+                $(".causes-btn").animate({'left': '+=50px'}, 2500, "linear", _.bind(scrollC, null, $moveable));
             });
             $moveable.mouseout(function(){
-                $(".work-btn").stop();
-                $moveable.css({'visibility': 'visible'});
-                $(".work-btn").animate({'left': '+=100px'}, 2500, "linear", scrollTwo);
+                $(".causes-btn").stop();
+                _.each($('.causes-btn'), function (btn){
+                    var $btn = $(btn);
+                    $btn.animate({'left': '+=100px'}, 2500, "linear", _.bind(scrollC, null, $btn));
+                });
             });
             if ($moveable.position().left > ($(window).width())) {
                 $moveable.stop();
                 $moveable.css({'visibility': 'hidden'});
                 $moveable.css({'left': '-50px'});
-                scrollTwo();
+                scrollC($moveable);
             }
             else {
                 $moveable.stop();
                 $moveable.css({'visibility': 'visible'});
-                $(".work-btn").animate({'left': '+=100px'}, 2500, "linear", scrollTwo);
-            }
-        }
-        function scrollThree() {
-            var $moveable = $(".wb-two");
-            $moveable.mouseover(function(){
-                $(".work-btn").stop();
-                $moveable.css({'visibility': 'visible'});
-            $(".work-btn").animate({'left': '+=50px'}, 2500, "linear", scrollThree);
-            });
-            $moveable.mouseout(function(){
-                $(".work-btn").stop();
-                $moveable.css({'visibility': 'visible'});
-                $(".work-btn").animate({'left': '+=100px'}, 2500, "linear", scrollThree);
-            });
-            if ($moveable.position().left > ($(window).width())) {
-                $moveable.stop();
-                $moveable.css({'visibility': 'hidden'});
-                $moveable.css({'left': '-50px'});
-                scrollThree();
-            }
-            else {
-                $moveable.stop();
-                $moveable.css({'visibility': 'visible'});
-                $(".work-btn").animate({'left': '+=100px'}, 2500, "linear", scrollThree);
+                $moveable.animate({'left': '+=100px'}, 2500, "linear", _.bind(scrollC, null, $moveable));
             }
         }
         if ($('#subtitle-wrd').height() != $('#subtitle-img').height()) {
