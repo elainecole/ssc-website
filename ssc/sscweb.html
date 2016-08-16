@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <style type="text/css">
         html {
             font-family: Lato, Arial, Helvetica, sans-serif !important;
@@ -393,11 +393,10 @@
      <!-- <div class="work-div" style="margin-top: 100px;"> -->
         <button class="btn btn-default work-btn wb-one" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="appleLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="AppleLogo"/>
-
         </button>
-        <button class="btn btn-default work-btn wb-two" type="button" aria-haspopup="true" aria-expanded="false">
+        <!-- <button class="btn btn-default work-btn wb-two" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="audiLogo.png" style="position: absolute; width: 120%; background: transparent;" alt="AudiLogo"/>
-        </button>
+        </button> -->
          <!-- <button class="btn btn-default work-btn wb-three" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="blackberryLogo.png" style="position: absolute; width: 120%; background: transparent;" alt="BlackberryLogo"/>
         </button> -->
@@ -904,38 +903,39 @@
                 setTimeout(function(){$panel.parent().slideDown()}, 401);
             }
         });
-        $('.wb-one').css({'left': '100px'});
-        $('.wb-two').css({'left': '0px'});
-        $('.wb-three').css({'left': '200px'});
-        scrollOne();
-        scrollTwo();
-        scrollThree();
+        // $('.wb-one').css({'left': '100px'});
+        // $('.wb-two').css({'left': '0px'});
+        // $('.wb-three').css({'left': '200px'});
+        // scrollOne();
+        scroll($('.wb-one'));
+        // scrollTwo();
+        // scrollThree();
         // $('.wb-one').hover(pauseSlide($('.wb-one')), resumeSlide($('.wb-one')));
         // scroll($('.wb-one'));
-        function scrollOne() {
-            console.log('ji');
-            var $moveable = $(".wb-one");
+
+        function scroll($moveable) {
             $moveable.mouseover(function(){
                 $(".work-btn").stop();
                 $moveable.css({'visibility': 'visible'});
-            $(".work-btn").animate({'left': '+=50px'}, 2500, "linear", scrollOne);
+                $(".work-btn").animate({'left': '+=50px'}, 2500, "linear", _.bind(scroll, null, $moveable));
             });
             $moveable.mouseout(function(){
                 $(".work-btn").stop();
                 $moveable.css({'visibility': 'visible'});
-                $(".work-btn").animate({'left': '+=100px'}, 2500, "linear", scrollOne);
+                $(".work-btn").animate({'left': '+=100px'}, 2500, "linear", _.bind(scroll, null, $moveable));
             });
             if ($moveable.position().left > ($(window).width())) {
+                console.log("fixed");
                 $moveable.stop();
                 $moveable.css({'visibility': 'hidden'});
                 $moveable.css({'left': '-50px'});
-                scrollOne();
-
+                // _.bind(scroll, null, $moveable);
+                scroll($moveable);
             }
             else {
                 $moveable.stop();
                 $moveable.css({'visibility': 'visible'});
-                $(".work-btn").animate({'left': '+=100px'}, 2500, "linear", scrollOne);
+                $moveable.animate({'left': '+=100px'}, 2500, "linear", _.bind(scroll, null, $moveable));
             }
         }
         function scrollTwo() {
