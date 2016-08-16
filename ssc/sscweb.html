@@ -392,12 +392,13 @@
     </div> -->
      <!-- <div class="work-div" style="margin-top: 100px;"> -->
         <button class="btn btn-default work-btn wb-one" type="button" aria-haspopup="true" aria-expanded="false">
-            <img src="appleLogo.png" class="work-btn" style="width: 110%; background: transparent;" alt="AppleLogo"/>
+            <img src="appleLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="AppleLogo"/>
+
         </button>
-        <!-- <button class="btn btn-default work-btn wb-two" type="button" aria-haspopup="true" aria-expanded="false">
-            <img src="audiLogo.png" class="work-btn" style="width: 120%; background: transparent;" alt="AudiLogo"/>
+        <button class="btn btn-default work-btn wb-two" type="button" aria-haspopup="true" aria-expanded="false">
+            <img src="audiLogo.png" style="position: absolute; width: 120%; background: transparent;" alt="AudiLogo"/>
         </button>
-        <button class="btn btn-default work-btn wb-three" type="button" aria-haspopup="true" aria-expanded="false">
+        <!-- <button class="btn btn-default work-btn wb-three" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="blackberryLogo.png" class="work-btn" style="width: 120%; background: transparent;" alt="BlackberryLogo"/>
         </button>
         <button class="btn btn-default work-btn wb-four" type="button" aria-haspopup="true" aria-expanded="false">
@@ -903,26 +904,59 @@
                 setTimeout(function(){$panel.parent().slideDown()}, 401);
             }
         });
-
+        $('.wb-one').css({'left': ($(window).width() - $('.wb-one').width()) * (1/11)});
+        $('.wb-two').css({'left': ($(window).width() - $('.wb-two').width()) * (1/11) * 2});
         scrollOne();
+        scrollTwo();
+
         // $('.wb-one').hover(pauseSlide($('.wb-one')), resumeSlide($('.wb-one')));
         // scroll($('.wb-one'));
         function scrollOne() {
-            var $moveable = $('.wb-one');
-            $('.wb-one').mouseenter(function(){
-            $(this).animate({'left': '+=50px'}, 2500, "linear");
-            });
-            $('.wb-one').mouseleave(function(){
-                $(this).animate({'left': '+=500px'}, 2500, "linear");
-            });
-            if ($moveable.position().left < ($(window).width() - $(window).width()/20)) {
+            var $moveable = $(".wb-one");
+            $moveable.mouseover(function(){
+                $(".work-btn").stop();
                 $moveable.css({'visibility': 'visible'});
-                $moveable.animate({'left': '+=' + $(window).width()/10 + 'px'}, 2000, "linear", scrollOne);
+            $(".work-btn").animate({'left': '+=50px'}, 2500, "linear", scrollOne);
+            });
+            $moveable.mouseout(function(){
+                $(".work-btn").stop();
+                $moveable.css({'visibility': 'visible'});
+                $(".work-btn").animate({'left': '+=100px'}, 2500, "linear", scrollOne);
+            });
+            if ($moveable.position().left < ($(window).width())) {
+                $(".work-btn").stop();
+                $moveable.css({'visibility': 'visible'});
+                $(".work-btn").animate({'left': '+=100px'}, 2500, "linear", scrollOne);
             }
             else {
+                $moveable.stop();
                 $moveable.css({'visibility': 'hidden'});
                 $moveable.css({'left': '-50px'});
-                scrollOne()
+                scrollOne();
+            }
+        }
+        function scrollTwo() {
+            var $moveable = $(".wb-two");
+            $moveable.mouseover(function(){
+                $(".work-btn").stop();
+                $moveable.css({'visibility': 'visible'});
+            $(".work-btn").animate({'left': '+=50px'}, 2500, "linear", scrollTwo);
+            });
+            $moveable.mouseout(function(){
+                $(".work-btn").stop();
+                $moveable.css({'visibility': 'visible'});
+                $(".work-btn").animate({'left': '+=100px'}, 2500, "linear", scrollTwo);
+            });
+            if ($moveable.position().left < ($(window).width())) {
+                $(".work-btn").stop();
+                $moveable.css({'visibility': 'visible'});
+                $(".work-btn").animate({'left': '+=100px'}, 2500, "linear", scrollTwo);
+            }
+            else {
+                $moveable.stop();
+                $moveable.css({'visibility': 'hidden'});
+                $moveable.css({'left': '-50px'});
+                scrollTwo();
             }
         }
         if ($('#subtitle-wrd').height() != $('#subtitle-img').height()) {
