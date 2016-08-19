@@ -225,7 +225,14 @@
             width: 120%;
         }
         .modal-backdrop {
-             background: transparent;
+            display: none !important;
+        }
+        .modal-body {
+            margin: 0 auto;
+            overflow: auto !important;
+        }
+        .modal-open .modal {
+            /*width: 70%;*/
         }
     </style>
     <title>Satjiv S. Chahil</title>
@@ -286,11 +293,11 @@
                     </button>
                 </li>
                 <!-- <div class="container"> -->
-                    <!-- <li class="nav-item">
+                    <li class="nav-item">
                         <button id="btn-one" class="btn btn-default btn-one" type="button" data-toggle="modal" data-target="#modalOne">
                             <i class="material-icons">info_outline</i>
                         </button>
-                    </li> -->
+                    </li>
                     <li class="nav-item">
                         <button id="btn-two" class="btn btn-default btn-two" type="button" data-toggle="modal" data-target="#modalTwo">
                             <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
@@ -349,11 +356,8 @@
                 </div>
             </div>
         </nav>
-
-
-
     <div class="subtitle-div">
-            <div class="modal fade" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
+            <div class="modal" id="imgModal" tabindex="-1" role="dialog" aria-labelledby="imgModal" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -439,19 +443,9 @@
             <img src="starkeyLogo.png" style="position: absolute; width: 130%; padding-top: 5px; background: transparent;" alt="StarkeyLogo"/>
         </button>
     </div>
-    <div class="business-focus">
-        Satjiv S. Chahil is a Silicon Valley, California-based advisor specializing in
-        <ul>
-            <li>commercializing innovations and driving go-to-market strategies</li>
-            <li>assisting companies expand their businesses to global markets</li>
-            <li>facilitating and integrating business goals with social causes</li>
-        </ul>
-        Chahil's clients have included: Audi, Blackberry, BMW/Mini, Engadget, Mercedes, Obi Worldphone, SF 49er's, Sony, Starkey, and TechCrunch.
-        Philanthropic organizations supported: American India Foundation, American Film Institute, AmfAR, Boys and Girls Club, Elton John Foundation, Serena Williams Foundation and Virgin Unite.
-        <br>
-    </div>
+
         <div class="modals">
-            <!-- <div class="modal fade" id="modalOne" tabindex="-1" role="dialog" aria-labelledby="modalOne" aria-hidden="true">
+            <div class="modal" id="modalOne" tabindex="-1" role="dialog" aria-labelledby="modalOne" aria-hidden="true">
                 <div class="modal-dialog modal-sml" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -460,15 +454,25 @@
                             </button>
                             <h4 class="modal-title" id="modalOne">Business Focus</h4>
                         </div>
-                        <div class="modal-body"> -->
-
-                        <!-- </div>
+                        <div class="modal-body">
+                            <div class="business-focus">
+                                Satjiv S. Chahil is a Silicon Valley, California-based advisor specializing in
+                                <ul>
+                                    <li>commercializing innovations and driving go-to-market strategies</li>
+                                    <li>assisting companies expand their businesses to global markets</li>
+                                    <li>facilitating and integrating business goals with social causes</li>
+                                </ul>
+                                Chahil's clients have included: Audi, Blackberry, BMW/Mini, Engadget, Mercedes, Obi Worldphone, SF 49er's, Sony, Starkey, and TechCrunch.
+                                Philanthropic organizations supported: American India Foundation, American Film Institute, AmfAR, Boys and Girls Club, Elton John Foundation, Serena Williams Foundation and Virgin Unite.
+                                <br>
+                            </div>
+                        </div>
                         <div class="modal-footer">
                             Some footer here.
                         </div>
                     </div>
-                </div> -->
-            <!-- </div> -->
+                </div>
+             </div>
             <div class="modal" id="modalTwo" tabindex="5" role="dialog" aria-labelledby="modalTwo" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
@@ -530,7 +534,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalThree" tabindex="-1" role="dialog" aria-labelledby="modalThree" aria-hidden="true">
+            <div class="modal" id="modalThree" tabindex="-1" role="dialog" aria-labelledby="modalThree" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -635,14 +639,14 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="modalThree" tabindex="-1" role="dialog" aria-labelledby="modalThree" aria-hidden="true">
+            <div class="modal" id="modalFour" tabindex="-1" role="dialog" aria-labelledby="modalFOur" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                            <h4 class="modal-title" id="modalThree">Business Experience</h4>
+                            <h4 class="modal-title" id="modalFour">Work Experience</h4>
                         </div>
                         <div class="modal-body">
                             <div class="row row-panel">
@@ -686,175 +690,265 @@
                     </div>
                 </div>
             </div>
+            <div class="modal" id="modalFive" tabindex="-1" role="dialog" aria-labelledby="modalFive" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title" id="modalFive">Publications</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row row-panel">
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                        <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            Some footer here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="modal" id="modalSix" tabindex="-1" role="dialog" aria-labelledby="modalSix" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="modalSix">Press</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row row-panel">
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.wired.com/2000/11/people-39/')">
+                                    <img src="wiredLogo.png" class="panel-btn" style="background: transparent;" alt="WiredLogo"/>
+                                </button>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://fortune.com/2013/08/29/tech-star-satjiv-chahil/')">
+                                    <img src="fortuneLogo.png" class="panel-btn" style="background: transparent;" alt="FortuneLogo"/>
+                                </button>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.cnet.com/news/palm-names-former-apple-execs-to-new-posts/')">
+                                    <img src="cnetLogo.png" class="panel-btn" style="background: transparent;" alt="C|netLogo"/>
+                                </button>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('/CNN_Money_Article.pdf')">
+                                    <img src="cnnLogo.png" class="panel-btn" style="background: transparent;" alt="CNNLogo"/>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row row-panel">
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        Some footer here.
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="modal" id="modalSeven" tabindex="-1" role="dialog" aria-labelledby="modalSeven" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="modalSeven">Education</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row row-panel">
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src="LawrenceschoolLogo.png" class="panel-btn" style="background: transparent;" alt="LawrenceschoolLogo"/>
+                                </button>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src="stanfordLogo.png" class="panel-btn" style="background: transparent;" alt="StanfordLogo"/>
+                                </button>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src="ThunderbirdLogo.png" class="panel-btn" style="background: transparent;" alt="ThunderbirdLogo"/>
+                                </button>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src="PunjabUniversityLogo.png" class="panel-btn" style="background: transparent;" alt="PunjabUniversityLogo"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        Some footer here.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="modalEight" tabindex="-1" role="dialog" aria-labelledby="modalEight" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="modalEight">Heroes, Friends & Mentors</h4>
+                    </div>
+                    <div class="modal-body">
 
-            <div class="panel panel-default panel-five">
-                <div class="panel-body" id="panel-five" aria-labelledby="btn-five">
-                    <h3 class="panel-title">Publications</h3>
-                    <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
-                            </button>
-                        </div>
                     </div>
-                    <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default panel-six">
-                <div class="panel-body" id="panel-six" aria-labelledby="btn-six">
-                    <h3 class="panel-title">Press</h3>
-                    <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.wired.com/2000/11/people-39/')">
-                                <img src="wiredLogo.png" class="panel-btn" style="background: transparent;" alt="WiredLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://fortune.com/2013/08/29/tech-star-satjiv-chahil/')">
-                                <img src="fortuneLogo.png" class="panel-btn" style="background: transparent;" alt="FortuneLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.cnet.com/news/palm-names-former-apple-execs-to-new-posts/')">
-                                <img src="cnetLogo.png" class="panel-btn" style="background: transparent;" alt="C|netLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('/CNN_Money_Article.pdf')">
-                                <img src="cnnLogo.png" class="panel-btn" style="background: transparent;" alt="CNNLogo"/>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
-                            </button>
-                        </div>
+                    <div class="modal-footer">
+                        Some footer here.
                     </div>
                 </div>
             </div>
         </div>
-        <div class="panels">
-            <div class="panel panel-default panel-seven">
-                <div class="panel-body" id="panel-seven" aria-labelledby="btn-seven">
-                    <h3 class="panel-title">Education</h3>
-                    <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="LawrenceschoolLogo.png" class="panel-btn" style="background: transparent;" alt="LawrenceschoolLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="stanfordLogo.png" class="panel-btn" style="background: transparent;" alt="StanfordLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="ThunderbirdLogo.png" class="panel-btn" style="background: transparent;" alt="ThunderbirdLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="PunjabUniversityLogo.png" class="panel-btn" style="background: transparent;" alt="PunjabUniversityLogo"/>
-                            </button>
-                        </div>
+        <div class="modal" id="modalNine" tabindex="-1" role="dialog" aria-labelledby="modalNine" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="modalNine">References</h4>
                     </div>
-                </div>
-            </div>
-            <div class="panel panel-default panel-eight">
-                <div class="panel-body" id="panel-eight" aria-labelledby="btn-eight">
-                <h3 class="panel-title">Heroes, Friends & Mentors</h3>
-                Mentors
-                </div>
-            </div>
-            <div class="panel panel-default panel-nine">
-                <div class="panel-body" id="panel-nine" aria-labelledby="btn-nine">
-                <h3 class="panel-title">References</h3>
-                Panel content
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        Some footer here.
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="panels">
-            <div class="panel panel-default panel-ten">
-                <div class="panel-body" id="panel-ten" aria-labelledby="btn-ten">
-                    <h3 class="panel-title">Innovation & Partnerships</h3>
-                    Panel content
+        <div class="modal" id="modalTen" tabindex="-1" role="dialog" aria-labelledby="modalTen" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="modalTen">Innovation & Partnerships</h4>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        Some footer here.
+                    </div>
                 </div>
             </div>
-            <div class="panel panel-default panel-eleven">
-                <div class="panel-body" id="panel-eleven" aria-labelledby="btn-eleven">
-                <h3 class="panel-title">TV</h3>
-                Panel content
+        </div>
+        <div class="modal" id="modalEleven" tabindex="-1" role="dialog" aria-labelledby="modalEleven" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="modalEleven">Television</h4>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        Some footer here.
+                    </div>
                 </div>
             </div>
-            <div class="panel panel-default panel-twelve">
-                <div class="panel-body" id="panel-twelve" aria-labelledby="btn-twelve">
-                    <h3 class="panel-title">Contact</h3>
-                    <div class="col-xs-6" style="text-align: center">
-                        <a href="mailto:Satjiv@Chahil.com">
-                            <i class="material-icons">email</i>
-                        </a>
+        </div>
+        <div class="modal" id="modalTwelve" tabindex="-1" role="dialog" aria-labelledby="modalTwelve" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="modalTwelve">Contact</h4>
                     </div>
-                    <!-- <div class="col-xs-6" style="text-align: center">
-                        <i class="material-icons">ring_volume</i>
-                    </div> -->
-                    <div class="col-xs-6" style="text-align: center">
-                        <a href="https://www.linkedin.com/in/satjiv-chahil-3b8baa99?authType=&authToken=&trk=" title="LinkedIn" class="btn btn-linkedin"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+                    <div class="modal-body">
+                        <div class="col-xs-6" style="text-align: center">
+                            <a href="mailto:Satjiv@Chahil.com">
+                                <i class="material-icons">email</i>
+                            </a>
+                        </div>
+                        <!-- <div class="col-xs-6" style="text-align: center">
+                            <i class="material-icons">ring_volume</i>
+                        </div> -->
+                        <div class="col-xs-6" style="text-align: center">
+                            <a href="https://www.linkedin.com/in/satjiv-chahil-3b8baa99?authType=&authToken=&trk=" title="LinkedIn" class="btn btn-linkedin"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+                        </div>
                     </div>
+                    <div class="modal-footer">
+                        Some footer here.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -912,8 +1006,10 @@
     // }, 0);
     // });
     $( document ).ready(function () {
-        // $(".modal").modal({}).draggable();
         $("#imgModal").draggable({
+            handle: ".modal-header"
+        });
+        $("#modalOne").draggable({
             handle: ".modal-header"
         });
         $("#modalTwo").draggable({
@@ -923,6 +1019,30 @@
             handle: ".modal-header"
         });
         $("#modalFour").draggable({
+            handle: ".modal-header"
+        });
+        $("#modalFive").draggable({
+            handle: ".modal-header"
+        });
+        $("#modalSix").draggable({
+            handle: ".modal-header"
+        });
+        $("#modalSeven").draggable({
+            handle: ".modal-header"
+        });
+        $("#modalEight").draggable({
+            handle: ".modal-header"
+        });
+        $("#modalNine").draggable({
+            handle: ".modal-header"
+        });
+        $("#modalTen").draggable({
+            handle: ".modal-header"
+        });
+        $("#modalEleven").draggable({
+            handle: ".modal-header"
+        });
+        $("#modalTwelve").draggable({
             handle: ".modal-header"
         });
         var $windowWidth = $(window).width();
