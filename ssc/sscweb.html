@@ -234,6 +234,26 @@
         .modal-open .modal {
             /*width: 70%;*/
         }
+        #modalFour {
+            top:5%;
+            right:50%;
+            outline: none;
+        }
+        #modalFive {
+            top:5%;
+            right:50%;
+            outline: none;
+        }
+        .modal-bio {
+            left: 25%;
+            top: 1%;
+            outline: none;
+        }
+        .modal-publication {
+            left: 25%;
+            top: 1%;
+            outline: none;
+        }
     </style>
     <title>Satjiv S. Chahil</title>
     <meta name="Satjiv S. Chahil" content="">
@@ -651,35 +671,35 @@
                         <div class="modal-body">
                             <div class="row row-panel">
                                 <div class="col-xs-4">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
+                                    <button class="btn btn-default panel-work-btn" type="button" data-toggle="modal" data-target="#modalHP">
                                         <img src="hpLogo.png" class="modal-work-icons" style="background: transparent;" alt="HPLogo"/>
                                     </button>
                                 </div>
                                 <div class="col-xs-4">
-
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/palmbio.pdf')">
+                                    <button class="btn btn-default panel-work-btn" type="button" data-toggle="modal" data-target="#modalPalm">
                                         <img src="palmLogo.png" class="modal-work-icons" style="background: transparent;" alt="PalmLogo"/>
                                     </button>
                                 </div>
+
                                 <div class="col-xs-4">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/ChahilNewbridge.pdf')">
+                                    <button class="btn btn-default panel-work-btn" type="button" data-toggle="modal" data-target="#modalNewbridge">
                                         <img src="newbridgeLogo.png" class="modal-work-icons" style="width: 120%; background: transparent;" alt="newBridgeLogo"/>
                                     </button>
                                 </div>
                             </div>
                             <div class="row row-panel">
                                 <div class="col-xs-4">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/AppleBio1.pdf')">
+                                    <button class="btn btn-default panel-work-btn" type="button" data-toggle="modal" data-target="#modalApple">
                                         <img src="appleLogo.png" class="modal-work-icons" style="background: transparent;" alt="AppleLogo"/>
                                     </button>
                                 </div>
                                 <div class="col-xs-4">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
+                                    <button class="btn btn-default panel-work-btn" type="button">
                                         <img src="xeroxLogo.png" class="modal-work-icons" style="background: transparent;" alt="XeroxLogo"/>
                                     </button>
                                 </div>
                                 <div class="col-xs-4">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
+                                    <button class="btn btn-default panel-work-btn" type="button">
                                         <img src="ibmLogo.png" class="modal-work-icons" style="background: transparent;" alt="IBMLogo"/>
                                     </button>
                                 </div>
@@ -687,6 +707,62 @@
                         </div>
                         <div class="modal-footer">
                             Some footer here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-bio" id="modalHP" tabindex="-1" role="dialog" aria-labelledby="modalHP" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/hpbiochahil.pdf" width="800px" height="1100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-bio" id="modalPalm" tabindex="-1" role="dialog" aria-labelledby="modalPalm" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/palmbio.pdf" width="800px" height="1100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-bio" id="modalNewbridge" tabindex="-1" role="dialog" aria-labelledby="modalNewbridge" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/chahilNewbridge.pdf" width="800px" height="1100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-bio" id="modalApple" tabindex="-1" role="dialog" aria-labelledby="modalApple" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/applebio1.pdf" width="800px" height="1100px">
                         </div>
                     </div>
                 </div>
@@ -703,22 +779,22 @@
                         <div class="modal-body">
                             <div class="row row-panel">
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalClinton">
                                         <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
                                     </button>
                                 </div>
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalEM">
                                         <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
                                     </button>
                                 </div>
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalPC">
                                         <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
                                     </button>
                                 </div>
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalNW">
                                         <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
                                     </button>
                                 </div>
@@ -748,6 +824,62 @@
                         </div>
                         <div class="modal-footer">
                             Some footer here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-publication" id="modalClinton" tabindex="-1" role="dialog" aria-labelledby="modalClinton" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/ClintonThirdTerm.pdf" width="800px" height="1100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-publication" id="modalEM" tabindex="-1" role="dialog" aria-labelledby="modalEM" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/euromanagement.pdf" width="800px" height="1100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-publication" id="modalPC" tabindex="-1" role="dialog" aria-labelledby="modalPC" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/PCbusiness.pdf" width="800px" height="1100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-publication" id="modalNW" tabindex="-1" role="dialog" aria-labelledby="modalNW" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/newmediafornewworld.pdf" width="800px" height="1100px">
                         </div>
                     </div>
                 </div>
@@ -826,7 +958,7 @@
                         <div class="row row-panel">
                             <div class="col-xs-4">
                                 <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <img src="stanfordLogo.png" class="panel-btn" style="background: transparent;" alt="StanfordLogo"/>
+                                    <img src="stanfordLogo.png" class="panel-btn" style="width: 80%; background: transparent;" alt="StanfordLogo"/>
                                 </button>
                             </div>
                             <div class="col-xs-4">
@@ -844,12 +976,12 @@
                         <div class="row row-panel">
                             <div class="col-xs-6">
                                 <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <img src="cambridgelogo.png" class="panel-btn" style="background: transparent;" alt="LawrenceschoolLogo"/>
+                                    <img src="cambridgelogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="LawrenceschoolLogo"/>
                                 </button>
                             </div>
                             <div class="col-xs-6">
                                 <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <img src="Lawrenceicon.gif" class="panel-btn" style="background: transparent;" alt="LawrenceschoolLogo"/>
+                                    <img src="Lawrenceicon.gif" class="panel-btn" style="width: 80%; background: transparent;" alt="LawrenceschoolLogo"/>
                                 </button>
                             </div>
                             <!-- <div class="col-xs-3">
@@ -885,7 +1017,79 @@
                         <h4 class="modal-title" id="modalEight">Heroes, Friends & Mentors</h4>
                     </div>
                     <div class="modal-body">
+                        <div id="hfmCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#hfmCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="1"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="2"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="3"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="4"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="5"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="6"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="7"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="8"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="9"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="10"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="11"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="12"></li>
+                                <li data-target="#hfmCarousel" data-slide-to="13"></li>
 
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="/hfm/p1.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p2.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p3.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p4.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p5.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p6.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p7.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p8.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p9.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p10.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p11.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p12.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p13.jpg" alt="picture">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#hfmCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#hfmCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         Some footer here.
