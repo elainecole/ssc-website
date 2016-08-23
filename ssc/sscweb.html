@@ -180,35 +180,6 @@
             background-color: transparent !important;
             box-shadow: none !important;
         }
-        /*button:hover {
-            /*color: #fff;*/
-        }*/
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            border-bottom: 1px dotted black;
-        }
-
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 120px;
-            background-color: black;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px 0;
-
-            /* Position the tooltip */
-            position: absolute;
-            z-index: 1;
-            bottom: 100%;
-            left: 50%;
-            margin-left: -60px;
-        }
-
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-        }
         .btn-linkedin {
           background: #0E76A8;
           border-radius: 0;
@@ -269,6 +240,15 @@
         }
         .hidden {
             display: none;
+        }
+        .dropdown-menu {
+            width: 300px !important;
+            height: 300px !important;
+            background-color: #FFF8E5;
+        }
+        .dropdown-header {
+            color: #003068;
+            font-size: 2.5em;
         }
     </style>
     <title>Satjiv S. Chahil</title>
@@ -359,10 +339,42 @@
                             <i class="material-icons">import_contacts</i>
                         </button>
                     </li>
-                    <li class="nav-item">
-                        <button class="btn btn-default btn-seven" type="button" data-toggle="modal" data-target="#modalSeven">
-                            <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                    <li class="nav-item dropup">
+                        <button class="btn btn-default btn-seven dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-education"></span><span class="caret"></span>
                         </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-header">Education</li>
+                            <div class="row row-panel">
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalStanford">
+                                        <img src="stanfordLogo.png" class="panel-btn" style="width: 80%; background: transparent;" alt="StanfordLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalAmerican">
+                                        <img src="thunderbirdcrest.png" class="panel-btn" style="background: transparent;" alt="ThunderbirdLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalPunjab">
+                                        <img src="punjabcrest.png" class="panel-btn" style="background: transparent;" alt="PunjabUniversityLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalCambridge">
+                                        <img src="cambridgelogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="CambridgeSchoolLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalLawrence">
+                                        <img src="Lawrenceicon.gif" class="panel-btn" style="width: 80%; background: transparent;" alt="LawrenceschoolLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <button class="btn btn-default btn-eight" type="button" data-toggle="modal" data-target="#modalEight">
@@ -389,6 +401,7 @@
                             <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
                         </button>
                     </li>
+
                 </div>
             </div>
         </nav>
@@ -501,6 +514,9 @@
                                 Chahil's clients have included: Audi, Blackberry, BMW/Mini, Engadget, Mercedes, Obi Worldphone, SF 49er's, Sony, Starkey, and TechCrunch.
                                 Philanthropic organizations supported: American India Foundation, American Film Institute, AmfAR, Boys and Girls Club, Elton John Foundation, Serena Williams Foundation and Virgin Unite.
                                 <br>
+                                <div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
                             </div>
                         </div>
                         <div class="modal-footer">
