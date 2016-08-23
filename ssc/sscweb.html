@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/path/to/jquery.qtip.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -21,6 +22,8 @@
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <!-- <script type="text/javascript" src="/path/to/jquery.qtip.js"></script> -->
+
     <style type="text/css">
         html {
             font-family: Lato, Arial, Helvetica, sans-serif !important;
@@ -244,6 +247,11 @@
             right:50%;
             outline: none;
         }
+        #modalSeven {
+            top:5%;
+            right:50%;
+            outline: none;
+        }
         .modal-bio {
             left: 25%;
             top: 1%;
@@ -253,6 +261,14 @@
             left: 25%;
             top: 1%;
             outline: none;
+        }
+        .modal-school {
+            left: 25%;
+            top: 1%;
+            outline: none;
+        }
+        .hidden {
+            display: none;
         }
     </style>
     <title>Satjiv S. Chahil</title>
@@ -364,7 +380,7 @@
                         </button>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-default btn-eleven" type="button" data-toggle="modal" data-target="#modalEleven">
+                        <button class="btn btn-default btn-eleven" type="button" data-toggle="tooltip" data-html="true" data-placement="top" title="Thisis where the content goes">
                             <i class="material-icons">movie</i>
                         </button>
                     </li>
@@ -566,34 +582,34 @@
                         <div class="modal-body">
                             <div class="row row-panel">
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://aif.org/')">
                                         <img src="aifLogo.png" class="panel-causes-icons" style="background: transparent;" alt="AIFLogo"/>
                                     </button>
                                 </div>
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.afi.com/')">
                                         <img src="afiLogo.png" class="panel-causes-icons" style="background: transparent;" alt="AFILogo"/>
                                     </button>
                                 </div>
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.amfar.org/')">
                                         <img src="AmfARLogo.png" class="panel-causes-icons" style="background: transparent;" alt="amFARLogo"/>
                                     </button>
                                 </div>
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.mptf.com/')">
                                         <img src="MPTFLogo.png" class="panel-causes-icons" style="background: transparent;" alt="MPTFLogo"/>
                                     </button>
                                 </div>
                             </div>
                             <div class="row row-panel">
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://ejaf.org/')">
                                         <img src="EJAFLogo.png" class="panel-causes-icons" style="background: transparent;" alt="EJAFLogo"/>
                                     </button>
                                 </div>
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.ucsf.edu/')">
                                         <img src="UCSFLogo.png" class="panel-causes-icons" style="background: transparent;" alt="UCSFLogo"/>
                                     </button>
                                 </div>
@@ -945,6 +961,39 @@
                 </div>
             </div>
         </div>
+        <!-- <div class="" id="education-box" style="visibility: hidden;">
+            <div class="eb-body">
+                <div class="row row-panel">
+                    <div class="col-xs-4">
+                        <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalStanford">
+                            <img src="stanfordLogo.png" class="panel-btn" style="width: 80%; background: transparent;" alt="StanfordLogo"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalAmerican">
+                            <img src="thunderbirdcrest.png" class="panel-btn" style="background: transparent;" alt="ThunderbirdLogo"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalPunjab">
+                            <img src="punjabcrest.png" class="panel-btn" style="background: transparent;" alt="PunjabUniversityLogo"/>
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-panel">
+                    <div class="col-xs-6">
+                        <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalCambridge">
+                            <img src="cambridgelogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="CambridgeSchoolLogo"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-6">
+                        <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalLawrence">
+                            <img src="Lawrenceicon.gif" class="panel-btn" style="width: 80%; background: transparent;" alt="LawrenceschoolLogo"/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
         <div class="modal" id="modalSeven" tabindex="-1" role="dialog" aria-labelledby="modalSeven" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -957,52 +1006,107 @@
                     <div class="modal-body">
                         <div class="row row-panel">
                             <div class="col-xs-4">
-                                <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalStanford">
                                     <img src="stanfordLogo.png" class="panel-btn" style="width: 80%; background: transparent;" alt="StanfordLogo"/>
                                 </button>
                             </div>
                             <div class="col-xs-4">
-                                <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <img src="ThunderbirdLogo.png" class="panel-btn" style="background: transparent;" alt="ThunderbirdLogo"/>
+                                <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalAmerican">
+                                    <img src="thunderbirdcrest.png" class="panel-btn" style="background: transparent;" alt="ThunderbirdLogo"/>
                                 </button>
                             </div>
                             <div class="col-xs-4">
-                                <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <img src="PunjabUniversityLogo.png" class="panel-btn" style="background: transparent;" alt="PunjabUniversityLogo"/>
+                                <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalPunjab">
+                                    <img src="punjabcrest.png" class="panel-btn" style="background: transparent;" alt="PunjabUniversityLogo"/>
                                 </button>
                             </div>
 
                         </div>
                         <div class="row row-panel">
                             <div class="col-xs-6">
-                                <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <img src="cambridgelogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="LawrenceschoolLogo"/>
+                                <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalCambridge">
+                                    <img src="cambridgelogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="CambridgeSchoolLogo"/>
                                 </button>
                             </div>
                             <div class="col-xs-6">
-                                <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalLawrence">
                                     <img src="Lawrenceicon.gif" class="panel-btn" style="width: 80%; background: transparent;" alt="LawrenceschoolLogo"/>
                                 </button>
                             </div>
-                            <!-- <div class="col-xs-3">
-                                <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <img src="stanfordLogo.png" class="panel-btn" style="background: transparent;" alt="StanfordLogo"/>
-                                </button>
-                            </div>
-                            <div class="col-xs-3">
-                                <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <img src="ThunderbirdLogo.png" class="panel-btn" style="background: transparent;" alt="ThunderbirdLogo"/>
-                                </button>
-                            </div>
-                            <div class="col-xs-3">
-                                <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <img src="PunjabUniversityLogo.png" class="panel-btn" style="background: transparent;" alt="PunjabUniversityLogo"/>
-                                </button> -->
-                            <!-- </div> -->
                         </div>
                     </div>
                     <div class="modal-footer">
                         Some footer here.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-school" id="modalStanford" tabindex="-1" role="dialog" aria-labelledby="modalStanford" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="/stanford.pdf" width="800px" height="1100px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-school" id="modalAmerican" tabindex="-1" role="dialog" aria-labelledby="modalAmerican" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="/american.pdf" width="800px" height="1100px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-school" id="modalPunjab" tabindex="-1" role="dialog" aria-labelledby="modalPunjab" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="/punjab.pdf" width="800px" height="1100px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-school" id="modalCambridge" tabindex="-1" role="dialog" aria-labelledby="modalCambridge" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="/cambridge.pdf" width="800px" height="1100px">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade modal-school" id="modalLawrence" tabindex="-1" role="dialog" aria-labelledby="modalLawrence" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <embed src="/lawrence.pdf" width="800px" height="1100px">
                     </div>
                 </div>
             </div>
@@ -1234,6 +1338,14 @@
     // }, 0);
     // });
     $( document ).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip({
+            animated: 'fade',
+            placement: 'bottom',
+            html: true
+        });
+
+        // $('.btn-eight').tooltip({title: "<h1><strong>HTML</strong> inside <code>the</code> <em>tooltip</em></h1>", html: true, placement: "top"});
+
         $("#imgModal").draggable({
             handle: ".modal-header"
         });
@@ -1273,6 +1385,16 @@
         $("#modalTwelve").draggable({
             handle: ".modal-header"
         });
+
+        // $('.btn-seven').hover(show($('#education-box')), hide($('#education-box')));
+
+        function show($item) {
+            $item.css({'visibility': 'visible'});
+        }
+        function hide($item) {
+            $item.css({'visibility': 'hidden'});
+        }
+
         var $windowWidth = $(window).width();
         $('.open-panel').click(function (e) {
             var $this = $(e.target).closest('button'),
@@ -1284,6 +1406,7 @@
                 $('.panel-body').parent().slideUp();
                 setTimeout(function(){$panel.parent().slideDown()}, 401);
             }
+
         });
         $('.wb-one').css({'left': ($(window).width() - $('.wb-one').width()) * (1/14)});
         $('.wb-two').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/14)*2)});
