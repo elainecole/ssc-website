@@ -42,16 +42,7 @@
        }
        .title {
             color: #C93732;
-            /*margin-top: 10px;*/
             font-size: 28px;
-            /*margin-bottom: 5px;*/
-            /*font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;*/
-            /*font-family: 'Open Sans', sans-serif;*/
-            /*font-family: 'Roboto Condensed', sans-serif;*/
-            /*font-family: 'Open Sans Condensed', sans-serif;*/
-            /*font-family: 'PT Sans Narrow', sans-serif;*/
-            /*font-family: 'Roboto', sans-serif;*/
-            /*font-family: 'Source Sans Pro', sans-serif;*/
 
         }
         .col-xs-4 {
@@ -98,6 +89,7 @@
         }
         .causes-div {
             padding: 15px;
+            padding-top: 275px;
         }
         .row-work {
             margin: 10px;
@@ -242,13 +234,23 @@
             display: none;
         }
         .dropdown-menu {
-            width: 300px !important;
-            height: 300px !important;
             background-color: #FFF8E5;
+        }
+        .dm-education {
+            width: 300px !important;
+            height: 400px !important;
         }
         .dropdown-header {
             color: #003068;
             font-size: 1.5em;
+        }
+        .dropup ul {
+            /*opacity: .5;*/
+            /*background:transparent;*/
+            /*background-color: transparent;*/
+        }
+        .dropup ul li {
+            /*opacity: 1;*/
         }
         .caret {
             color: #FFF8E5;
@@ -349,34 +351,36 @@
                         <button class="btn btn-default btn-seven dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="glyphicon glyphicon-education"></span><span class="caret"></span>
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu dm-education">
                             <li class="dropdown-header">Education</li>
                             <div class="row row-panel">
-                                <div class="col-xs-4">
-                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalStanford">
-                                        <img src="stanfordLogo.png" class="panel-btn" style="width: 80%; background: transparent;" alt="StanfordLogo"/>
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#modalStanford">
+                                        <img src="stanfordLogo.png" style="width: 70%; background: transparent;" alt="StanfordLogo"/>
                                     </button>
                                 </div>
-                                <div class="col-xs-4">
-                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalAmerican">
-                                        <img src="thunderbirdcrest.png" class="panel-btn" style="background: transparent;" alt="ThunderbirdLogo"/>
-                                    </button>
-                                </div>
-                                <div class="col-xs-4">
-                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalPunjab">
-                                        <img src="punjabcrest.png" class="panel-btn" style="background: transparent;" alt="PunjabUniversityLogo"/>
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#modalAmerican">
+                                        <img src="thunderbirdcrest.png" style="width: 80%; background: transparent;" alt="ThunderbirdLogo"/>
                                     </button>
                                 </div>
                             </div>
                             <div class="row row-panel">
                                 <div class="col-xs-6">
-                                    <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalCambridge">
-                                        <img src="cambridgelogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="CambridgeSchoolLogo"/>
+                                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#modalPunjab">
+                                        <img src="punjabcrest.png" style="width: 100%; background: transparent;" alt="PunjabUniversityLogo"/>
                                     </button>
                                 </div>
                                 <div class="col-xs-6">
+                                    <button class="btn btn-default" type="button" data-toggle="modal" data-target="#modalCambridge">
+                                        <img src="cambridgelogo.png" style="width: 60%; background: transparent;" alt="CambridgeSchoolLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-6">
                                     <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalLawrence">
-                                        <img src="Lawrenceicon.gif" class="panel-btn" style="width: 80%; background: transparent;" alt="LawrenceschoolLogo"/>
+                                        <img src="Lawrenceicon.gif" style="width: 70%; background: transparent;" alt="LawrenceschoolLogo"/>
                                     </button>
                                 </div>
                             </div>
@@ -523,22 +527,22 @@
                         <div class="modal-body">
                             <div class="row row-panel">
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
                                         <img src="audiLogo.png" class="modal-work-icons" style="background: transparent;" alt="AudiLogo"/>
                                     </button>
                                 </div>
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
                                         <img src="blackberryLogo.png" class="modal-work-icons" style="background: transparent;" alt="BlackberryLogo"/>
                                     </button>
                                 </div>
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
                                         <img src="BMWLogo.png" class="modal-work-icons" style="background: transparent;" alt="BMWLogo"/>
                                     </button>
                                 </div>
                                 <div class="col-xs-3">
-                                    <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
                                         <img src="beatsLogo.png" class="modal-work-icons" style="background: transparent;" alt="BeatsLogo"/>
                                     </button>
                                 </div>
@@ -1245,28 +1249,28 @@
         <button class="btn btn-default causes-btn c-three" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="AmfARLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="amFARLogo"/>
         </button>
-    <!--    <button class="btn btn-default causes-btn c-four" type="button" aria-haspopup="true" aria-expanded="false">
+       <button class="btn btn-default causes-btn c-four" type="button" aria-haspopup="true" aria-expanded="false">
             <img src="MPTFLogo.png" class="causes-btn" style="width: 100%; background: transparent;" alt="MPTFLogo"/>
         </button>
         <button class="btn btn-default causes-btn c-five" type="button" aria-haspopup="true" aria-expanded="false">
-            <img src="EJAFLogo.png" class="causes-btn" style="width: 150%; background: transparent;" alt="EJAFLogo"/>
+            <img src="EJAFLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="EJAFLogo"/>
         </button>
         <button class="btn btn-default causes-btn c-six" type="button" aria-haspopup="true" aria-expanded="false">
-            <img src="UCSFLogo.png" class="causes-btn" style="width: 150%; background: transparent;" alt="UCSFLogo"/>
+            <img src="UCSFLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="UCSFLogo"/>
         </button>
         <button class="btn btn-default causes-btn c-seven" type="button" aria-haspopup="true" aria-expanded="false">
-            <img src="virginuniteLogo.png" class="causes-btn" style="width: 150%; background: transparent;" alt="VirginUniteLogo"/>
+            <img src="virginuniteLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="VirginUniteLogo"/>
         </button>
         <button class="btn btn-default causes-btn c-eight" type="button" aria-haspopup="true" aria-expanded="false">
-            <img src="SpecialOlympicsLogo.png" class="causes-btn" style="width: 159%; background: transparent;" alt="SpecialOlympicsLogo"/>
+            <img src="SpecialOlympicsLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="SpecialOlympicsLogo"/>
         </button>
         <button class="btn btn-default causes-btn c-nine" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.bgcp.org/#mission')">
-            <img src="boys&girlsLogo.png" class="causes-btn" style="width: 150%; background: transparent;" alt="Boys&GirlsLogo"/>
+            <img src="boys&girlsLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="Boys&GirlsLogo"/>
         </button>
         <button class="btn btn-default causes-btn c-ten" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.specialolympics.org/')">
-            <img src="SpecialOlympicsLogo.png" class="causes-btn" style="width: 100%; background: transparent;" alt="SpecialOlympicsLogo"/>
+            <img src="SpecialOlympicsLogo.png" style="position: absolute; width: 100%; background: transparent;" alt="SpecialOlympicsLogo"/>
         </button>
-</div> -->
+</div>
 
 </body>
 
@@ -1364,9 +1368,16 @@
         $('.wb-thirteen').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/14)*13)});
         $('.wb-fourteen').css({'left': ($(window).width() - $('.wb-one').width()) * (0)});
 
-        $('.c-one').css({'left': '100px'});
-        $('.c-two').css({'left': '0px'});
-        $('.c-three').css({'left': '200px'});
+        $('.c-one').css({'left': ($(window).width() - $('.wb-one').width()) * (1/10)});
+        $('.c-two').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/10)*2)});
+        $('.c-three').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/10)*3)});
+        $('.c-four').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/10)*4)});
+        $('.c-five').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/10)*5)});
+        $('.c-six').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/10)*6)});
+        $('.c-seven').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/10)*7)});
+        $('.c-eight').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/10)*8)});
+        $('.c-nine').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/10)*9)});
+        $('.c-ten').css({'left': ($(window).width() - $('.wb-one').width()) * ((1/10)*10)});
         scrollW($('.wb-one'));
         scrollW($('.wb-two'));
         scrollW($('.wb-three'));
@@ -1385,6 +1396,13 @@
         scrollC($('.c-one'));
         scrollC($('.c-two'));
         scrollC($('.c-three'));
+        scrollC($('.c-four'));
+        scrollC($('.c-five'));
+        scrollC($('.c-six'));
+        scrollC($('.c-seven'));
+        scrollC($('.c-eight'));
+        scrollC($('.c-nine'));
+        scrollC($('.c-ten'));
 
         function scrollW($moveable) {
             $moveable.mouseover(function(){
