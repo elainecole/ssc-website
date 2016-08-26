@@ -262,6 +262,23 @@
         .dropdown-toggle:hover .caret {
             color: #C93732;
         }
+        .dropup .dropdown-menu {
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            transition: all 0.3s;
+
+            max-height: 0;
+            display: block;
+            overflow: hidden;
+            opacity: 0;
+        }
+
+        .dropup.open .dropdown-menu {
+            max-height: 500px;
+            opacity: 1;
+        }
     </style>
     <title>Satjiv S. Chahil</title>
     <meta name="Satjiv S. Chahil" content="">
@@ -664,9 +681,18 @@
                             </div>
                             <div class="row row-panel">
                                 <div class="col-xs-3">
+                                </div>
+                                <div class="col-xs-3">
                                     <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.brightfocus.org/alzheimers')">
                                         <img src="alzheimersdiseaseresearchLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="alzheimersdiseaseresearchLogo"/>
                                     </button>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.virgin.com/unite/')">
+                                        <img src="virginunitelogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="virginuniteLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-3">
                                 </div>
                             </div>
                         </div>
@@ -935,18 +961,18 @@
                         </div>
                         <div class="row row-panel">
                             <div class="col-xs-3">
-                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.adweek.com/news/advertising/chahil-joins-executive-ranks-hp-81437')">
+                                    <img src="adweekLogo.png" class="panel-btn" style="background: transparent;" alt="AdWeekLogo"/>
                                 </button>
                             </div>
                             <div class="col-xs-3">
-                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.nytimes.com/2007/03/08/technology/08drive.html?_r=0')">
+                                    <img src="nytimeslogo.png" class="panel-btn" style="background: transparent;" alt="NewYorkTimesLogo"/>
                                 </button>
                             </div>
                             <div class="col-xs-3">
-                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.forbes.com/sites/jenniferelias/2016/02/08/how-the-super-bowl-became-a-platform-for-hearables/#1126d5d175a0')">
+                                    <img src="forbeslogo.png" class="panel-btn" style="background: transparent;" alt="ForbesLogo"/>
                                 </button>
                             </div>
                             <div class="col-xs-3">
@@ -1340,7 +1366,9 @@
         $("#modalTwelve").draggable({
             handle: ".modal-header"
         });
-
+        // $('.dropdown-toggle').click(function() {
+        //     $(this).next('.dropdown-menu').slideToggle(500);
+        // });
         // $('.btn-seven').hover(show($('#education-box')), hide($('#education-box')));
 
         function show($item) {

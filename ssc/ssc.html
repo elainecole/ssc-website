@@ -173,31 +173,12 @@
             background-color: transparent !important;
             box-shadow: none !important;
         }
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            border-bottom: 1px dotted black;
+        .modal-backdrop {
+            display: none !important;
         }
-
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 120px;
-            background-color: black;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px 0;
-
-            /* Position the tooltip */
-            position: absolute;
-            z-index: 1;
-            bottom: 100%;
-            left: 50%;
-            margin-left: -60px;
-        }
-
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
+        .modal-body {
+            margin: 0 auto;
+            overflow: auto !important;
         }
         .btn-linkedin {
           background: #0E76A8;
@@ -352,44 +333,44 @@
                     <div class="row row-panel">
                         <div class="col-xs-3">
                             <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="audiLogo.png" class="modal-work-icons" style="background: transparent;" alt="AudiLogo"/>
+                                <img src="audiLogo.png" style="width: 100%; background: transparent;" alt="AudiLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
                             <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="blackberryLogo.png" class="modal-work-icons" style="background: transparent;" alt="BlackberryLogo"/>
+                                <img src="blackberryLogo.png" style="width: 100%; background: transparent;" alt="BlackberryLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
                             <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="BMWLogo.png" class="modal-work-icons" style="background: transparent;" alt="BMWLogo"/>
+                                <img src="BMWLogo.png" style="width: 100%; background: transparent;" alt="BMWLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
                             <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="beatsLogo.png" class="modal-work-icons" style="background: transparent;" alt="BeatsLogo"/>
+                                <img src="beatsLogo.png" style="width: 100%; background: transparent;" alt="BeatsLogo"/>
                             </button>
                         </div>
                     </div>
                     <div class="row row-panel">
                         <div class="col-xs-3">
                             <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                <img src="mercedesLogo.png" class="modal-work-icons" style="background: transparent;" alt="MercedesLogo"/>
+                                <img src="mercedesLogo.png" style="width: 120%; background: transparent;" alt="MercedesLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
                             <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                <img src="sonyLogo.png" class="modal-work-icons" style="background: transparent;" alt="SonyLogo"/>
+                                <img src="sonyLogo.png" style="width: 100%; background: transparent;" alt="SonyLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
                             <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                <img src="swarovskiLogo.png" class="modal-work-icons" style="background: transparent;" alt="SwarvoskiLogo"/>
+                                <img src="swarovskiLogo.png" style="width: 100%; background: transparent;" alt="SwarvoskiLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
                             <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                <img src="starkeyLogo.png" class="modal-work-icons" style="background: transparent;" alt="StarkeyLogo"/>
+                                <img src="starkeyLogo.png" style="width: 120%; background: transparent;" alt="StarkeyLogo"/>
                             </button>
                         </div>
                     </div>
@@ -466,25 +447,19 @@
                     </div>
                     <div class="row row-panel">
                         <div class="col-xs-3">
+                        </div>
+                        <div class="col-xs-3">
                             <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.brightfocus.org/alzheimers')">
                                 <img src="alzheimersdiseaseresearchLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="alzheimersdiseaseresearchLogo"/>
                             </button>
                         </div>
-                        <!-- <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.habitat.org')">
-                                <img src="habitatforhumanitylogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="habitatforhumanityLogo"/>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.virgin.com/unite/')">
+                                <img src="virginunitelogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="virginuniteLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://tamana.org/')">
-                                <img src="tamanaLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="TamanaLogo"/>
-                            </button>
                         </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://diabetes.org/')">
-                                <img src="americandiabetesassociationLogo.png" class="panel-causes-btn" style="width: 100%; background: transparent;" alt="americandiabetesassociationLogo"/>
-                            </button>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -513,37 +488,94 @@
                 <div class="panel-body" id="panel-four" aria-labelledby="btn-four">
                     <h3 class="panel-title">Business Experience</h3>
                     <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="appleLogo.png" class="modal-work-icons" style="background: transparent;" alt="AppleLogo"/>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-work-btn" type="button" data-toggle="modal" data-target="#modalHP">
+                                <img src="hpLogo.png" class="modal-work-icons" style="width: 40%; background: transparent;" alt="HPLogo"/>
                             </button>
                         </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                <img src="hpLogo.png" class="modal-work-icons" style="background: transparent;" alt="HPLogo"/>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-work-btn" type="button" data-toggle="modal" data-target="#modalPalm">
+                                <img src="palmLogo.png" class="modal-work-icons" style="width: 40%; background: transparent;" alt="PalmLogo"/>
                             </button>
                         </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                <img src="ibmLogo.png" class="modal-work-icons" style="background: transparent;" alt="IBMLogo"/>
-                            </button>
-                        </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                <img src="palmLogo.png" class="modal-work-icons" style="background: transparent;" alt="PalmLogo"/>
+
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-work-btn" type="button" data-toggle="modal" data-target="#modalNewbridge">
+                                <img src="newbridgeLogo.png" class="modal-work-icons" style="width: 40%; background: transparent;" alt="newBridgeLogo"/>
                             </button>
                         </div>
                     </div>
                     <div class="row row-panel">
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/hpbiochahil.pdf')">
-                                <img src="xeroxLogo.png" class="modal-work-icons" style="background: transparent;" alt="XeroxLogo"/>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-work-btn" type="button" data-toggle="modal" data-target="#modalApple">
+                                <img src="appleLogo.png" class="modal-work-icons" style="width: 40%; background: transparent;" alt="AppleLogo"/>
                             </button>
                         </div>
-                        <div class="col-xs-3">
-                            <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('/chahilnewbridge.pdf')">
-                                <img src="newbridgeLogo.png" class="modal-work-icons" style="background: transparent;" alt="newBridgeLogo"/>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-work-btn" type="button">
+                                <img src="xeroxLogo.png" class="modal-work-icons" style="width: 40%; background: transparent;" alt="XeroxLogo"/>
                             </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-work-btn" type="button">
+                                <img src="ibmLogo.png" class="modal-work-icons" style="width: 40%; background: transparent;" alt="IBMLogo"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-bio" id="modalHP" tabindex="-1" role="dialog" aria-labelledby="modalHP" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/hpbiochahil.pdf" width="800px" height="1100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-bio" id="modalPalm" tabindex="-1" role="dialog" aria-labelledby="modalPalm" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/palmbio.pdf" width="800px" height="1100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-bio" id="modalNewbridge" tabindex="-1" role="dialog" aria-labelledby="modalNewbridge" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/chahilNewbridge.pdf" width="800px" height="1100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-bio" id="modalApple" tabindex="-1" role="dialog" aria-labelledby="modalApple" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/applebio1.pdf" width="800px" height="1100px">
                         </div>
                     </div>
                 </div>
@@ -553,22 +585,22 @@
                     <h3 class="panel-title">Publications</h3>
                     <div class="row row-panel">
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalClinton">
                                 <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
                             </button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalEM">
                                 <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
                             </button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalPC">
                                 <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
                             </button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalNW">
                                 <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
                             </button>
                         </div>
@@ -593,6 +625,62 @@
                             <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
                                 <span class="glyphicon glyphicon-asterisk modal-press-icons" aria-hidden="true"></span>
                             </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-publication" id="modalClinton" tabindex="-1" role="dialog" aria-labelledby="modalClinton" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/ClintonThirdTerm.pdf" width="800px" height="1100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-publication" id="modalEM" tabindex="-1" role="dialog" aria-labelledby="modalEM" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/euromanagement.pdf" width="800px" height="1100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-publication" id="modalPC" tabindex="-1" role="dialog" aria-labelledby="modalPC" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/PCbusiness.pdf" width="800px" height="1100px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade modal-publication" id="modalNW" tabindex="-1" role="dialog" aria-labelledby="modalNW" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <embed src="/newmediafornewworld.pdf" width="800px" height="1100px">
                         </div>
                     </div>
                 </div>
@@ -624,18 +712,18 @@
                     </div>
                     <div class="row row-panel">
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.adweek.com/news/advertising/chahil-joins-executive-ranks-hp-81437')">
+                                <img src="adweekLogo.png" class="panel-btn" style="background: transparent;" alt="AdWeekLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.nytimes.com/2007/03/08/technology/08drive.html?_r=0')">
+                                <img src="nytimeslogo.png" class="panel-btn" style="background: transparent;" alt="NewYorkTimesLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
-                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                            <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.forbes.com/sites/jenniferelias/2016/02/08/how-the-super-bowl-became-a-platform-for-hearables/#1126d5d175a0')">
+                                <img src="forbeslogo.png" class="panel-btn" style="background: transparent;" alt="ForbesLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-3">
@@ -672,24 +760,31 @@
                 <div class="panel-body" id="panel-seven" aria-labelledby="btn-seven">
                     <h3 class="panel-title">Education</h3>
                     <div class="row row-panel">
-                        <div class="col-xs-3">
+                        <div class="col-xs-4">
                             <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="stanfordLogo.png" class="panel-btn" style="background: transparent;" alt="StanfordLogo"/>
+                                <img src="stanfordLogo.png" class="panel-btn" style="width: 30%; background: transparent;" alt="StanfordLogo"/>
                             </button>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xs-4">
                             <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="ThunderbirdLogo.png" class="panel-btn" style="width: 120%; background: transparent;" alt="ThunderbirdLogo"/>
+                                <img src="thunderbirdcrest.png" class="panel-btn" style="width: 60%; background: transparent;" alt="ThunderbirdLogo"/>
                             </button>
                         </div>
-                        <div class="col-xs-3">
+                        <div class="col-xs-4">
                             <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="PunjabUniversityLogo.png" class="panel-btn" style="width: 120%; background: transparent;" alt="PunjabUniversityLogo"/>
+                                <img src="Punjabcrest.png" class="panel-btn" style="width: 80%; background: transparent;" alt="PunjabUniversityLogo"/>
                             </button>
                         </div>
-                        <div class="col-xs-3">
+                    </div>
+                    <div class="row row-panel">
+                        <div class="col-xs-4">
                             <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                <img src="LawrenceschoolLogo.png" class="panel-btn" style="width: 150%; background: transparent;" alt="LawrenceschoolLogo"/>
+                                <img src="cambridgelogo.png" style="width: 50%; background: transparent;" alt="CambridgeSchoolLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                                <img src="Lawrenceicon.gif" class="panel-btn" style="width: 60%; background: transparent;" alt="LawrenceschoolLogo"/>
                             </button>
                         </div>
                     </div>
@@ -753,7 +848,7 @@
                         <i class="material-icons">ring_volume</i>
                     </div> -->
                     <div class="col-xs-6" style="text-align: center">
-                        <a href="https://www.linkedin.com/in/satjiv-chahil-3b8baa99?authType=&authToken=&trk=" title="LinkedIn" class="btn btn-linkedin"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+                        <a href="https://www.linkedin.com/in/satjiv-chahil-3b8baa99?authType=&authToken=&trk=" target="blank" title="LinkedIn" class="btn btn-linkedin"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
                     </div>
             </div>
         </div>
