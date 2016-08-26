@@ -240,6 +240,10 @@
             width: 300px !important;
             height: 400px !important;
         }
+        .dm-clients {
+            width: 300px !important;
+            height: 500px !important;
+        }
         .dropdown-header {
             color: #003068;
             font-size: 1.5em;
@@ -321,10 +325,61 @@
                             <i class="material-icons">info_outline</i>
                         </button>
                     </li>
-                    <li class="nav-item">
-                        <button id="btn-two" class="btn btn-default btn-two" type="button" data-toggle="modal" data-target="#modalTwo">
-                            <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                    <li class="nav-item dropup">
+                        <button id="btn-two" class="btn btn-default btn-two dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span><span class="caret"></span>
                         </button>
+                        <ul class="dropdown-menu dm-clients">
+                            <li class="dropdown-header">Clients</li>
+                            <div class="row row-panel">
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
+                                        <img src="audiLogo.png" style="width: 100%; background: transparent;" alt="AudiLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
+                                        <img src="blackberryLogo.png" style="width: 100%; background: transparent;" alt="BlackberryLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
+                                        <img src="BMWLogo.png" style="width: 100%; background: transparent;" alt="BMWLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
+                                        <img src="beatsLogo.png" style="width: 100%; background: transparent;" alt="BeatsLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
+                                        <img src="mercedesLogo.png" style="width: 100%; background: transparent;" alt="MercedesLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
+                                        <img src="sonyLogo.png" style="width: 100%; background: transparent;" alt="SonyLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
+                                        <img src="swarovskiLogo.png" style="width: 100%; background: transparent;" alt="SwarvoskiLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-6">
+                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
+                                        <img src="starkeyLogo.png" style="width: 100%; background: transparent;" alt="StarkeyLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <button id="btn-three" class="btn btn-default btn-three" type="button" data-toggle="modal" data-target="#modalThree">
@@ -523,50 +578,7 @@
                             <h4 class="modal-title" id="modalTwo">Clients</h4>
                         </div>
                         <div class="modal-body">
-                            <div class="row row-panel">
-                                <div class="col-xs-3">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
-                                        <img src="audiLogo.png" class="modal-work-icons" style="background: transparent;" alt="AudiLogo"/>
-                                    </button>
-                                </div>
-                                <div class="col-xs-3">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
-                                        <img src="blackberryLogo.png" class="modal-work-icons" style="background: transparent;" alt="BlackberryLogo"/>
-                                    </button>
-                                </div>
-                                <div class="col-xs-3">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
-                                        <img src="BMWLogo.png" class="modal-work-icons" style="background: transparent;" alt="BMWLogo"/>
-                                    </button>
-                                </div>
-                                <div class="col-xs-3">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
-                                        <img src="beatsLogo.png" class="modal-work-icons" style="background: transparent;" alt="BeatsLogo"/>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="row row-panel">
-                                <div class="col-xs-3">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
-                                        <img src="mercedesLogo.png" class="modal-work-icons" style="background: transparent;" alt="MercedesLogo"/>
-                                    </button>
-                                </div>
-                                <div class="col-xs-3">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
-                                        <img src="sonyLogo.png" class="modal-work-icons" style="background: transparent;" alt="SonyLogo"/>
-                                    </button>
-                                </div>
-                                <div class="col-xs-3">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
-                                        <img src="swarovskiLogo.png" class="modal-work-icons" style="background: transparent;" alt="SwarvoskiLogo"/>
-                                    </button>
-                                </div>
-                                <div class="col-xs-3">
-                                    <button class="btn btn-default panel-work-btn" type="button" onclick="window.open('')">
-                                        <img src="starkeyLogo.png" class="modal-work-icons" style="background: transparent;" alt="StarkeyLogo"/>
-                                    </button>
-                                </div>
-                            </div>
+
                         </div>
                         <div class="modal-footer">
                             Some footer here.
