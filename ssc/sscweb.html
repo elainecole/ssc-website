@@ -226,8 +226,8 @@
             outline: none;
         }
         .modal-school {
-            left: 25%;
-            top: 1%;
+            /*left: 25%;*/
+            /*top: 1%;*/
             outline: none;
         }
         .hidden {
@@ -241,6 +241,10 @@
             height: 400px !important;
         }
         .dm-clients {
+            width: 300px !important;
+            height: 500px !important;
+        }
+        .dm-causes {
             width: 300px !important;
             height: 500px !important;
         }
@@ -332,11 +336,6 @@
     </div>
         <nav class="navbar navbar-fixed-bottom navbar-light bg-faded"  style="border-top:3px solid #003068;">
             <div class="nav navbar-nav">
-                <li class="nav-item active">
-                    <button id="btn-two" class="btn btn-default open-panel" type="button">
-                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                    </button>
-                </li>
                     <li class="nav-item">
                         <button id="btn-one" class="btn btn-default btn-one" type="button" data-toggle="modal" data-target="#modalOne">
                             <i class="material-icons">info_outline</i>
@@ -398,10 +397,93 @@
                             </div>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <button id="btn-three" class="btn btn-default btn-three" type="button" data-toggle="modal" data-target="#modalThree">
-                            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                    <li class="nav-item dropup">
+                        <button id="btn-three" class="btn btn-default btn-three dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><span class="caret"></span>
                         </button>
+                        <ul class="dropdown-menu dm-causes">
+                            <li class="dropdown-header">Causes</li>
+                            <div class="row row-panel">
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://aif.org/')">
+                                        <img src="aifLogo.png" style="width: 100%; background: transparent;" alt="AIFLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.afi.com/')">
+                                        <img src="afiLogo.png" style="width: 100%; background: transparent;" alt="AFILogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.amfar.org/')">
+                                        <img src="AmfARLogo.png" style="width: 100%; background: transparent;" alt="amFARLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.mptf.com/')">
+                                        <img src="MPTFLogo.png" style="width: 100%; background: transparent;" alt="MPTFLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://ejaf.org/')">
+                                        <img src="EJAFLogo.png" style="width: 100%; background: transparent;" alt="EJAFLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.ucsf.edu/')">
+                                        <img src="UCSFLogo.png" style="width: 100%; background: transparent;" alt="UCSFLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.specialolympics.org/')">
+                                        <img src="SpecialOlympicsLogo.png" style="width: 100%; background: transparent;" alt="SpecialOlympicsLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.bgcp.org/#mission')">
+                                        <img src="boys&girlsLogo.png" style="width: 110%; background: transparent;" alt="Boys&GirlsLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.doctorswithoutborders.org/')">
+                                        <img src="doctorswithoutbordersLogo.png" style="width: 100%; background: transparent;" alt="DoctorsWithoutBordersLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.habitat.org')">
+                                        <img src="habitatforhumanitylogo.png" style="width: 100%; background: transparent;" alt="habitatforhumanityLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://tamana.org/')">
+                                        <img src="tamanaLogo.png" style="width: 100%; background: transparent;" alt="TamanaLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://diabetes.org/')">
+                                        <img src="americandiabetesassociationLogo.png" style="width: 100%; background: transparent;" alt="americandiabetesassociationLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row row-panel">
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.brightfocus.org/alzheimers')">
+                                        <img src="alzheimersdiseaseresearchLogo.png" style="width: 100%; background: transparent;" alt="alzheimersdiseaseresearchLogo"/>
+                                    </button>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-default panel-causes-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.virgin.com/unite/')">
+                                        <img src="virginunitelogo.png" style="width: 100%; background: transparent;" alt="virginuniteLogo"/>
+                                    </button>
+                                </div>
+                            </div>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <button class="btn btn-default btn-four" type="button" data-toggle="modal" data-target="#modalFour">
@@ -976,8 +1058,30 @@
                                 </button>
                             </div>
                             <div class="col-xs-3">
-                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false">
-                                    <span class="glyphicon glyphicon-asterisk modal-article-icons" aria-hidden="true"></span>
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.sfgate.com/news/article/New-Year-s-party-in-cyberspace-3118296.php')">
+                                    <img src="sfgateLogo.png" class="panel-btn" style="background: transparent;" alt="SFGateLogo"/>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row row-panel">
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://content.time.com/time/magazine/article/0,9171,976619,00.html')">
+                                    <img src="timelogo.png" class="panel-btn" style="background: transparent;" alt="TimeLogo"/>
+                                </button>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.nytimes.com/2006/07/25/business/media/25adco.html')">
+                                    <img src="nytimeslogo.png" class="panel-btn" style="background: transparent;" alt="NewYorkTimesLogo"/>
+                                </button>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.forbes.com/sites/jenniferelias/2016/02/08/how-the-super-bowl-became-a-platform-for-hearables/#1126d5d175a0')">
+                                    <img src="forbeslogo.png" class="panel-btn" style="background: transparent;" alt="ForbesLogo"/>
+                                </button>
+                            </div>
+                            <div class="col-xs-3">
+                                <button class="btn btn-default panel-article-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.forbes.com/sites/jenniferelias/2016/02/08/how-the-super-bowl-became-a-platform-for-hearables/#1126d5d175a0')">
+                                    <img src="forbeslogo.png" class="panel-btn" style="background: transparent;" alt="ForbesLogo"/>
                                 </button>
                             </div>
                         </div>
