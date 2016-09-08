@@ -153,6 +153,7 @@
             background-color: #FFF8E5 !important;
             color: #274C77;
         }
+
         .lighter-text {
             font-weight: 300;
         }
@@ -293,6 +294,14 @@
             max-height: 500px;
             opacity: 1;
         }
+        .nav-item:hover {
+            background-color: #C93732;
+        }
+        .nav-btn:hover {
+            color: #FFF8E5;
+            background-color: #C93732;
+        }
+
     </style>
     <title>Satjiv S. Chahil</title>
     <meta name="Satjiv S. Chahil" content="">
@@ -344,16 +353,16 @@
             </div>
         </div>
     </div>
-        <nav class="navbar navbar-fixed-bottom navbar-light bg-faded"  style="border-top:3px solid #003068;">
-            <div class="nav navbar-nav">
+        <nav class="navbar navbar-fixed-bottom navbar-light bg-faded"  style="border-top:3px solid #003068; padding-left: 15%;">
+            <div class="nav container-fluid navbar-nav" id="nav-center">
                     <li class="nav-item">
                         <button id="btn-one" class="btn btn-default btn-one" type="button" data-toggle="modal" data-target="#modalOne">
-                            <i class="material-icons">info_outline</i>
+                            <i class="material-icons nav-btn">info_outline</i>
                         </button>
                     </li>
                     <li class="nav-item dropup">
                         <button id="btn-two" class="btn btn-default btn-two dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span><span class="caret"></span>
+                            <span class="glyphicon glyphicon-briefcase nav-btn" aria-hidden="true"></span><span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu dm-clients">
                             <li class="dropdown-header">Clients</li>
@@ -409,7 +418,7 @@
                     </li>
                     <li class="nav-item dropup">
                         <button id="btn-three" class="btn btn-default btn-three dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span><span class="caret"></span>
+                            <span class="glyphicon glyphicon-globe nav-btn" aria-hidden="true"></span><span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu dm-causes">
                             <li class="dropdown-header">Causes</li>
@@ -497,7 +506,7 @@
                     </li>
                     <li class="nav-item dropup">
                         <button class="btn btn-default btn-four dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">history</i><span class="caret"></span>
+                            <i class="material-icons nav-btn">history</i><span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu dm-experience">
                             <li class="dropdown-header">Work Experience</li>
@@ -540,7 +549,7 @@
                     </li>
                     <li class="nav-item dropup">
                         <button class="btn btn-default btn-five dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span><span class="caret"></span>
+                            <span class="glyphicon glyphicon-edit nav-btn" aria-hidden="true"></span><span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu dm-publications">
                             <li class="dropdown-header">Publications</li>
@@ -577,7 +586,7 @@
                     </li>
                     <li class="nav-item dropup">
                         <button class="btn btn-default btn-six dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">import_contacts</i><span class="caret"></span>
+                            <i class="material-icons nav-btn">import_contacts</i><span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu dm-articles">
                             <li class="dropdown-header">Articles</li>
@@ -636,7 +645,7 @@
                     </li>
                     <li class="nav-item dropup">
                         <button class="btn btn-default btn-seven dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="glyphicon glyphicon-education"></span><span class="caret"></span>
+                            <span class="glyphicon glyphicon-education nav-btn"></span><span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu dm-education">
                             <li class="dropdown-header">Education</li>
@@ -675,27 +684,27 @@
                     </li>
                     <li class="nav-item">
                         <button class="btn btn-default btn-eight" type="button" data-toggle="modal" data-target="#modalEight">
-                            <i class="material-icons">people</i>
+                            <i class="material-icons nav-btn">people</i><span class="caret"></span>
                         </button>
                     </li>
                     <li class="nav-item">
                         <button class="btn btn-default btn-nine" type="button" data-toggle="modal" data-target="#modalNine">
-                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-thumbs-up nav-btn" aria-hidden="true"></span><span class="caret"></span>
                         </button>
                     </li>
                     <li class="nav-item">
                         <button class="btn btn-default btn-ten" type="button" data-toggle="modal" data-target="#modalTen">
-                            <i class="material-icons">pan_tool</i>
+                            <i class="material-icons nav-btn">pan_tool</i><span class="caret"></span>
                         </button>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-default btn-eleven" type="button" data-toggle="tooltip" data-html="true" data-placement="top" title="Thisis where the content goes">
-                            <i class="material-icons">movie</i>
+                        <button class="btn btn-default btn-eleven" type="button" data-toggle="tooltip" data-html="true">
+                            <i class="material-icons nav-btn">movie</i><span class="caret"></span>
                         </button>
                     </li>
                     <li class="nav-item">
                         <button class="btn btn-default btn-twelve" type="button" data-toggle="modal" data-target="#modalTwelve">
-                            <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span><span class="caret"></span>
                         </button>
                     </li>
                 </div>
