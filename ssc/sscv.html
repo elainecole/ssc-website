@@ -33,7 +33,6 @@
             /*width: 100%;*/
             background-color: #FFF8E5;
             position: relative;
-
         }
         footer {
             position:absolute;
@@ -58,6 +57,21 @@
         .menu-icon {
             font-size: 3.0em;
             color: #FFB600;
+        }
+        .menu-icon:hover {
+            background-color: #C93732;
+            color: #FFF8E5;
+        }
+        .section-btn {
+            background-color: transparent;
+            border: none;
+        }
+        .section-btn:hover {
+            background-color: #FFB600;
+        }
+        .clients {
+            padding-top: 100px;
+            margin-top: 100px;
         }
         .btn-linkedin {
           background: #C93732;
@@ -85,6 +99,7 @@
             background: transparent;
             margin-bottom: 0px;
         }
+
     </style>
 
     <title>Satjiv S. Chahil</title>
@@ -94,71 +109,36 @@
 
     <nav class="navbar navbar-default navbar-fixed-top navbar-one" role="navigation">
         <div class="container">
-            <!-- <div class="navbar-header">
-                <a class="navbar-brand" href="#">Brand</a>
+            <div class="navbar-header">
+                <div style="padding-bottom: 0px;">
+                    <img src="photo1.png" style="position: absolute; background: transparent; width: 100px;" alt="SatjivPhoto"/>
+                </div>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul> -->
-                    <div class="navbar-header">
-                        <div style="padding-bottom: 0px;">
-                            <img src="photo1.png" style="position: absolute; background: transparent; width: 100px;" alt="SatjivPhoto"/>
-                        </div>
-                    </div>
-                    <div class="navbar-right" style="text-align: right;">
-                        <div class="title-div">
-                            <p class="lead" style="font-size: 28px;"><b>Satjiv S. Chahil</b></p>
-                        </div>
-                        <div class="subtitle-div" style="margin-top: 0px;">
-                            <p><b><div class="col-xs-12">
-                                <div>Global Marketing & Innovation Advisory Services</div>
-                            </div></b>
-                            <div class="col-xs-12">
-                                <b>Silicon Valley, California
-                            </div></b></p>
-                        </div>
-                    </div>
+            <div class="navbar-right" style="text-align: right;">
+                <div class="title-div">
+                    <p class="lead" style="font-size: 28px;"><b>Satjiv S. Chahil</b></p>
+                </div>
+                <div class="subtitle-div" style="margin-top: 0px;">
+                    <p><b><div class="col-xs-12">
+                        <div>Global Marketing & Innovation Advisory Services</div>
+                    </div></b>
+                    <div class="col-xs-12">
+                        <b>Silicon Valley, California
+                    </div></b></p>
+                </div>
             </div>
-        </div><!-- /.container-fluid -->
-    </nav>
-    <!-- <div class="divide-nav">
-        <div class="container">
-            <p class="divide-text">Some Text Here</p>
         </div>
-    </div> -->
+    </nav>
     <nav class="navbar menu navbar-default navbar-lower navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="collapse navbar-collapse collapse-buttons">
-                <ul class="nav navbar-nav">
-                    <li><a href="#section1">
-                        <span class="menu-icon glyphicon glyphicon-briefcase nav-btn" aria-hidden="true"></span>
-                    </a></li>
-                </ul>
-            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#section1">
+                    <i class="menu-icon material-icons nav-btn">info_outline</i>
+                </a></li>
+                <li><a href="#clients">
+                    <span class="menu-icon glyphicon glyphicon-briefcase nav-btn" aria-hidden="true"></span>
+                </a></li>
+            </ul>
         </div>
     </nav>
         <div class="container">
@@ -166,46 +146,54 @@
                 <div class="filler"></div>
         </div>
     </div>
-        <!-- <nav class="navbar nav-one navbar-fixed-top">
-            <div class="container-fluid">
-                <div class=" row navbar-left col-lg-6 col-md-6">
-                    <div id="business-card-row">
-                        <div class="col-md-4">
-                            <div style="text-align: left; padding-bottom: 0px;">
-                                <img src="photo1.png" style="left: 0; position: absolute; background: transparent; width: 10%;" alt="SatjivPhoto"/>
-                            </div>
-                        </div>
-                        <div class="navbar-header navbar-right col-lg-6 col-md-6" style="text-align: right;">
-                            <div class="title-div" style="margin-bottom: 10px;">
-                                <p class="lead" style="font-size: 28px;"><b>Satjiv S. Chahil</b></p>
-                            </div>
-                            <div class="subtitle-div">
-                                <p><b><div class="col-xs-12">
-                                    <div>Global Marketing & Innovation Advisory Services</div>
-                                </div></b>
-                                <div class="col-xs-12">
-                                    <b>Silicon Valley, California
-                                </div></b></p>
-                            </div>
-                        </div>
-                    </div>
+
+    </div>
+    <div class="scroll-body" data-spy="scroll" data-target=".navbar" data-offset="100">
+        <div class="section" id="clients">
+            <div class="row row-panel">
+                <div class="col-xs-3">
+                    <button class="btn btn-default section-btn" type="button" onclick="window.open('')">
+                        <img src="audiLogo.png" style="width: 100%; background: transparent;" alt="AudiLogo"/>
+                    </button>
+                </div>
+                <div class="col-xs-3">
+                    <button class="btn btn-default section-btn" type="button" onclick="window.open('')">
+                        <img src="blackberryLogo.png" style="width: 100%; background: transparent;" alt="BlackberryLogo"/>
+                    </button>
+                </div>
+                <div class="col-xs-3">
+                    <button class="btn btn-default section-btn" type="button" onclick="window.open('')">
+                        <img src="BMWLogo.png" style="width: 100%; background: transparent;" alt="BMWLogo"/>
+                    </button>
+                </div>
+                <div class="col-xs-3">
+                    <button class="btn btn-default section-btn" type="button" onclick="window.open('')">
+                        <img src="beatsLogo.png" style="width: 100%; background: transparent;" alt="BeatsLogo"/>
+                    </button>
                 </div>
             </div>
-        </nav>
-        <nav class="navbar nav-two navbar-fixed-top">
-            <div class="row menu">
-                <ul class="nav navbar-nav">
-                    <li><a href="#section1">
-                        <span class="menu-icon glyphicon glyphicon-briefcase nav-btn" aria-hidden="true"></span>
-                    </a></li>
-                </ul>
+            <div class="row row-panel">
+                <div class="col-xs-3">
+                    <button class="btn btn-default section-btn" type="button" onclick="window.open('')">
+                        <img src="mercedesLogo.png" style="width: 100%; background: transparent;" alt="MercedesLogo"/>
+                    </button>
+                </div>
+                <div class="col-xs-3">
+                    <button class="btn btn-default section-btn" type="button" onclick="window.open('')">
+                        <img src="sonyLogo.png" style="width: 100%; background: transparent;" alt="SonyLogo"/>
+                    </button>
+                </div>
+                <div class="col-xs-3">
+                    <button class="btn btn-default section-btn" type="button" onclick="window.open('')">
+                        <img src="swarovskiLogo.png" style="width: 100%; background: transparent;" alt="SwarvoskiLogo"/>
+                    </button>
+                </div>
+                <div class="col-xs-3">
+                    <button class="btn btn-default section-btn" type="button" onclick="window.open('')">
+                        <img src="starkeyLogo.png" style="width: 100%; background: transparent;" alt="StarkeyLogo"/>
+                    </button>
+                </div>
             </div>
-        </nav> -->
-
-        <i class="menu-icon material-icons nav-btn">info_outline</i>
-    </div>
-    <div class="scroll-body" data-spy="scroll" data-target=".navbar" data-offset="50">
-
     </div>
 
 
