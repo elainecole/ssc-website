@@ -57,10 +57,7 @@
         .menu-icon {
             font-size: 3.0em;
             color: #FFB600;
-        }
-        .menu-icon:hover {
-            background-color: #C93732;
-            color: #FFF8E5;
+            background-color: transparent;
         }
         .section-btn {
             background-color: transparent;
@@ -69,9 +66,13 @@
         .section-btn:hover, :after, :active {
             background-color: transparent;
         }
-        .clients {
-            padding-top: 100px;
+        .section {
+            padding-top: 150px;
             margin-top: 100px;
+        }
+        .section-header {
+            color: #C93732;
+            padding-left: 50px;
         }
         .btn-linkedin {
           background: #C93732;
@@ -93,12 +94,15 @@
         }
         .menu {
             background-color: #003068;
+            padding-left: 12%;
         }
         .navbar-one {
             background: transparent;
             margin-bottom: 0px;
         }
-
+        .nav-btn:active {
+            background-color: none;
+        }
     </style>
 
     <title>Satjiv S. Chahil</title>
@@ -131,11 +135,41 @@
     <nav class="navbar menu navbar-default navbar-lower navbar-fixed-top" role="navigation">
         <div class="container">
             <ul class="nav navbar-nav">
-                <li><a href="#section1">
+                <li><a href="#summary">
                     <i class="menu-icon material-icons nav-btn">info_outline</i>
                 </a></li>
                 <li><a href="#clients">
                     <span class="menu-icon glyphicon glyphicon-briefcase nav-btn" aria-hidden="true"></span>
+                </a></li>
+                <li><a href="#causes">
+                    <span class="menu-icon glyphicon glyphicon-globe nav-btn" aria-hidden="true"></span>
+                </a></li>
+                <li><a href="#work">
+                    <i class="menu-icon material-icons nav-btn">history</i>
+                </a></li>
+                <li><a href="#publications">
+                    <span class="menu-icon glyphicon glyphicon-edit nav-btn" aria-hidden="true"></span>
+                </a></li>
+                <li><a href="#articles">
+                    <i class="menu-icon material-icons nav-btn">import_contacts</i>
+                </a></li>
+                <li><a href="#education">
+                    <span class="menu-icon glyphicon glyphicon-education nav-btn"></span>
+                </a></li>
+                <li><a href="#fhm">
+                    <i class="menu-icon material-icons nav-btn">people</i>
+                </a></li>
+                <li><a href="#references">
+                    <span class="menu-icon glyphicon glyphicon-thumbs-up nav-btn" aria-hidden="true"></span>
+                </a></li>
+                <li><a href="#ip">
+                    <i class="menu-icon material-icons nav-btn">pan_tool</i>
+                </a></li>
+                <li><a href="#television">
+                    <i class="menu-icon material-icons nav-btn">movie</i>
+                </a></li>
+                <li><a href="#contact">
+                    <span class="menu-icon glyphicon glyphicon-phone-alt nav-btn" aria-hidden="true"></span>
                 </a></li>
             </ul>
         </div>
@@ -149,6 +183,9 @@
     </div>
     <div class="scroll-body" data-spy="scroll" data-target=".navbar" data-offset="100">
         <div class="section" id="clients">
+            <div class="section-header">
+                <h2>Clients</h2>
+            </div>
             <div class="row row-panel">
                 <div class="col-xs-3">
                     <button class="btn btn-default section-btn" type="button" onclick="window.open('')">
