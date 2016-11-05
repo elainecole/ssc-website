@@ -632,29 +632,29 @@
                     <h3 class="panel-title">Education</h3>
                     <div class="row row-panel">
                         <div class="col-xs-4">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/Stanford.pdf')">
                                 <img src="stanfordLogo.png" class="panel-btn" style="width: 30%; background: transparent;" alt="StanfordLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-4">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/AmericanGradChahil.pdf')">
                                 <img src="thunderbirdcrest.png" class="panel-btn" style="width: 60%; background: transparent;" alt="ThunderbirdLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-4">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/PunjabChahil.pdf')">
                                 <img src="Punjabcrest.png" class="panel-btn" style="width: 80%; background: transparent;" alt="PunjabUniversityLogo"/>
                             </button>
                         </div>
                     </div>
                     <div class="row row-panel">
                         <div class="col-xs-4">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/cambridge.pdf')">
                                 <img src="cambridgelogo.png" style="width: 50%; background: transparent;" alt="CambridgeSchoolLogo"/>
                             </button>
                         </div>
                         <div class="col-xs-4">
-                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/LawrenceChahil.pdf')">
                                 <img src="Lawrenceicon.gif" class="panel-btn" style="width: 60%; background: transparent;" alt="LawrenceschoolLogo"/>
                             </button>
                         </div>
@@ -663,17 +663,121 @@
             </div>
             <div class="panel panel-default panel-eight">
                 <div class="panel-body" id="panel-eight" aria-labelledby="btn-eight">
-                <h3 class="panel-title">Heroes, Friends & Mentors</h3>
-                Mentors
+                <h3 class="panel-title" style="margin-bottom: 6px;">Heroes, Friends & Mentors</h3>
+                <div id="hfmCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#hfmCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="1"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="2"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="3"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="4"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="5"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="6"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="7"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="8"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="9"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="10"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="11"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="12"></li>
+                        <li data-target="#hfmCarousel" data-slide-to="13"></li>
+
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="/hfm/p1.jpg" alt="picture">
+                    </div>
+                    <div class="item">
+                        <img src="/hfm/p2.jpg" alt="picture">
+                    </div>
+                    <div class="item">
+                        <img src="/hfm/p3.jpg" alt="picture">
+                    </div>
+                    <div class="item">
+                        <img src="/hfm/p4.jpg" alt="picture">
+                    </div>
+                    <div class="item">
+                        <img src="/hfm/p5.jpg" alt="picture">
+                    </div>
+                    <div class="item">
+                        <img src="/hfm/p6.jpg" alt="picture">
+                    </div>
+                    <div class="item">
+                        <img src="/hfm/p7.jpg" alt="picture">
+                    </div>
+                    <div class="item">
+                        <img src="/hfm/p8.jpg" alt="picture">
+                    </div>
+                    <div class="item">
+                        <img src="/hfm/p9.jpg" alt="picture">
+                    </div>
+                    <div class="item">
+                        <img src="/hfm/p10.jpg" alt="picture">
+                    </div>
+                    <div class="item">
+                        <img src="/hfm/p11.jpg" alt="picture">
+                    </div>
+                    <div class="item">
+                        <img src="/hfm/p12.jpg" alt="picture">
+                    </div>
+                    <div class="item">
+                        <img src="/hfm/p13.jpg" alt="picture">
+                    </div>
                 </div>
-            </div>
-            <div class="panel panel-default panel-nine">
-                <div class="panel-body" id="panel-nine" aria-labelledby="btn-nine">
-                <h3 class="panel-title">Accolades</h3>
-                Panel content
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#hfmCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#hfmCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
                 </div>
             </div>
         </div>
+            <div class="panel panel-default panel-nine">
+                <div class="panel-body" id="panel-nine" aria-labelledby="btn-nine">
+                <h3 class="panel-title">Accolades</h3>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/mercedes.jpg')">
+                            <img src="mercedeslogo.png" class="panel-btn" style="width: 60%; background: transparent;" alt="Mercedes"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/ForbesLetter.jpg')">
+                            <img src="forbeslogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="Forbes"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/HPletter.jpg')">
+                            <img src="hplogo.png" class="panel-btn" style="width: 40%; background: transparent;" alt="HP"/>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/appleletter.jpg')">
+                            <img src="applelogo.png" class="panel-btn" style="width: 40%; background: transparent;" alt="Apple"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/wsjletter.pdf')">
+                            <img src="wsjlogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="WSJ"/>
+                        </button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/dreamworksletter.jpg')">
+                            <img src="dreamworkslogo.jpg" class="panel-btn" style="width: 70%; background: transparent;" alt="Dreamworks"/>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         <div class="icons-four">
             <div class="row">
                 <div class="col-xs-4">
@@ -697,29 +801,69 @@
             <div class="panel panel-default panel-ten">
                 <div class="panel-body" id="panel-ten" aria-labelledby="btn-ten">
                     <h3 class="panel-title">Partnerships</h3>
-                    Panel content
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/starkeypressrelease.pdf')">
+                                <img src="starkeylogo.png" class="panel-btn" style="width: 60%; background: transparent;" alt="Starkey"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/49erspressrelease.jpg')">
+                                <img src="sonylogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="Sony"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/HPpressrelease.pdf')">
+                                <img src="hplogo.png" class="panel-btn" style="width: 40%; background: transparent;" alt="HP"/>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="panel panel-default panel-eleven">
                 <div class="panel-body" id="panel-eleven" aria-labelledby="btn-eleven">
-                <h3 class="panel-title">Videos</h3>
-                Panel content
+                    <h3 class="panel-title">Videos</h3>
+                    <i class="material-icons">movie</i>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/starkey.pdf')">
+                                <img src="starkeylogo.png" class="panel-btn" style="width: 60%; background: transparent;" alt="Starkey"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/HPSmartTV.pdf')">
+                                <img src="hplogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="HP"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/appleDVD.pdf')">
+                                <img src="applelogo.png" class="panel-btn" style="width: 40%; background: transparent;" alt="Apple"/>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="panel panel-default panel-twelve">
                 <div class="panel-body" id="panel-twelve" aria-labelledby="btn-twelve">
                     <h3 class="panel-title">Innovations</h3>
-                    <div class="col-xs-6" style="text-align: center">
-                        <a href="mailto:Satjiv@Chahil.com">
-                            <i class="material-icons">email</i>
-                        </a>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/starkey.pdf')">
+                                <img src="starkeylogo.png" class="panel-btn" style="width: 60%; background: transparent;" alt="Starkey"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/HPSmartTV.pdf')">
+                                <img src="hplogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="HP"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/appleDVD.pdf')">
+                                <img src="applelogo.png" class="panel-btn" style="width: 40%; background: transparent;" alt="Apple"/>
+                            </button>
+                        </div>
                     </div>
-                    <!-- <div class="col-xs-6" style="text-align: center">
-                        <i class="material-icons">ring_volume</i>
-                    </div> -->
-                    <div class="col-xs-6" style="text-align: center">
-                        <a href="https://www.linkedin.com/in/satjiv-chahil-3b8baa99?authType=&authToken=&trk=" target="blank" title="LinkedIn" class="btn btn-linkedin"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
-                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -752,9 +896,9 @@
         <button class="btn btn-default causes-btn c-nine" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.bgcp.org/#mission')">
             <img src="boys&girlsLogo.png" class="causes-btn" style="width: 150%; background: transparent;" alt="Boys&GirlsLogo"/>
         </button>
-        <!-- <button class="btn btn-default causes-btn c-ten" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.specialolympics.org/')">
-            <img src="SpecialOlympicsLogo.png" class="causes-btn" style="width: 100%; background: transparent;" alt="SpecialOlympicsLogo"/>
-        </button> -->
+        <button class="btn btn-default causes-btn c-ten" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.brightfocus.org/alzheimers')">
+            <img src="alzheimersdiseaseresearchLogo.png" class="causes-btn" style="width: 100%; background: transparent;" alt="alzheimersdiseaseresearchLogo"/>
+        </button>
 </div>
 <div class="quote-div">
     <div class="row">
