@@ -38,6 +38,32 @@
             opacity: 0;
             position: absolute;
         }
+        .panel-press-btn {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        #edu-modal img {
+            width: 100%;
+        }
+        #press-modal img {
+            width: 100%;
+        }
+        #causes-modal img {
+            width: 100%;
+        }
+        #jobs-modal img {
+            width: 100%;
+        }
+        #clients-modal img {
+            width: 100%;
+        }
+        .contact-inner-button {
+            height: 40px;
+            width: 70%;
+            padding-top: 8px;
+            background-color: #337ab7;
+            color: #fff;
+        }
     </style>
     <title>Satjiv S. Chahil</title>
     <meta name="Satjiv S. Chahil" content="">
@@ -67,7 +93,41 @@
                     <h4 class="modal-title">About</h4>
                 </div>
                 <div class="modal-body">
-
+                    <div style="font-weight:400;">
+                        <strong>Satjiv S. Chahil is a Silicon Valley, California-based advisor specializing in: </strong>
+                        <ul>
+                            <li>commercializing innovations and driving go-to-market strategies</li>
+                            <li>assisting companies expand their businesses to global markets</li>
+                            <li>facilitating and integrating business goals with social causes</li>
+                        </ul>
+                        <div>
+                            <strong>Chahil's clients have included: </strong>
+                            <ul>
+                                <li>Audi</li>
+                                <li>Blackberry</li>
+                                <li>BMW/Mini</li>
+                                <li>Engadget</li>
+                                <li>Mercedes</li>
+                                <li>Obi Worldphone</li>
+                                <li>San Francisco 49ers</li>
+                                <li>Sony</li>
+                                <li>Starkey</li>
+                                <li>TechCrunch</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <strong>Philanthropic organizations supported: </strong>
+                            <ul>
+                                <li>American India Foundation</li>
+                                <li>American Film Institute</li>
+                                <li>amfAR</li>
+                                <li>Boys and Girls Club of America</li>
+                                <li>Elton John Foundation</li>
+                                <li>Serena Williams Foundation</li>
+                                <li>Virgin Unite</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -80,7 +140,41 @@
                     <h4 class="modal-title">Jobs</h4>
                 </div>
                 <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#hp-modal">
+                                <img src="hpLogo.png" style="background: transparent;" alt="HPLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#palm-modal">
+                                <img src="palmLogo.png" style="background: transparent;" alt="PalmLogo"/>
+                            </button>
+                        </div>
 
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#newbridge-modal">
+                                <img src="newbridgeLogo.png"style="background: transparent;" alt="newBridgeLogo"/>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#apple-modal">
+                                <img src="appleLogo.png" style="background: transparent;" alt="AppleLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('http://xerox.com')">
+                                <img src="xeroxLogo.png" style="background: transparent;" alt="XeroxLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('http://ibm.com')">
+                                <img src="ibmLogo.png" style="background: transparent;" alt="IBMLogo"/>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -93,7 +187,35 @@
                     <h4 class="modal-title">Education</h4>
                 </div>
                 <div class="modal-body">
-
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button data-toggle="modal" data-target="#stanford-modal" class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalStanford">
+                                <img src="stanfordLogo.png" class="panel-btn" style="width: 80%; background: transparent;" alt="StanfordLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button data-toggle="modal" data-target="#thunderbird-modal" class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalAmerican">
+                                <img src="thunderbirdcrest.png" class="panel-btn" style="background: transparent;" alt="ThunderbirdLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button data-toggle="modal" data-target="#punjab-modal" class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalPunjab">
+                                <img src="punjabcrest.png" class="panel-btn" style="background: transparent;" alt="PunjabUniversityLogo"/>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button data-toggle="modal" data-target="#cambridge-modal" class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalCambridge">
+                                <img src="cambridgelogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="CambridgeSchoolLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button data-toggle="modal" data-target="#lawrence-modal" class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#modalLawrence">
+                                <img src="Lawrenceicon.gif" class="panel-btn" style="width: 80%; background: transparent;" alt="LawrenceschoolLogo"/>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,7 +228,40 @@
                     <h4 class="modal-title">Accolades</h4>
                 </div>
                 <div class="modal-body">
-
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/mercedes.jpg')">
+                                <img src="mercedeslogo.png" class="panel-btn" style="width: 60%; background: transparent;" alt="Mercedes"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/ForbesLetter.jpg')">
+                                <img src="forbeslogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="Forbes"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/HPletter.jpg')">
+                                <img src="hplogo.png" class="panel-btn" style="width: 40%; background: transparent;" alt="HP"/>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/appleletter.jpg')">
+                                <img src="applelogo.png" class="panel-btn" style="width: 40%; background: transparent;" alt="Apple"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/wsjletter.pdf')">
+                                <img src="wsjlogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="WSJ"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/dreamworksletter.jpg')">
+                                <img src="dreamworkslogo.jpg" class="panel-btn" style="width: 70%; background: transparent;" alt="Dreamworks"/>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -119,7 +274,23 @@
                     <h4 class="modal-title">Partners</h4>
                 </div>
                 <div class="modal-body">
-
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#starkey-partner-modal">
+                                <img src="starkeylogo.png" class="panel-btn" style="width: 60%; background: transparent;" alt="Starkey"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button"  onclick="window.open('/49erspressrelease.jpg')">
+                                <img src="sonylogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="Sony"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#hp-partner-modal">
+                                <img src="hplogo.png" class="panel-btn" style="width: 40%; background: transparent;" alt="HP"/>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,7 +303,50 @@
                     <h4 class="modal-title">Clients</h4>
                 </div>
                 <div class="modal-body">
-
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('http://audi.com')">
+                                <img src="audiLogo.png" style="width: 100%; background: transparent;" alt="AudiLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('http://blackberry.com')">
+                                <img src="blackberryLogo.png" style="width: 100%; background: transparent;" alt="BlackberryLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('http://bmw.com')">
+                                <img src="BMWLogo.png" style="width: 100%; background: transparent;" alt="BMWLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('http://beatsbydre.com')">
+                                <img src="beatsLogo.png" style="width: 100%; background: transparent;" alt="BeatsLogo"/>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('http://mercedes-benz.com')">
+                                <img src="mercedesLogo.png" style="width: 100%; background: transparent;" alt="MercedesLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('http://sony.com')">
+                                <img src="sonyLogo.png" style="width: 100%; background: transparent;" alt="SonyLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('http://swarovski.com')">
+                                <img src="swarovskiLogo.png" style="width: 100%; background: transparent;" alt="SwarovskiLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('http://starkey.com')">
+                                <img src="starkeyLogo.png" style="width: 100%; background: transparent;" alt="StarkeyLogo"/>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,7 +359,84 @@
                     <h4 class="modal-title">Causes</h4>
                 </div>
                 <div class="modal-body">
-
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://aif.org/')">
+                                <img src="aifLogo.png" style="width: 100%; background: transparent;" alt="AIFLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.afi.com/')">
+                                <img src="afiLogo.png" style="width: 100%; background: transparent;" alt="AFILogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.amfar.org/')">
+                                <img src="AmfARLogo.png" style="width: 100%; background: transparent;" alt="amFARLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.mptf.com/')">
+                                <img src="MPTFLogo.png" style="width: 100%; background: transparent;" alt="MPTFLogo"/>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://ejaf.org/')">
+                                <img src="EJAFLogo.png" style="width: 100%; background: transparent;" alt="EJAFLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.ucsf.edu/')">
+                                <img src="UCSFLogo.png" style="width: 100%; background: transparent;" alt="UCSFLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.specialolympics.org/')">
+                                <img src="SpecialOlympicsLogo.png" style="width: 100%; background: transparent;" alt="SpecialOlympicsLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.bgcp.org/#mission')">
+                                <img src="boys&girlsLogo.png" style="width: 110%; background: transparent;" alt="Boys&GirlsLogo"/>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.doctorswithoutborders.org/')">
+                                <img src="doctorswithoutbordersLogo.png" style="width: 100%; background: transparent;" alt="DoctorsWithoutBordersLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.habitat.org')">
+                                <img src="habitatforhumanitylogo.png" style="width: 100%; background: transparent;" alt="habitatforhumanityLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://tamana.org/')">
+                                <img src="tamanaLogo.png" style="width: 100%; background: transparent;" alt="TamanaLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://diabetes.org/')">
+                                <img src="americandiabetesassociationLogo.png" style="width: 100%; background: transparent;" alt="americandiabetesassociationLogo"/>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.brightfocus.org/alzheimers')">
+                                <img src="alzheimersdiseaseresearchLogo.png" style="width: 100%; background: transparent;" alt="alzheimersdiseaseresearchLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('https://www.virgin.com/unite/')">
+                                <img src="virginunitelogo.png" style="width: 100%; background: transparent;" alt="virginuniteLogo"/>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -155,10 +446,81 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Heroes</h4>
+                    <h4 class="modal-title">Heroes, Friends & Mentors</h4>
                 </div>
                 <div class="modal-body">
+                    <div id="hfmCarousel" class="carousel slide" data-ride="carousel" style="height: 500px;">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#hfmCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="1"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="2"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="3"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="4"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="5"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="6"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="7"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="8"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="9"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="10"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="11"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="12"></li>
+                            <li data-target="#hfmCarousel" data-slide-to="13"></li>
 
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox" style="height: 100%;">
+                            <div class="item active">
+                                <img src="/hfm/p1.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p2.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p3.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p4.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p5.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p6.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p7.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p8.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p9.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p10.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p11.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p12.jpg" alt="picture">
+                            </div>
+                            <div class="item">
+                                <img src="/hfm/p13.jpg" alt="picture">
+                            </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#hfmCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#hfmCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -171,7 +533,30 @@
                     <h4 class="modal-title">Thoughts</h4>
                 </div>
                 <div class="modal-body">
-
+                    <div class="row row-panel">
+                        <div class="col-xs-6">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#clinton-modal">
+                                Clinton's Third Term
+                            </button>
+                        </div>
+                        <div class="col-xs-6">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#euromanagement-modal">
+                                European Management Journal
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row row-panel">
+                        <div class="col-xs-6">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#pcbusiness-modal">
+                                International PC Business
+                            </button>
+                        </div>
+                        <div class="col-xs-6">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#new-media-modal">
+                                New Media For a New World
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -184,7 +569,23 @@
                     <h4 class="modal-title">Innovations</h4>
                 </div>
                 <div class="modal-body">
-
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#starkey-innovation-modal">
+                                <img src="starkeylogo.png" class="panel-btn" style="width: 60%; background: transparent;" alt="Starkey"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" data-toggle="modal" data-target="#hp-innovation-modal">
+                                <img src="hplogo.png" class="panel-btn" style="width: 50%; background: transparent;" alt="HP"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-4">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/appleDVD.png')">
+                                <img src="applelogo.png" class="panel-btn" style="width: 40%; background: transparent;" alt="Apple"/>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,7 +598,16 @@
                     <h4 class="modal-title">Contact</h4>
                 </div>
                 <div class="modal-body">
-
+                    <div class="row">
+                        <div class="col-xs-6" style="text-align: center">
+                            <a class="btn contact-inner-button" href="mailto:Satjiv@Chahil.com">
+                                <i class="material-icons">email</i>
+                            </a>
+                        </div>
+                        <div class="col-xs-6" style="text-align: center">
+                            <a href="https://www.linkedin.com/in/satjiv-chahil-3b8baa99?authType=&authToken=&trk=" title="LinkedIn" class="btn btn-linkedin contact-inner-button"><i class="fa fa-linkedin fa-fw"></i> Connect on LinkedIn</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -210,12 +620,62 @@
                     <h4 class="modal-title">Press</h4>
                 </div>
                 <div class="modal-body">
-
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://fortune.com/2013/08/29/tech-star-satjiv-chahil/')">
+                                <img src="fortuneLogo.png" class="panel-btn" style="background: transparent;" alt="FortuneLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.forbes.com/sites/jenniferelias/2016/02/08/how-the-super-bowl-became-a-platform-for-hearables/#1126d5d175a0')">
+                                <img src="forbeslogo.jpg" class="panel-btn" style="background: transparent;" alt="ForbesLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.forbes.com/sites/jenniferelias/2016/02/08/how-the-super-bowl-became-a-platform-for-hearables/#1126d5d175a0')">
+                                <img src="timelogo.png" class="panel-btn" style="background: transparent;" alt="TimesLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://indiaeducationdiary.in/Punjab/Shownews.asp?newsid=32263')">
+                                <img src="ielogo.jpg" class="panel-btn" style="background: transparent;" alt="ielogo"/>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.nytimes.com/2007/03/08/technology/08drive.html?_r=0')">
+                                <img src="wsjLogo.png" class="panel-btn" style="background: transparent;" alt="WSJLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.nytimes.com/2006/07/25/business/media/25adco.html')">
+                                <img src="nytimeslogo.png" class="panel-btn" style="background: transparent;" alt="NewYorkTimesLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('/CNN_Money_Article.pdf')">
+                                <img src="cnnmoneylogo.png" class="panel-btn" style="background: transparent;" alt="CNNMoneyLogo"/>
+                            </button>
+                        </div>
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.nytimes.com/2007/03/08/technology/08drive.html?_r=0')">
+                                <img src="bwlogo.jpg" class="panel-btn" style="background: transparent;" alt="BusinessWeeklyLogo"/>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <button class="btn btn-default panel-press-btn" type="button" aria-haspopup="true" aria-expanded="false" onclick="window.open('http://www.wired.com/2000/11/people-39/')">
+                                <img src="wiredLogo.png" class="panel-btn" style="background: transparent;" alt="WiredLogo"/>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="modal fade" id="vidoes-modal" tabindex="-1" role="dialog">
+    <div class="modal fade" id="videos-modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -223,11 +683,242 @@
                     <h4 class="modal-title">Videos</h4>
                 </div>
                 <div class="modal-body">
-
+                    <div>
+                        <p>
+                            <strong><em>Coming Soon...</em></strong>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="hp-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">HP</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/hpbiochahil.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="palm-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Palm</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/palmbio.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="newbridge-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Newbridge</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/chahilNewbridge.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="apple-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Apple</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/applebio1.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="stanford-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Stanford</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/stanford.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="thunderbird-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">American</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/american.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="punjab-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Punjab</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/punjab.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cambridge-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Cambridge</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/cambridge.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="lawrence-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Lawrence</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/LawrenceChahil.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="clinton-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Clinton's Third Term</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/ClintonThirdTerm.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="euromanagement-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">European Management Journal</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/euromanagement.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="pcbusiness-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">International PC Business</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/PCbusiness.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="new-media-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">New Media for a New World</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/newmediafornewworld.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="starkey-partner-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Starkey Release</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/starkeypressrelease.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="hp-partner-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">HP Release</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/HPpressrelease.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="starkey-innovation-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Starkey Innovations</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/starkey.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="hp-innovation-modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">HP Innovations</h4>
+                </div>
+                <div class="modal-body">
+                    <embed src="/HPSmartTV.pdf" width="100%" height="500px">
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 <script type="text/javascript">
@@ -275,8 +966,12 @@
             $('.press-button').css({top: ((.341 * imageHeight) / windowHeight * 100) + 'vh', left: '38.6vw', height: '8vw'});
             $('.videos-button').css({top: ((.34 * imageHeight) / windowHeight * 100) + 'vh', left: '48vw', height: '7.5vw'});
         }
-    }
+    };
+
     $(document).ready(function () {
+        if ($(window).width() < 600) {
+            window.location.href = '/m.html';
+        }
         buttonConfig();
 
         $(window).resize( function () {

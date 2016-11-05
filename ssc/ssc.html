@@ -843,7 +843,7 @@
                             </button>
                         </div>
                         <div class="col-xs-4">
-                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/appleDVD.pdf')">
+                            <button class="btn btn-default panel-press-btn" type="button" onclick="window.open('/appleDVD.png')">
                                 <img src="applelogo.png" class="panel-btn" style="width: 40%; background: transparent;" alt="Apple"/>
                             </button>
                         </div>
@@ -899,6 +899,10 @@
 
     <script>
     $( document ).ready(function () {
+        if ($(window).width() < 600) {
+            window.location.href = '/w.html';
+        }
+
         $('.open-panel').click(function (e) {
             var $this = $(e.target).closest('button'),
                 panelLookup = $this.attr('data-panel'),
